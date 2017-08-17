@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="349.39111mm"
+   height="247.79111mm"
+   viewBox="0 0 1238 877.99998"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="002_toolboxes.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="680.52995"
+     inkscape:cy="690.17183"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="947"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(240.42857,-91.933624)">
+    <image
+       sodipodi:absref="002_toolboxes_raw.png"
+       xlink:href="002_toolboxes_raw.png"
+       inkscape:export-ydpi="59"
+       inkscape:export-xdpi="59"
+       style="fill:none;stroke:#00ff00"
+       width="1238"
+       height="878"
+       preserveAspectRatio="none"
+       id="image4144"
+       x="-240.42857"
+       y="91.933624" />
+    <rect
+       style="fill:none;stroke:#ffae00;stroke-width:7.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4149"
+       width="506.0864"
+       height="25.253811"
+       x="-231.33719"
+       y="118.37502" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="281.49829"
+       y="145.07812"
+       id="text4151"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4153"
+         x="281.49829"
+         y="145.07812"
+         style="fill:#ffae00;fill-opacity:1">Menu bar</tspan></text>
+    <rect
+       style="fill:none;stroke:#4c69e4;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4149-3"
+       width="1217.5724"
+       height="66.382721"
+       x="-232.52927"
+       y="150.11008" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#4c69e4;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4170"
+       width="32.849689"
+       height="681.76031"
+       x="-233.27827"
+       y="219.60185"
+       ry="7.0710702" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#4c69e4;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4172"
+       width="1221.4133"
+       height="32.43874"
+       x="-233.27084"
+       y="901.78058"
+       ry="7.0710702" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#4c69e4;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4176"
+       width="35.357136"
+       height="675.71429"
+       x="951.35718"
+       y="221.36218" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0019c2;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="599"
+       y="184.21935"
+       id="text4178"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4180"
+         x="599"
+         y="184.21935">Toolbars</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#ff2a2a;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4184"
+       width="299.99997"
+       height="707.14294"
+       x="-229"
+       y="221.3622"
+       ry="7.0710702" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#ff2a2a;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4186"
+       width="267.14288"
+       height="671.42859"
+       x="712.42853"
+       y="222.79077"
+       ry="7.0710702" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="95.285721"
+       y="457.07648"
+       id="text4188"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4190"
+         x="95.285721"
+         y="457.07648"
+         style="fill:#ff2a2a;fill-opacity:1">Vertical toolboxes areas</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4192"
+       width="1201.4285"
+       height="220.00002"
+       x="-224.71428"
+       y="705.64789"
+       ry="7.0710702" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00ff00;fill-opacity:1;stroke:#00ffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="94.428574"
+       y="683.36218"
+       id="text4194"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4196"
+         x="94.428574"
+         y="683.36218">Horizontal toolboxes area</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#00ffff;stroke-width:5.24300003;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4198"
+       width="1219.1914"
+       height="13.71931"
+       x="-233.19162"
+       y="939.42853"
+       ry="1.4285671" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="162.42857"
+       y="841.36218"
+       id="text4200"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4202"
+         x="162.42857"
+         y="841.36218">Status bar</tspan></text>
+  </g>
+</svg>
