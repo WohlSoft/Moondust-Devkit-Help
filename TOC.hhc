@@ -208,7 +208,7 @@
  </OBJECT>
  <LI><OBJECT type="text/sitemap">
   <PARAM name="Name" value="Placing features">
-  <PARAM name="Local" value="levelediting/level_items_tool_squarefill.html">
+  <PARAM name="Local" value="levelediting/level_items_place_tools.html">
  </OBJECT>
  <LI><OBJECT type="text/sitemap">
   <PARAM name="Name" value="Player start points">

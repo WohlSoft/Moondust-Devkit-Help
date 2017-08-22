@@ -45,13 +45,13 @@ name="Saving_file">Saving file</a></p>
 <p style="text-align: left">Save current data into opened file. If file is
 created, will be asked for save file.</p>
 <p style="text-align: left">&nbsp;</p>
-<p style="text-align: left"><a name="Open_folder_of_current_file">Open folder of 
+<p style="text-align: left"><a name="Open_folder_of_current_file">Open folder of
 current file</a></p>
 <p style="text-align: left">Opens a folder where current file is saved</p>
 <p style="text-align: left">&nbsp;</p>
-<p style="text-align: left"><a name="Open_custom_data_folder">Open custom data 
+<p style="text-align: left"><a name="Open_custom_data_folder">Open custom data
 folder</a></p>
-<p style="text-align: left">Opens a custom data folder (folder with name equal 
+<p style="text-align: left">Opens a custom data folder (folder with name equal
 to current file name and stored in the same place)</p>
 
 <br>
@@ -81,8 +81,7 @@ image file (will be saved in PNG format).</p>
 <p style="text-align: left"><img alt=""
 src="../screenshots/menus/002_edit.png"></p>
 
-<p style="text-align: left; text-decoration: underline;"><a
-name="History">History</a></p>
+<p style="text-align: left; text-decoration: underline;"><a name="History">History</a></p>
 
 <p style="text-align: left"><strong>Undo</strong> - Cancel recent action.</p>
 
@@ -90,8 +89,7 @@ name="History">History</a></p>
 
 <br>
 
-<p style="text-align: left; text-decoration: underline;"><a
-name="Clipboard">Clipboard</a></p>
+<p style="text-align: left; text-decoration: underline;"><a name="Clipboard">Clipboard</a></p>
 
 <p style="text-align: left"><strong>Copy</strong> - Selected items will be
 stored in special buffer. Data can be pasted in other file.</p>
@@ -105,29 +103,40 @@ paste items from buffer.</p>
 
 <br>
 
-<p style="text-align: left" class="auto-style1"><a name="Align_selected">Align
-selected</a></p>
+<p style="text-align: left"><strong>Snap to grid</strong> - Switch automatic alignment of placed or moved elements</p>
+<p style="text-align: left"><strong>Set align grid size</strong> - Allows you to override default grid alignment size. To restore default choose the "Default by item"</p>
+
+<br>
+
+<p style="text-align: left; text-decoration: underline;"><a
+name="Collisions_on/off">Prevent overlap</a></p>
+
+<p style="text-align: left">Prevents similar items from overlapping each other.
+Objects will not be able to be placed on top of each other, and attempting to do so will result
+in the selected object returning to its original position. If this flag is disabled,
+you will be able to move elements over each other with no limitation. Objects will
+never be allowed to overlap when placing new objects, unless you are duplicating or
+pasting from the clipboard, which will always allow overlapping.</p>
+
+<p style="text-align: left"><em>You can disable this option for move items over
+each other without limits.</em></p>
+
+<br>
+
+<p style="text-align: left" class="auto-style1"><a name="Align_selected">Align selected</a></p>
 
 <p style="text-align: left">Align each selected item to grid.</p>
-
 <br>
 
-<p style="text-align: left" class="auto-style1"><a
-name="RotateItems_left/right">Rotate left/right</a></p>
+<p style="text-align: left" class="auto-style1"><a name="RotateItems_left/right">Rotate left/right</a></p>
 
-<p style="text-align: left">Rotate item's coordinates inside selection
-rectangle</p>
-
+<p style="text-align: left">Rotate item's coordinates inside selection rectangle</p>
 <br>
 
-<p style="text-align: left" class="auto-style1"><a
-name="FlipItems_horizontal/vertical">Flip horizontal/vertical</a></p>
+<p style="text-align: left" class="auto-style1"><a name="FlipItems_horizontal/vertical">Flip horizontal/vertical</a></p>
 
-<p style="text-align: left">Invert item's coordinates relative to selection
-rectangle</p>
-
+<p style="text-align: left">Invert item's coordinates relative to selection rectangle</p>
 <br>
-
 <br>
 
 <p style="text-align: left"><strong><a name="Level">Level</a></strong></p>
@@ -149,7 +158,7 @@ modifications</a></p>
 copy all items of selected sections with section settings and size into another
 section and into another file.</p>
 
-<p style="text-align: left"><strong>Delete section</strong> - removes all items 
+<p style="text-align: left"><strong>Delete section</strong> - removes all items
 of current section and de-initializes it.</p>
 
 <p style="text-align: left"><strong>Rotate left/right</strong> - will rotate
@@ -210,21 +219,25 @@ map properties toolbox.</p>
 <p style="text-align: left"><a name="Test"><strong>T</strong><span
 class="auto-style2"><strong>est</strong></span></a></p>
 
+<small>Variant of menu on Linux and macOS</small>
 <p style="text-align: left"><img alt="" src="../screenshots/menus/005_test.png"></p>
 
-<p style="text-align: left"><strong>Run testing</strong> - will run testing of
-current level. Will be available interprocessing.</p>
+<small>Variant of menu on Windows with Integration config pack</small>
+<p style="text-align: left"><img alt="" src="../screenshots/menus/005_test_win.png"></p>
 
-<p style="text-align: left"><strong>Run testing of saved file</strong> - will
-start testing of saved file without interprocessing.</p>
+<p style="text-align: left"><strong>Run testing</strong> - will run testing of current level in Engine. Will be available interprocessing.<br>
+<div style="padding-left: 40px;"><small><strong>Note:</strong> when you have used Integration config pack, "Run Testing" may be redefined to start LunaTester.
+In this case you still be able to run PGE Engine by opening it in the "PGE Engine" menu</p></small></div>
 
-<p><strong>Run test via SMBX</strong> - allows to run current level in the SMBX
-editor window. (This option works on Windows (also on the Wine) systems and SMBX should have pre-installed <a
-target="_blank" href="http://wohlsoft.ru/pgewiki/LunaLUA">LunaLUA</a>).</p>
-<p><strong>Start Engine</strong> - Starts PGE Engine in normal mode with current 
+<p style="text-align: left"><strong>Run testing of saved file</strong> - will start testing of saved file without interprocessing.</p>
+
+<p><strong>LunaTester</strong> - (Windows only) will start testing in the legacy SMBX Engine (it must have
+    pre-installed <a target="_blank" href="http://wohlsoft.ru/pgewiki/LunaLua">LunaLua</a> and you
+    must use the Integration config pack which points folder of LunaLua-SMBX Engine).</p>
+
+<p><strong>Start Engine</strong> - Starts PGE Engine in normal mode with current
 configuration package.</p>
-<p><strong>Testing options</strong> - provides ability to set preferences of 
-testing process.</p>
+<p><strong>Testing options</strong> - provides ability to set preferences of testing process.</p>
 
 <p style="text-align: left">&nbsp;</p>
 
@@ -267,27 +280,12 @@ up.</em></p>
 
 <br>
 
-<p style="text-align: left; text-decoration: underline;"><a
-name="Collisions_on/off">Collisions on/off</a></p>
-
-<p style="text-align: left">Enable or disable collision detection on drop
-items. If collision was cased, moved item will return back to source position.
-For example: blocks can't be placed over other blocks, or NPCs can't be placed
-to other NPCs or over blocks, and BGO can't be palced over equal BGO, but
-difference BGO can be placed over.</p>
-
-<p style="text-align: left"><em>You can disable this option for move items over
-each other without limits.</em></p>
-
-<br>
-
 <p style="text-align: left"><strong><a name="Configuration">Configuration</a></strong></p>
 <p style="text-align: left">
 <img alt="" src="../screenshots/menus/Configuration.png"></p>
 <p style="text-align: left">&nbsp;</p>
 
-<p style="text-align: left; text-decoration: underline;"><a
-name="Global_configuration_status">Global configuration status</a></p>
+<p style="text-align: left; text-decoration: underline;"><a name="Global_configuration_status">Current configuration status</a></p>
 
 <p style="text-align: left">This option displaying the global configuration
 status window. You will see list of all loaded items and you can see all
@@ -297,16 +295,21 @@ in game config files.</p>
 <br>
 
 <p style="text-align: left; text-decoration: underline;"><a
-name="Reloading_of_global_configuration">Reloading of global
-configuration</a></p>
+name="Reloading_of_global_configuration">Reload configuration pack</a></p>
 
 <p style="text-align: left">This option start to completely reload of all
 global configuration data without restart of editor.</p>
 
 <br>
 
+<p style="text-align: left; text-decoration: underline;"><a
+name="Run_configure_tool">Run configure tool...</a></p>
+<p style="text-align: left">Some configuration packs has own configure tool which can set extra properties of config pack (for example, integration config packs are using it to setup the LunaLua-SMBX directory).</p>
+
+<br>
+
 <p style="text-align: left" class="auto-style1"><a
-name="Change_configuration">Change configuration</a></p>
+name="Change_configuration">Change configuration pack</a></p>
 
 <p style="text-align: left">This option giving able to switch into another
 config pack</p>
@@ -409,13 +412,13 @@ the engine part while debug test is runned.</p>
 <br>
 
 <p style="text-align: left" class="auto-style1"><a
-name="SMBX-Like_GUI">SMBX-Like GUI</a></p>
+name="SMBX-Like_GUI">Legacy GUI</a></p>
 
 <p style="text-align: left">This menuitem will switch editor's GUI into classic
 design with sub-windows mode and with tileset items box.</p>
 <p style="text-align: left">&nbsp;</p>
 <p style="text-align: left"><a name="Modern_GUI">Modern GUI</a></p>
-<p style="text-align: left">This menuitem will switch editor&#39;s GUI into modern 
+<p style="text-align: left">This menuitem will switch editor&#39;s GUI into modern
 design with tab-view mode and with default filter-search items box.</p>
 
 <br>
