@@ -1,0 +1,106 @@
+{
+  "name": "docute",
+  "version": "0.0.0-managed-by-semantic-release",
+  "scripts": {
+    "build:umd": "poi --config build/poi.lib.config.js --prod",
+    "build:es": "sfc normalize --config build/sfc.config.js",
+    "build": "npm run build:umd && npm run build:es",
+    "test": "npm run lint && echo 'no tests!'",
+    "lint": "xo",
+    "website": "poi --serve --config build/poi.website.config.js",
+    "build:website": "poi --prod --config build/poi.website.config.js && npm run copy-docs",
+    "copy-docs": "cp -r website/docs/* website/dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "dependencies": "^0.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "jump.js": "^1.0.2",
+    "loadjs": "^3.5.4",
+    "marked": "^0.5.0",
+    "medium-zoom": "^1.0.2",
+    "prismjs": "^1.15.0",
+    "vue": "^2.5.17",
+    "vue-content-loader": "^0.2.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@leptosia/docute-google-analytics": "^1.0.0",
+    "babel-preset-minimal": "^0.1.1",
+    "bili": "^3.4.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint-config-rem": "^3.0.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
+    "fast-async": "^6.3.8",
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
+    "poi": "^12.0.0-alpha.7",
+    "postcss-import": "^12.0.0",
+    "postcss-preset-env": "^6.0.3",
+    "rollup-plugin-vue": "^4.3.2",
+    "semantic-release": "^15.12.0",
+    "sfc": "^0.2.13",
+    "webpack-node-externals": "^1.7.2",
+    "xo": "^0.23.0"
+  },
+  "repository": {
+    "url": "leptosia/docute",
+    "type": "git"
+  },
+  "main": "dist/docute.js",
+  "module": "lib/index.js",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "description": "Effortlessly documentation done right.",
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "xo": {
+    "extends": [
+      "rem",
+      "plugin:vue/essential"
+    ],
+    "prettier": true,
+    "ignores": [
+      "**/website/**",
+      "**/dist/**"
+    ],
+    "envs": [
+      "browser"
+    ],
+    "globals": [
+      "__DOCUTE_VERSION__"
+    ],
+    "extensions": [
+      "vue"
+    ],
+    "rules": {
+      "unicorn/filename-case": "off",
+      "unicorn/no-abusive-eslint-disable": "off"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md,vue}": [
+      "yarn lint --fix",
+      "git add"
+    ]
+  },
+  "release": {
+    "branch": "master"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

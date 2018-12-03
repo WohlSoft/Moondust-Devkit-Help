@@ -1,0 +1,7 @@
+
+  .InjectedComponents[data-position="sidebar:start"] {
+    margin-bottom: 25px
+  }
+.InjectedComponents[data-position="sidebar:start"]>*:first-child {
+      margin-top: 0;
+    }
