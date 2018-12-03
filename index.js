@@ -108,7 +108,7 @@ new Docute({
     nav: [
         {
             title: 'Home',
-            link: '/Intro'
+            link: '/'
         },
         {
             title: 'FAQ',
@@ -129,7 +129,7 @@ new Docute({
             links: [
                 {
                     title: 'Intro',
-                    link: '/Intro'
+                    link: '/'
                 }
             ]
         },
