@@ -1,8 +1,8 @@
 # Hot keys
 
+## Common
 | Hot key | Description | Extras |
 |---------|-------------|--------|
-|| **Common** ||
 | Ctrl+O |Open exist file ||
 | Ctrl+S |Save current file ||
 | Ctrl+Shift+S |Save current file as... || 
@@ -14,8 +14,11 @@
 | Ctrl+Z |Cancel recent action | [History Manager](HistoryManager.md) |
 | Ctrl+Y |Repeat cancelled action | [History Manager](HistoryManager.md) |
 | Ctrl+F |Search items on level ||
-| Alt+Enter(Return) |Switch betwee fullscreen and normal mode ||
-|| **Level/World Editing** ||
+| Alt+Enter(Return) |Switch between fullscreen and normal mode ||
+
+## Level/World Editing
+| Hot key | Description | Extras |
+|---------|-------------|--------|
 |Ctrl+[1,2,...,9,0] |Switch to level section 0,1,...,9 ||
 |Ctrl+Alt+[1,2,...,9,0] |Switch to level section 10,11,...,18,19 ||
 |Alt+1 |Switch to section 20 ||
@@ -44,7 +47,10 @@
 |Shift+C |Toggle Circlular place mode | |
 |Shift+D |Toggle Line mode | |
 |Shift+F |Toggle Flood-fill mode ||
-||**Functional keys**||
+
+## Functional keys
+| Hot key | Description | Extras |
+|---------|-------------|--------|
 |F1 |Help contents ||
 |F5 |Launch test of current level ||
 |F8 |Reload current file ||
@@ -53,6 +59,9 @@
 |F11 |Play/Stop music ||
 |F12 |Export selected fragment of Level or World map||
 |into the image file||
-||**Resizing process hor keys**||
+
+## Resizing process hor keys
+| Hot key | Description | Extras |
+|---------|-------------|--------|
 |Enter |Accept new size and return to select mode ||
 |Esc |Cancel resizing, keep current size and return to select mode ||
