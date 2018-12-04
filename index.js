@@ -204,6 +204,30 @@ new Docute({
             title: 'Level editing',
             links: [
                 {
+                    title: 'About',
+                    link: '/EditLevel/About'
+                },
+                {
+                    title: 'Set level title',
+                    link: '/EditLevel/SetTitle'
+                },
+                {
+                    title: 'Sections',
+                    link: '/EditLevel/Sections'
+                },
+                {
+                    title: 'Item browser',
+                    link: '/EditLevel/ItemBrowser'
+                },
+                {
+                    title: 'Level Items',
+                    link: '/EditLevel/Items'
+                },
+                {
+                    title: '<WIP>',
+                    link: '/WIP/WIP'
+                },
+                {
                     title: '<WIP>',
                     link: '/WIP/WIP'
                 }
