@@ -175,12 +175,20 @@ new Docute({
                     link: '/Editing/Placing'
                 },
                 {
+                    title: 'Removing items',
+                    link: '/Editing/RemoveItems'
+                },
+                {
                     title: 'Context menu',
                     link: '/Editing/ContextMenu'
                 },
                 {
-                    title: 'ItemProperties',
+                    title: 'Item Properties',
                     link: '/Editing/ItemProperties'
+                },
+                {
+                    title: 'Search',
+                    link: '/Editing/Search'
                 }
             ]
         },
