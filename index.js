@@ -168,6 +168,23 @@ new Docute({
             ]
         },
         {
+            title: "Editing",
+            links: [
+                {
+                    title: 'Placing elements',
+                    link: '/Editing/Placing'
+                },
+                {
+                    title: 'Context menu',
+                    link: '/Editing/ContextMenu'
+                },
+                {
+                    title: 'ItemProperties',
+                    link: '/Editing/ItemProperties'
+                }
+            ]
+        },
+        {
             title: 'Editor GUI',
             links: [
                 {
