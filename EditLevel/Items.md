@@ -634,12 +634,7 @@ direction. Player will be exited from exit point with defined exit direction.
 Each warp have an own entry. At first you need to add a new warp entry
 into the list:
 
-<ImageZoom
-  alt="002_addWarp"
-  url="screenshots/LevelEditing/Warps/002_addWarp.png"
-  width="200px"
-  :border="true"
-/>
+![002_addWarp](screenshots/LevelEditing/Warps/002_addWarp.png)
 
 And now, you can place points (or you can define warp options before).
 
@@ -709,12 +704,7 @@ make a second warp entry with opposite point placements:
 
 Locked warp - is a warp with closed entrance which possible to open with a key:
 
-<ImageZoom
-  alt="018_locked_door"
-  url="screenshots/LevelEditing/Warps/018_locked_door.png"
-  width="200px"
-  :border="true"
-/>
+![018_locked_door](screenshots/LevelEditing/Warps/018_locked_door.png)
 
 To make a locked door, you need to set the "Locked" flag into the 'checked' state:
 
@@ -821,7 +811,8 @@ _World map point selection dialog_
 
 
 ## PhysEnv
-**Physical environment area** (Water, Quicksand, etc.) - this is a specual unit what define the physical environment inside it's rectangle.
+**Physical environment zone** (Water, Quicksand, etc.) - this is a special
+unit which defines the physical environment inside it's rectangular area.
 
 **Available environment types:**
 * **Water** - a swimmable liquid environment.
