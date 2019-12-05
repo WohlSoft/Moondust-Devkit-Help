@@ -1,3 +1,5 @@
+let docuteSourceRoot = './';
+
 new Docute({
     target: '#docute',
     title: 'Moondust Editor - Documentation',
