@@ -19,9 +19,6 @@
 ## Level/World Editing
 | Hot key | Description | Extras |
 |---------|-------------|--------|
-|Ctrl+[1,2,...,9,0] |Switch to level section 0,1,...,9 ||
-|Ctrl+Alt+[1,2,...,9,0] |Switch to level section 10,11,...,18,19 ||
-|Alt+1 |Switch to section 20 ||
 |Mouse Wheel |Scroll vertically ||
 |Ctrl+Mouse Wheel |Scroll horizontally ||
 |Shift+Mouse Wheel |Scroll vertically faster ||
