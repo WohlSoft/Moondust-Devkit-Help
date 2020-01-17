@@ -1,3 +1,5 @@
+let docuteSourceRoot = './';
+
 new Docute({
     target: '#docute',
     title: 'Moondust Editor - Documentation',
@@ -164,6 +166,31 @@ new Docute({
                 {
                     title: 'How to make world maps',
                     link: '/Intro/QuickStart/HowToMakeWorlds'
+                }
+            ]
+        },
+        {
+            title: "Editing",
+            links: [
+                {
+                    title: 'Placing elements',
+                    link: '/Editing/Placing'
+                },
+                {
+                    title: 'Removing items',
+                    link: '/Editing/RemoveItems'
+                },
+                {
+                    title: 'Context menu',
+                    link: '/Editing/ContextMenu'
+                },
+                {
+                    title: 'Item Properties',
+                    link: '/Editing/ItemProperties'
+                },
+                {
+                    title: 'Search',
+                    link: '/Editing/Search'
                 }
             ]
         },
