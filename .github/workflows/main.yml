@@ -15,5 +15,5 @@ jobs:
           flags: '-lrvuO --delete --exclude=".*"'
           options: ''
           ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
-          src: '*'
+          src: '/github/workspace/*'
           dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.EDITOR_HELP_REMOTE }}'
