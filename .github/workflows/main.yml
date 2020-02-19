@@ -12,7 +12,7 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with: 
-          flags: '-lrvuO --delete --exclude=".*"'
+          flags: '-lrvuO --delete'
           options: ''
           ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
           src: './*'
