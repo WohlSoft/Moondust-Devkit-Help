@@ -12,7 +12,7 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with: 
-          flags: '-lrvuO --delete'
+          flags: '-avzr --delete'
           options: '../workspace'
           ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
           src: '.'
