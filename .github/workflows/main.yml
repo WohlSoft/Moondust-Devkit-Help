@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy documentation to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: '${{ secrets.SSH_USER }}'
+          server: '${{ secrets.SSH_SERVER }}'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: './*'
+          remote_path: ${{ secrets.EDITOR_HELP_REMOTE }}
+          args: '-o ConnectTimeout=5'
