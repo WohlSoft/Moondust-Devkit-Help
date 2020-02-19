@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List all content of the repo
-        run: git clone https://github.com/WohlSoft/PGE-Editor-Help.git .
+        run: git clone -b docute --depth=1 https://github.com/WohlSoft/PGE-Editor-Help.git .
       - name: List all content of the repo
         run: ls -al
       - name: Deploy to server
