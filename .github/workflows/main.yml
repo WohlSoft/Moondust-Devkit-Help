@@ -4,10 +4,10 @@ on: [push]
 
 jobs:
   upload:
-    name: Upload full content of repository to remote server
+    name: Upload help to server
     runs-on: ubuntu-latest
     steps:
-      - name: List all content of the repo
+      - name: Clone the repo
         run: git clone -b docute --depth=1 https://github.com/WohlSoft/PGE-Editor-Help.git .
       - name: List all content of the repo
         run: ls -al
@@ -16,7 +16,7 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with: 
-          flags: '-avzr --delete --exclude=".*"'
+          flags: '-lrvuO --delete --exclude=".*"'
           options: ''
           ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
           src: './*'
