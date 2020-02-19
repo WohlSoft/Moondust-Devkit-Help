@@ -6,12 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: deploy documentation to server
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: '${{ secrets.SSH_USER }}'
-          server: '${{ secrets.SSH_HOST }}'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: '*'
-          remote_path: ${{ secrets.EDITOR_HELP_REMOTE }}
-          args: '-o ConnectTimeout=5'
+      - name: Deploy to server
+        id: deploy
+        uses: Pendect/action-rsyncer@v1.1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with: 
+          flags: '-lrvuO --delete --exclude=".*"'
+          options: ''
+          ssh_options: ''
+          src: '.'
+          dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.EDITOR_HELP_REMOTE }}'
