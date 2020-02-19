@@ -1,0 +1,23 @@
+name: Auto-Upload
+
+on: [push]
+
+jobs:
+  upload:
+    name: Upload docute-based help to server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the repo
+        run: git clone -b docute --depth=1 https://github.com/WohlSoft/PGE-Editor-Help.git .
+      - name: List all content of the repo
+        run: ls -al
+      - name: Deploy to server
+        uses: Pendect/action-rsyncer@v1.1.0
+        env:
+          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          flags: '-lrvuO --delete --exclude=".*"'
+          options: ''
+          ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+          src: './*'
+          dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.EDITOR_HELP_REMOTE }}'
