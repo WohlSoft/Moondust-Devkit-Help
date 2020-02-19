@@ -9,7 +9,7 @@ jobs:
       - name: Bash for GitHub Actions
         uses: jcblw/bash@1.0.0
         with:
-          args: "ls -l ."
+          args: ["ls -l ."]
       - name: deploy documentation to server
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
