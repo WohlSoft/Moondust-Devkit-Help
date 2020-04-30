@@ -251,8 +251,32 @@ new Docute({
                     link: '/EditLevel/Items'
                 },
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'Layers',
+                    link: '/EditLevel/Layers'
+                },
+                {
+                    title: 'Events',
+                    link: '/EditLevel/Events'
+                },
+                {
+                    title: 'Placing tools',
+                    link: '/EditLevel/PlacingTools'
+                },
+                {
+                    title: 'Remove items',
+                    link: '/EditLevel/RemoveItems'
+                },
+                {
+                    title: 'Context menu',
+                    link: '/EditLevel/ContextMenu'
+                },
+                {
+                    title: 'Properties box',
+                    link: '/EditLevel/PropertiesBox'
+                },
+                {
+                    title: 'Item search',
+                    link: '/EditLevel/ItemSearch'
                 },
                 {
                     title: '<WIP>',

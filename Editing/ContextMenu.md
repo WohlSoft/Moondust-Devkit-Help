@@ -1,12 +1,14 @@
 # Context menu
 
-Each item have it's context menu. For righthander's mouse it can be opened
-by right mouse button (for lefthanders - by left mouse-button).
+Every item has its context menu. By a righthander mouse, it can be opened by a 
+right mouse button (for lefthanders - by left mouse button) while the mouse cursor 
+points an item on the scene or a selected group.
 
-By context menu you can change the basic settings of one item or of all
-selected items. You can change layer of current item(s) and also available
-quick creation of new layer for selected item(s). For Warp point possible
-for fast jump to opposite point.
+By a context menu, you can change some of the basic settings of one item or of all
+selected items. You can change the layer of the current item(s). Also, you will find
+the ability for the quick creation of a new layer for a selected group of item(s). 
+Context menu of warp points allows you to quickly jump to the opposite side of a
+warp entry.
 
 <ImageZoom
   alt="BlockContext"

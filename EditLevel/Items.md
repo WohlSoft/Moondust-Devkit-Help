@@ -9,8 +9,8 @@ material, sceneries, items, characters, etc.
 * [Background objects](#BGO)
 * [Non-playable characters](#NPC)
 * [Warp/Door points](#Warps)
-* [Physical environment zones (Inside SMBX the Water/Quicksand)](#PhysEnv)
-* [Player's start points](#PlayerPoints)
+* [Physical environments (Known in SMBX as Water/Quicksand)](#physical-environments)
+* [Player's start points](#Player-points)
 
 
 ## Blocks
@@ -810,9 +810,9 @@ _World map point selection dialog_
 />
 
 
-## PhysEnv
-**Physical environment zone** (Water, Quicksand, etc.) - this is a special
-unit which defines the physical environment inside it's rectangular area.
+## Physical environments
+**Physical environments** (Water, Quicksand, etc.) - there are a special 
+units that defining the physical environment inside of their rectangular area.
 
 **Available environment types:**
 * **Water** - a swimmable liquid environment.
@@ -865,7 +865,7 @@ Green - water, Yellow - quicksand
   :border="true"
 />
 
-You have abie to change environment type of the placed rectangle:
+You have an ability to change environment type of the placed rectangle by a context menu:
 
 <ImageZoom
   alt="06_change_type"
@@ -875,7 +875,7 @@ You have abie to change environment type of the placed rectangle:
 />
 
 
-Also, you can resize environment rectangle, if you made mistakes with size of them:
+Also, you can easily resize an environment rectangle:
 
 To start resizing, you should open the "Resize" context menu item and you will
 see a yellow rectangle which a "sizer". Move corner dots or sides to define new
@@ -906,21 +906,21 @@ minimally available size
 
 
 
-## PlayerPoints
+## Player points
 
-This is the points, what defining start position of playable character on
-this level. Every you start play level, playable character will be placed
-in this point.
+This is a point that defines an initial position of a playable character on the level. 
+Every time you starting a level, the playable character will appear at this point.
 
-For place the player point, you need select one of toolbar button ![P1](screenshots/LevelEditing/players/player1_start.png) or ![P2](screenshots/LevelEditing/players/player2_start.png),
-where red - for 1st player and green - for 2nd.
+To place a player point, you need to click one of the toolbar buttons (![P1](screenshots/LevelEditing/players/player1_start.png) or ![P2](screenshots/LevelEditing/players/player2_start.png)): 
+where is red - it's for a 1'st player and the green for 2'nd.
 
-In the editor start points will be displayed as flags (They are may look
-differently in dependent on a current UI theme):
+In the editor start points will be shown as flags (They are may look
+differently with a dependence on a currently used UI theme):
 
 ![PlayerPoints](screenshots/LevelEditing/Items/Player_startPoints_2.png)
 
-If points will not be defined, level will be automatically end, because
-it haven't available playable characters on level. Also you can use doors
-as player's start point, but you need define the array index of this door
-in the world map or in other level.
+If points will not be defined, the level will automatically end, because
+it hasn't available playable characters on the level. Also, you can use doors
+as player's start points, but you need to define the array index of this door
+in the world map or on another level.
+

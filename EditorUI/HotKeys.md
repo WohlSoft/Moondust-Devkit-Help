@@ -40,16 +40,16 @@
 |Ctrl+L |Show/Hide Layers toolbox ||
 |Ctrl+E |Show/Hide Events toolbox | |
 |Ctrl+D |Show/Hide Wars and Doors toolbox | |
-|Shift+S |Toggle Rectangulag place mode ||
-|Shift+C |Toggle Circlular place mode | |
-|Shift+D |Toggle Line mode | |
-|Shift+F |Toggle Flood-fill mode ||
+|Shift+S |Toggle a rectangle place mode ||
+|Shift+C |Toggle a circle place mode | |
+|Shift+D |Toggle a line place mode | |
+|Shift+F |Toggle a flood-fill place mode ||
 
 ## Functional keys
 | Hot key | Description | Extras |
 |---------|-------------|--------|
 |F1 |Help contents ||
-|F5 |Launch test of current level ||
+|F5 |Launch a testing of current level ||
 |F8 |Reload current file ||
 |F9 |Disable/Enable collisions ||
 |F10 |Disable/Enable animations ||
