@@ -8,7 +8,7 @@ Layers can be added by "add" button and by context menu with add to them all sel
  
 
 <p class="tip">
-    You can drag layers items in a list and change their order
+    You can drag layers items in a list to change their order
 </p>
 
 <p class="tip">

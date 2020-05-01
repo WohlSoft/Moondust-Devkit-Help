@@ -279,8 +279,8 @@ new Docute({
                     link: '/EditLevel/ItemSearch'
                 },
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'Testing',
+                    link: '/EditLevel/Testing.md'
                 }
             ]
         },
