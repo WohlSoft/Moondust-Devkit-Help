@@ -4,6 +4,8 @@ new Docute({
     target: '#docute',
     title: 'Moondust Editor - Documentation',
     sourcePath: docuteSourceRoot,
+    darkThemeToggler: true,
+    detectSystemDarkTheme: true,
     highlight: ['typescript', 'bash'],
     editLinkBase: 'https://github.com/WohlSoft/PGE-Editor-Help/edit/master/',
     editLinkText: 'Edit this page on GitHub',
@@ -128,7 +130,7 @@ new Docute({
     sidebar: [
         {
             title: 'Main',
-            links: [
+            children: [
                 {
                     title: 'Intro',
                     link: '/'
@@ -137,7 +139,7 @@ new Docute({
         },
         {
             title: 'Getting started',
-            links: [
+            children: [
                 {
                     title: 'Quick Start',
                     link: '/Intro/QuickStart',
@@ -150,7 +152,7 @@ new Docute({
         },
         {
             title: "Quick start",
-            links: [
+            children: [
                 {
                     title: 'What\'s a Moondust Editor?',
                     link: '/Intro/QuickStart/WhatsAnEditor'
@@ -170,8 +172,9 @@ new Docute({
             ]
         },
         {
+            collapsable: true,
             title: "Editing",
-            links: [
+            children: [
                 {
                     title: 'Placing elements',
                     link: '/Editing/Placing'
@@ -195,8 +198,9 @@ new Docute({
             ]
         },
         {
+            collapsable: true,
             title: 'Editor GUI',
-            links: [
+            children: [
                 {
                     title: 'Toolboxes, Toolbars, panels',
                     link: '/EditorUI/Tools'
@@ -228,8 +232,9 @@ new Docute({
             ]
         },
         {
+            collapsable: true,
             title: 'Level editing',
-            links: [
+            children: [
                 {
                     title: 'About',
                     link: '/EditLevel/About'
@@ -286,7 +291,7 @@ new Docute({
         },
         {
             title: 'World map editing',
-            links: [
+            children: [
                 {
                     title: '<WIP>',
                     link: '/WIP/WIP'
@@ -295,7 +300,7 @@ new Docute({
         },
         {
             title: 'Custom NPC configuration editing',
-            links: [
+            children: [
                 {
                     title: '<WIP>',
                     link: '/WIP/WIP'
@@ -304,7 +309,7 @@ new Docute({
         },
         {
             title: 'Customizing',
-            links: [
+            children: [
                 {
                     title: '<WIP>',
                     link: '/WIP/WIP'
@@ -313,7 +318,7 @@ new Docute({
         },
         {
             title: 'Configurations',
-            links: [
+            children: [
                 {
                     title: '<WIP>',
                     link: '/WIP/WIP'
@@ -322,7 +327,7 @@ new Docute({
         },
         {
             title: 'Tools',
-            links: [
+            children: [
                 {
                     title: '<WIP>',
                     link: '/WIP/WIP'
@@ -331,7 +336,7 @@ new Docute({
         },
         {
             title: 'Our friends',
-            links: [
+            children: [
                 {
                     title: 'Hedgewars',
                     link: 'http://hedgewars.org/'

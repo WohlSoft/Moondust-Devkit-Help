@@ -67,7 +67,7 @@ p.warning.no-bg, p.tip.no-bg, p.danger.no-bg {
 }
 p.warning {
 	border-left-color: #f7d24c;
-	background-color: #fefbed;
+	background-color: #fefbed0f;
 }
 p.warning:before {
 	background-color: #f7d24c;
@@ -81,7 +81,7 @@ p.danger:before {
 }
 p.tip {
 	border-left-color: #3c763d;
-	background-color: rgba(241, 249, 241, 0.83);
+	background-color: rgba(241, 249, 241, 0.13);
 }
 p.tip:before {
 	background-color: #3c763d;
