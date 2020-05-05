@@ -3,8 +3,6 @@
 While you work on your levels, you would want to quickly run your level in action
 to verify the behavior.
 
-**TODO: Clarify this page better**
-
 ![testMenu](screenshots/menus/005_test.png)
 
 Editor has a support of level testing via different runtime engines. You may use any of supported engines
@@ -24,8 +22,12 @@ currently saved on the disk. This option doesn't support an Editor integration.
 
 You may want to **Start Game** if you want to change your game control setup or run an episode playing.
 
-If needed, you can tune your **Testing options** to select a playable characters, count of players,
+If needed, you can tune your **Testing options** to select playable characters, count of players,
 enable some cheating or debug features, set a specific state of playable characters, etc.
+
+For engines are working on Windows, Editor has a support for an IPC bridges which can work on Wine. 
+Therefore, if you use Editor on a non-Windows operating system, you will find an extra menu item in menus of
+LunaTester and SMBX-38A which allowing you to configure Wine usage and even choose a different Wine installation (see [Wine Settings](#wine-settings)).
 
 ## Test settings
 <ImageZoom
@@ -35,10 +37,10 @@ enable some cheating or debug features, set a specific state of playable charact
   :border="true"
 />
 
-It's a generic settings dialog which allows you to configure some features: choose 1 or 2 player game, 
+It's a dialog of generic settings which allows you to configure some features: choose 1 or 2 players game, 
 select playable characters and their states, add vehicles/mounts, etc.
 
-There are some extra settings:
+**There are some extra settings:**
 - **God Mode** - Makes your playable character being invincible to dangerous NPCs and surfaces.
 - **Unlimited Flight** - Allows your playable character to fly up by using of Alt-Jump key (PGE Engine only).
 - **Bulldozer mode** - Allows your playable character to destroy any nearest objects by Alt-Run key (PGE Engine only).
@@ -62,7 +64,7 @@ them into running game window directly.
 
 It's recommended to read the manual written in the [Engine.Readme.txt](https://raw.githubusercontent.com/Wohlhabend-Networks/PGE-Project/master/Content/readmes/Engine.Readme.txt) file included with PGE Engine.
 
-Menu options:
+**Menu options:**
 - **Test level/world** - Start a direct testing of currently loaded level data even file is unsaved.
 - **Test saved level/world** - Starts a testing of currently opened level by opening it from a disk.
 - **Start Game** - Start a normal game with using of a currently loaded configuration package. 
@@ -77,7 +79,7 @@ is running, you can select any of elements on Editor's tileset box or item searc
 them into running game window directly. You can pick-up elements by mouse click on elements inside of running game.
 Use a middle mouse button to turn on the eraser to remove elements around.
 
-Menu optuins:
+**Menu options:**
 - **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
 - **Test level in battle mode** - Start a level testing in battle mode.
 - **Test saved level** - Starts a testing of currently opened level by opening it from a disk.
@@ -103,20 +105,77 @@ choice a different assembly of TheXTech to use for some moment.
 
 It's a bridge proxy which allows you to use LunaLua equipped vanilla SMBX to run level tests on it.
 
-Pre-requirements:
+**Pre-requirements:**
 * LunaLua 0.7.3.1 or newer is required. If you have to use SMBX2 packages, you need to have an SMBX 2.0 Beta 3 or higher.
 * Windows 7 or higher, or Wine (3.0 and higher is recommended) with installed DirectX 9 or 11, MSVC2015 runtime, quartz, dsound, and VB6RUN.
 * Video drivers installed in your system, otherwise, game will not work or at least will lag.
 
 You can run testing of new-made or unsaved files on the fly.
- 
+
+**Menu options:**
+- **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
+- **Test saved level/world** - Starts a testing of currently opened level or world map by opening it from a disk.
+- **Reset checkpoints** - Resets state of checkpoints in a condition that background instance is running.
+- **Disable OpenGL** - Enforce using of software render.
+- **Keep running in background** - Game will keep running in background even you will close window to allow 
+quick running of a game.
+- **Terminate running process** - Kills the working background process. Use this in a condition when the game 
+does not respond a long time.
+- **Change the path to LunaTester** - Allows you to select the path to LunaLua-SMBX or SMBX2 data directory to make LunaTester work. 
+You may choice a different assembly of LunaLua-SMBX to use for some moment.
+- **[Wine settings...](#Wine-settings)** - (non-Windows operating systems only) Allows you to configure settings of Wine or choose 
+a different Wine installation (for example, import from a PlayOnLinux / PlayOnMac toolchain).
+- **Start Game** - Start a normal game of LunaLua-SMBX or SMBX2.
+
 
 ## SMBX-38A
 ![testMenu](screenshots/menus/005_test_38a.png)
 
 It's a bridge proxy which allows you to use SMBX-38A engine to run level tests on it.
 
-Pre-requirements:
+**Pre-requirements:**
 * Windows XP or higher, or Wine (3.0 and higher is recommended) with installed DirectX 9, quartz, dsound, and VB6RUN.
 * Video drivers installed in your system, otherwise, game will not work. 
 * SMBX-38A v1.4.3 and higher.
+
+
+**Menu options:**
+- **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
+- **Test level in battle mode** - Start a level testing in battle mode.
+- **Test saved level/world** - Starts a testing of currently opened level or world map by opening it from a disk.
+- **Reset checkpoints** - Resets state of checkpoints left after the last test playing.
+- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as 
+placing new elements taken in tilesets and item browsers.
+- **Don't auto-suspend game** - Makes game never suspend when game window is unfocused.
+- **Change the path to SMBX-38A** - Allows you to select the path to SMBX-38A executable to make the testing work. 
+You may choice a different assembly of SMBx-38A to use for some moment.
+- **[Wine settings...](#Wine-settings)** - (non-Windows operating systems only) Allows you to configure settings of Wine or choose 
+a different Wine installation (for example, import from a PlayOnLinux / PlayOnMac toolchain).
+- **Start Game** - Start a normal game of SMBX-38A
+
+## Wine settings
+<ImageZoom
+  alt="eventsList"
+  url="screenshots/Testing/wine_settings.png"
+  width="200px"
+  :border="true"
+/>
+
+This dialog allows you to configure a work of Wine on non-Windows operating system to make 
+a proper work of LunaTester and SMBX-38A engines.
+
+**Location of Wine**
+
+Here you should to choose which Wine installation to use: installed into your operating system, or select 
+a different one (for example, one of builds installed into your PlayOnLinux/PlayOnMac toolchain).
+
+**Enable Wine debug printing into "WineDebug" console** - allows you to get all Wine debug output messages into
+Editor's development console which you can open in **Help** -> **Show development console** menu.
+
+**Specify a custom environment (PlayOnLinux/Mac)** - allows you to configure some default locations used by Wine
+(for example, a home prefix where are your c_drive and registry data stored).
+
+**Import setup from PlayOnLinux/PlayOnMac** - a help tool which allows you to select an existing PlayOnLinux/Mac 
+profile and import Wine paths and settings from it to use in Editor to run level tests and episode playing.
+
+**Test** - a helpful utility which allows you to verify the work of selected Wine toolchain.
