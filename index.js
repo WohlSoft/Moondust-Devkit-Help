@@ -5,6 +5,9 @@ new Docute({
     title: 'Moondust Editor - Documentation',
     sourcePath: docuteSourceRoot,
     darkThemeToggler: true,
+    fetchOptions: {
+        mode: 'no-cors',
+    },
     detectSystemDarkTheme: true,
     highlight: ['typescript', 'bash'],
     editLinkBase: 'https://github.com/WohlSoft/PGE-Editor-Help/edit/master/',
