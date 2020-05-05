@@ -1,5 +1,8 @@
 <template functional>  
-  <span class="badge" :class="props.type">
+  <span
+    :class="['badge', `is-${props.type}`]"
+    :style="{backgroundColor: props.color}"
+  >
     <slot></slot>
   </span>
 </template>
@@ -9,9 +12,38 @@ export default {
   name: 'Badge',
   props: {
     type: {
-      type: String,
-      default: 'tip'
+      type: String
+    },
+    color: {
+      type: String
     }
   }
 };
 </script>
+
+<style>
+.badge {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 9px;
+  padding: 0 6px;
+  color: #fff;
+  margin-right: 5px;
+  background: #666
+}
+.badge.is-tip {
+    background: var(--tip-color);
+  }
+.badge.is-warning {
+    background: var(--warning-color);
+  }
+.badge.is-danger {
+    background: var(--danger-color);
+  }
+.badge.is-success {
+    background: var(--success-color);
+  }
+</style>

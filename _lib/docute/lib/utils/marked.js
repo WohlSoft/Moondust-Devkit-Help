@@ -468,8 +468,12 @@ var inline = {
 inline._escapes = /\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/g;
 inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;
 inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/;
-inline.autolink = edit(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex();
-inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
+inline.autolink = edit(inline.autolink).replace('scheme', inline._scheme).replace('email', inline._email).getRegex(); // @modified
+// old
+// inline._attribute = /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/
+// new for support `@` attribute names
+
+inline._attribute = /\s+[a-zA-Z@:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/;
 inline.tag = edit(inline.tag).replace('comment', block._comment).replace('attribute', inline._attribute).getRegex();
 inline._label = /(?:\[[^\[\]]*\]|\\[\[\]]?|`[^`]*`|[^\[\]\\])*?/;
 inline._href = /\s*(<(?:\\[<>]?|[^\s<>\\])*>|(?:\\[()]?|\([^\s\x00-\x1f\\]*\)|[^\s\x00-\x1f()\\])*?)/;
@@ -836,14 +840,15 @@ Renderer.prototype.hr = function () {
   return this.options.xhtml ? '<hr/>\n' : '<hr>\n';
 };
 
-Renderer.prototype.list = function (body, ordered, start) {
+Renderer.prototype.list = function (body, ordered, start, containsTaskList) {
   var type = ordered ? 'ol' : 'ul',
-      startatt = ordered && start !== 1 ? ' start="' + start + '"' : '';
-  return '<' + type + startatt + '>\n' + body + '</' + type + '>\n';
+      startatt = ordered && start !== 1 ? ' start="' + start + '"' : '',
+      className = containsTaskList ? ' class="contains-task-list"' : '';
+  return '<' + type + startatt + className + '>\n' + body + '</' + type + '>\n';
 };
 
-Renderer.prototype.listitem = function (text) {
-  return '<li>' + text + '</li>\n';
+Renderer.prototype.listitem = function (text, task) {
+  return "<li" + (task ? ' class="task-list-item"' : '') + ">" + text + '</li>\n';
 };
 
 Renderer.prototype.checkbox = function (checked) {
@@ -915,9 +920,10 @@ Renderer.prototype.link = function (href, title, text) {
   }
 
   var isExternal = /^https?:\/\//.test(href);
-  var tag = isExternal ? 'a' : 'router-link';
+  var isMailto = /^mailto:/.test(href);
+  var tag = isExternal || isMailto ? 'a' : 'router-link';
   var hrefAttr = tag === 'a' ? 'href' : 'to';
-  var out = "<" + tag + " " + hrefAttr + "=\"" + escape(isExternal ? href : removeMarkdownExtension(href)) + '"';
+  var out = "<" + tag + " " + hrefAttr + "=\"" + escape(isExternal ? href : removeMarkdownExtension(unescape(href))) + '"';
 
   if (title) {
     out += ' title="' + title + '"';
@@ -930,17 +936,24 @@ Renderer.prototype.link = function (href, title, text) {
 
   out += '>' + text + ("</" + tag + ">");
   return out;
-};
+}; // @modified
+
 
 Renderer.prototype.image = function (href, title, text) {
   if (this.options.baseUrl && !originIndependentUrl.test(href)) {
     href = resolveUrl(this.options.baseUrl, href);
   }
 
-  var out = '<img src="' + href + '" alt="' + text + '"';
+  var imageZoom = this.options.env.config.imageZoom;
+  var tag = imageZoom ? 'image-zoom' : 'img';
+  var out = "<" + tag + " src=\"" + href + '" alt="' + text + '"';
 
   if (title) {
     out += ' title="' + title + '"';
+  }
+
+  if (imageZoom) {
+    out += ' v-bind:border="false"';
   }
 
   out += this.options.xhtml ? '/>' : '>';
@@ -1121,21 +1134,28 @@ Parser.prototype.tok = function () {
       {
         body = '';
         var ordered = this.token.ordered,
-            start = this.token.start;
+            start = this.token.start,
+            containsTaskList = false;
 
         while (this.next().type !== 'list_end') {
+          if (this.token.task) {
+            containsTaskList = true;
+          }
+
           body += this.tok();
         }
 
-        return this.renderer.list(body, ordered, start);
+        return this.renderer.list(body, ordered, start, containsTaskList);
       }
+    // @modified
 
     case 'list_item_start':
       {
         body = '';
         var loose = this.token.loose;
+        var isTask = this.token.task;
 
-        if (this.token.task) {
+        if (isTask) {
           body += this.renderer.checkbox(this.token.checked);
         }
 
@@ -1143,7 +1163,7 @@ Parser.prototype.tok = function () {
           body += !loose && this.token.type === 'text' ? this.parseText() : this.tok();
         }
 
-        return this.renderer.listitem(body);
+        return this.renderer.listitem(body, isTask);
       }
 
     case 'html':

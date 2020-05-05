@@ -17,8 +17,12 @@ export default {
       attrs: {
         'data-position': props.position
       }
-    }, components.map(function (c) {
-      return h(c);
+    }, components.map(function (_ref2) {
+      var component = _ref2.component,
+          props = _ref2.props;
+      return h(component, {
+        props: props
+      });
     }));
   }
 };

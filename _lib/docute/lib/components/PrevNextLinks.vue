@@ -1,17 +1,15 @@
 <template>  
   <div class="prev-next-links" v-if="prevLinkItem || nextLinkItem">
     <div class="prev-link" v-if="prevLinkItem">
-      ← <router-link
-          :to="prevLinkItem.link">
-        {{ prevLinkItem.title }}
+      <router-link :to="prevLinkItem.link">
+        ← {{ prevLinkItem.title }}
       </router-link>
     </div>
   
     <div class="next-link" v-if="nextLinkItem">
-      <router-link
-        :to="nextLinkItem.link">
-        {{ nextLinkItem.title }}
-      </router-link> →
+      <router-link :to="nextLinkItem.link">
+        {{ nextLinkItem.title }} →
+      </router-link>
     </div>
   </div>
 </template>
@@ -26,7 +24,7 @@ export default {
     currentLinkIndex: function currentLinkIndex() {
       // Related:
       // - https://github.com/vuejs/vue/issues/8728
-      // - https://github.com/leptosia/docute/pull/171
+      // - https://github.com/egoist/docute/pull/171
       var sidebarLinks = this.sidebarLinks;
 
       for (var i = 0; i < sidebarLinks.length; i++) {
@@ -40,40 +38,29 @@ export default {
       return false;
     },
     prevLinkItem: function prevLinkItem() {
-      return this.currentLinkIndex && this.sidebarLinks[this.currentLinkIndex - 1];
+      return typeof this.currentLinkIndex === 'number' ? this.sidebarLinks[this.currentLinkIndex - 1] : null;
     },
     nextLinkItem: function nextLinkItem() {
-      return this.currentLinkIndex && this.sidebarLinks[this.currentLinkIndex + 1];
+      return typeof this.currentLinkIndex === 'number' ? this.sidebarLinks[this.currentLinkIndex + 1] : null;
     }
   })
 };
 </script>
 
 <style scoped>
-:root {
-  --accent-color: rgb(6, 125, 247);
-  --sidebar-bg: white;
-  --sidebar-section-title-color: rgb(136, 136, 136);
-  --border-color: #eaeaea;
-  --header-height: 60px;
-  --code-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-}
-
 .prev-next-links {
   overflow: auto;
   margin-top: 40px;
   padding-top: 30px;
-  border-top: 1px solid #eaeaea;
   border-top: 1px solid var(--border-color)
 }
 
-.prev-next-links a {
-    text-decoration: none
-  }
+@media print {
 
-.prev-next-links a:hover {
-      text-decoration: underline;
-    }
+.prev-next-links {
+    display: none
+}
+  }
 
 .prev-link {
   float: left;

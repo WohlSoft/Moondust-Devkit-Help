@@ -14,6 +14,7 @@ function () {
     this.router = router;
     this.components = {};
     this.hooks = hooks;
+    this.search = {};
     Vue.component(InjectedComponents.name, InjectedComponents);
   }
 
@@ -25,9 +26,12 @@ function () {
     }).length > 0;
   };
 
-  _proto.registerComponent = function registerComponent(position, component) {
+  _proto.registerComponent = function registerComponent(position, component, props) {
     this.components[position] = this.components[position] || [];
-    this.components[position].push(component);
+    this.components[position].push({
+      component: component,
+      props: props
+    });
     return this;
   };
 
@@ -57,6 +61,16 @@ function () {
 
   _proto.extendMarkdownComponent = function extendMarkdownComponent(fn) {
     this.hooks.add('extendMarkdownComponent', fn);
+    return this;
+  };
+
+  _proto.enableSearch = function enableSearch(search) {
+    if (search === void 0) {
+      search = {};
+    }
+
+    this.search = search;
+    this.search.enabled = true;
     return this;
   };
 

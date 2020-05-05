@@ -1,14 +1,18 @@
 <template>  
   <div class="LanguageSelector">
-    <DocuteSelect @change="handleChange">
+    <DocuteSelect
+      @change="handleChange"
+      :value="$store.getters.currentLocalePath"
+      v-slot="{value}"
+    >
       <option disabled>Choose Language</option>
       <option
         v-for="language in languages"
         :value="language.path"
-        :selected="isCurrentLocale(language.path)"
-        :key="language.path">
-        {{ language.language }}
-      </option>
+        :selected="value === language.path"
+        :key="language.path"
+        >{{ language.language }}</option
+      >
     </DocuteSelect>
   </div>
 </template>
@@ -27,11 +31,7 @@ export default {
     }
   },
   methods: {
-    isCurrentLocale: function isCurrentLocale(path) {
-      return this.$store.getters.currentLocalePath === path;
-    },
-    handleChange: function handleChange(e) {
-      var localePath = e.target.value;
+    handleChange: function handleChange(localePath) {
       var exactPath = this.$route.path.replace(new RegExp("^" + this.$store.getters.currentLocalePath), localePath);
       this.$router.push(exactPath);
     }

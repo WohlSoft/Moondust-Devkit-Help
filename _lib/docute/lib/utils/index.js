@@ -7,14 +7,22 @@ export var slugify = function slugify(str) {
   var WHITESPACE = /\s/g;
   return str.trim().replace(RE, '').replace(WHITESPACE, REPLACEMENT).toLowerCase();
 };
-export var getFilenameByPath = function getFilenameByPath(sourcePath, path) {
-  sourcePath = sourcePath || '';
-  sourcePath = sourcePath.replace(/\/$/, '');
+export var getFileUrl = function getFileUrl(sourcePath, path) {
+  sourcePath = sourcePath || '.'; // Remove trailing slash in `sourcePath`
+  // Since `path` always starts with slash
 
-  if (/\.md$/.test(path)) {
-    return sourcePath + path;
+  sourcePath = sourcePath.replace(/\/$/, '');
+  var result = sourcePath + path;
+  return result.replace(/^\.\//, '');
+};
+export var getFilenameByPath = function getFilenameByPath(path) {
+  // Ensure path always starts with slash
+  path = path.replace(/^\/?/, '/'); // Add .md suffix
+
+  if (!/\.md$/.test(path)) {
+    path = /\/$/.test(path) ? path + "README.md" : path + ".md";
   }
 
-  var filepath = /\/$/.test(path) ? path + "README.md" : path + ".md";
-  return sourcePath + filepath;
+  return path;
 };
+export var inBrowser = typeof window !== 'undefined';

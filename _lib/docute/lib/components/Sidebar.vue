@@ -1,192 +1,124 @@
 <template>  
   <div class="Sidebar" :class="{isShown: $store.state.showSidebar}">
-        <InjectedComponents position="sidebar:start" />
+    <InjectedComponents position="sidebar:start" />
+    <InjectedComponents position="mobile-sidebar:start" />
   
-        <MobileHeaderNav v-if="$store.getters.config.nav" :nav="$store.getters.config.nav" />
+    <HeaderNav
+      class="mobile-header-nav"
+      v-if="$store.getters.config.nav"
+      :nav="$store.getters.config.nav"
+    />
   
-        <div class="SidebarItems">
-          <div
-            v-for="(item, index) in $store.getters.sidebar"
-            :class="['SidebarItem', item.title && 'hasTitle']"
-            :key="index">
-            <div class="ItemTitle" v-if="item.title">
-              {{ item.title }}
-            </div>
-            <template v-for="(link, index) of item.links">
-              <a
-                v-if="isExternalLink(link.link)"
-                :key="index"
-                :href="link.link"
-                class="ItemLink"
-                target="_blank">
-                {{ link.title }}
-                <external-link-icon />
-              </a>
-              <router-link
-                v-else
-                :key="index"
-                :to="link.link"
-                class="ItemLink"
-                :class="{active: $route.path === link.link}">
-                {{ link.title }}
-              </router-link>
-              <div
-                class="LinkToc"
-                v-if="!$store.state.fetchingFile &&
-                link.toc !== false &&
-                link.link === $route.path &&
-                $store.state.page.headings &&
-                $store.state.page.headings.length > 0"
-                :key="`toc-${index}`">
-                <router-link
-                  class="TocHeading"
-                  :to="{hash: heading.slug}"
-                  :data-level="heading.level"
-                  v-for="heading in $store.state.page.headings"
-                  :key="heading.slug"
-                  v-html="heading.text">
-                </router-link>
-              </div>
-            </template>
-          </div>
-        </div>
+    <div class="SidebarItems">
+      <sidebar-item
+        v-for="(item, index) in $store.getters.sidebar"
+        :key="index"
+        :item="item"
+        :open="closedItems.indexOf(index) === -1"
+        @toggle="toggleItem(index)"
+      />
+    </div>
   
-        <InjectedComponents position="sidebar:end" />
-  
-      </div>
+    <InjectedComponents position="sidebar:end" />
+    <InjectedComponents position="sidebar:post-end" />
+  </div>
 </template>
 
 <script>
-import { isExternalLink } from '../utils';
-import MobileHeaderNav from './MobileHeaderNav.vue';
+import HeaderNav from './HeaderNav.vue';
+import SidebarItem from './SidebarItem.vue';
 export default {
   components: {
-    MobileHeaderNav: MobileHeaderNav
+    HeaderNav: HeaderNav,
+    SidebarItem: SidebarItem
+  },
+  data: function data() {
+    return {
+      closedItems: []
+    };
+  },
+  watch: {
+    '$route.path': {
+      handler: function handler() {
+        var index = this.getCurrentIndex(this.$route.path, this.$store.getters.sidebar);
+        this.openItem(index);
+      },
+      immediate: true
+    }
   },
   methods: {
-    isExternalLink: isExternalLink
+    openItem: function openItem(index) {
+      if (this.closedItems.indexOf(index) > -1) {
+        this.closedItems = this.closedItems.filter(function (v) {
+          return v !== index;
+        });
+      }
+    },
+    toggleItem: function toggleItem(index) {
+      if (this.closedItems.indexOf(index) === -1) {
+        this.closedItems.push(index);
+      } else {
+        this.closedItems = this.closedItems.filter(function (v) {
+          return v !== index;
+        });
+      }
+    },
+    getCurrentIndex: function getCurrentIndex(currentPath, sidebarItems) {
+      for (var idx = 0; idx < sidebarItems.length; idx++) {
+        if (this.getChildren(sidebarItems[idx]).some(function (child) {
+          return child.link === currentPath;
+        })) {
+          return idx;
+        }
+      }
+
+      return 0;
+    },
+    getChildren: function getChildren(item) {
+      return item.children || item.links || [];
+    }
   }
 };
 </script>
 
 <style scoped>
-:root {
-  --accent-color: rgb(6, 125, 247);
-  --sidebar-bg: white;
-  --sidebar-section-title-color: rgb(136, 136, 136);
-  --border-color: #eaeaea;
-  --header-height: 60px;
-  --code-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-}
-
 .Sidebar {
-  width: 250px;
-  background: white;
-  background: var(--sidebar-bg);
+  width: var(--sidebar-width);
+  background: var(--sidebar-background);
   position: fixed;
-  top: 60px;
   top: var(--header-height);
   bottom: 0;
   z-index: 9;
   overflow-y: auto;
-  padding: 30px 0;
-  word-break: break-word;
-  border-right: 1px solid #eaeaea;
-  border-right: 1px solid var(--border-color)
+  padding: 40px 0 30px 0;
+  word-break: break-word
 }
 
 .Sidebar a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
   }
 
 @media (max-width: 768px) {
 
-.Sidebar {
+  .Sidebar {
     left: 0;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     width: 80%;
-    transition: -webkit-transform 0.5s cubic-bezier(0.5, 0.32, 0.01, 1);
     transition: transform 0.5s cubic-bezier(0.5, 0.32, 0.01, 1);
-    transition: transform 0.5s cubic-bezier(0.5, 0.32, 0.01, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0.32, 0.01, 1)
+    padding: 30px 0;
+    border-right: 1px solid var(--border-color)
 }
 
     .Sidebar.isShown {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      transform: translateX(0);
     }
   }
 
-.SidebarItem:not(:last-child) {
-    padding-bottom: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
+@media print {
 
-.SidebarItem.hasTitle .ItemLink {
-      font-size: 0.9rem;
-    }
-
-.SidebarItem.hasTitle >>> .TocHeading {
-    font-size: 0.9rem;
-  }
-
-.ItemTitle {
-  font-size: 1rem;
-  padding: 0 20px;
-  margin-bottom: 10px;
-  position: relative;
-  color: rgb(136, 136, 136);
-  color: var(--sidebar-section-title-color);
-  text-transform: uppercase;
+  .Sidebar {
+    display: none
 }
-
-.ItemLink {
-  padding: 2px 20px;
-  display: flex;
-  font-size: 1.1rem;
-  position: relative
-}
-
-.ItemLink.active,
-  .ItemLink:hover {
-    font-weight: bold;
   }
-
-.TocHeading {
-  display: flex;
-  line-height: 1.4;
-  margin-bottom: 3px;
-  position: relative
-}
-
-.TocHeading:first-child {
-    margin-top: 5px;
-  }
-
-.TocHeading:last-child {
-    margin-bottom: 5px;
-  }
-
-.TocHeading[data-level='2'] {
-    margin-left: 35px;
-  }
-
-.TocHeading[data-level='3'] {
-    margin-left: 50px;
-  }
-
-.TocHeading.router-link-exact-active {
-    font-weight: bold
-  }
-
-.TocHeading.router-link-exact-active:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 3px;
-      right: 0;
-      background: #333;
-    }
 </style>

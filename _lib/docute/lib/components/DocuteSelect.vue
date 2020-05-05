@@ -1,17 +1,36 @@
-<template functional>  
+<template>  
   <div class="DocuteSelect">
-    <select class="select" v-on="listeners">
-      <slot name="default"></slot>
+    <select class="select" @change="handleChange" :value="value">
+      <slot v-bind="{value: value}"></slot>
     </select>
     <div class="arrow">
-      <svg width="13" height="6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#979797" fill-rule="evenodd" stroke-linecap="square"><path d="M1.367.375l5.185 5.303M11.685.375L6.5 5.678"></path></svg>
+      <svg
+        width="13"
+        height="6"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="#979797"
+        fill-rule="evenodd"
+        stroke-linecap="square"
+      >
+        <path d="M1.367.375l5.185 5.303M11.685.375L6.5 5.678"></path>
+      </svg>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'DocuteSelect'
+  name: 'DocuteSelect',
+  model: {
+    event: 'change'
+  },
+  props: ['value'],
+  methods: {
+    handleChange: function handleChange(e) {
+      this.$emit('change', e.target.value);
+    }
+  }
 };
 </script>
 
@@ -20,12 +39,10 @@ export default {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: #fff;
-  background: white;
   display: inline-flex;
-  height: 40px;
+  height: var(--docute-select-height);
   outline: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-color);
   font-size: 12px;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -61,18 +78,19 @@ export default {
   box-shadow: none;
   background: transparent;
   background-image: none;
-  line-height: 40px;
+  line-height: var(--docute-select-height);
   font-size: 14px;
   margin-right: -20px;
   padding: 0 76px 0 16px;
   text-transform: none;
   width: 100%;
   outline: none;
+  color: var(--text-color);
 }
 
 .arrow {
-  border-left: 1px solid #eaeaea;
-  background: white;
+  color: var(--text-color);
+  border-left: 1px solid var(--border-color);
   width: 40px;
   height: 100%;
   position: absolute;
