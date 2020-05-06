@@ -296,6 +296,14 @@ new Docute({
             title: 'World map editing',
             children: [
                 {
+                    title: 'About',
+                    link: '/EditWorld/About'
+                },
+                {
+                    title: 'Properties',
+                    link: '/EditWorld/Properties'
+                },
+                {
                     title: '<WIP>',
                     link: '/WIP/WIP'
                 }
