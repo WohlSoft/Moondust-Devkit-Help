@@ -28,7 +28,7 @@
 |Shift+Arrow keys |Scroll map faster ||
 |Ctrl + '+' |Zoom in ||
 |Ctrl + '-' |Zoom out ||
-|Ctrl + '=' |Reset zoom ||
+|Ctrl + '0' |Reset zoom ||
 |Right Mouse Button |Fast switch into 'Select' mode | |
 |Ctrl |Show coordinates hint on mouse move | |
 |Esc |Clear selection / Fast switch into 'Select' mode | |
