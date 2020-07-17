@@ -304,8 +304,16 @@ new Docute({
                     link: '/EditWorld/Properties'
                 },
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'Item Toolbox',
+                    link: '/EditWorld/ItemToolbox'
+                },
+                {
+                    title: 'Items',
+                    link: '/EditWorld/Items'
+                },
+                {
+                    title: 'Context Menu',
+                    link: '/EditWorld/ContextMenu'
                 }
             ]
         },
@@ -313,8 +321,12 @@ new Docute({
             title: 'Custom NPC configuration editing',
             children: [
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'What is NPC.txt?',
+                    link: '/EditNPCConfiguration/About'
+                },
+                {
+                    title: 'NPC.txt Editor features',
+                    link: '/EditNPCConfiguration/EditorFeature'
                 }
             ]
         },
@@ -322,8 +334,20 @@ new Docute({
             title: 'Customizing',
             children: [
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'How to use custom graphics',
+                    link: '/Customizing/CustomGraphics'
+                },
+                {
+                    title: 'Music and sound formats support',
+                    link: '/Customizing/CustomAudio'
+                },
+                {
+                    title: 'Opacity Masks (Transparency Masks)',
+                    link: '/Customizing/OpacityMasks'
+                },
+                {
+                    title: 'Editor Themes',
+                    link: '/Customizing/EditorThemes'
                 }
             ]
         },
@@ -331,8 +355,8 @@ new Docute({
             title: 'Configurations',
             children: [
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'Configuration manager',
+                    link: '/Configuration/StatusDialog'
                 }
             ]
         },
