@@ -5,12 +5,12 @@ material, sceneries, items, characters, etc.
 
 
 <u>**Avalilable item types:**</u>
-* [Blocks](#Blocks)
-* [Background objects](#BGO)
-* [Non-playable characters](#NPC)
-* [Warp/Door points](#Warps)
+* [Blocks](#blocks)
+* [Background objects](#bgo)
+* [Non-playable characters](#npc)
+* [Warp/Door points](#warps)
 * [Physical environments (Known in SMBX as Water/Quicksand)](#physical-environments)
-* [Player's start points](#Player-points)
+* [Player's start points](#player-points)
 
 
 ## Blocks
