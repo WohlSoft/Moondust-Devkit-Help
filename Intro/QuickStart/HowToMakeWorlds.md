@@ -67,18 +67,18 @@ _World map editor interface_
 
 ## World map items
 
-**Terrain tiles** - the main design units which are using for creation
+**[Terrain tiles](../../EditWorld/Items#terrain-tiles)** - the main design units which are using for creation
 of a design of the world map. Terrain tiles aren't communicating with
 other items.
 
-**Scenery** - there are secondary design unit. Sceneries can be hidden
+**[Scenery](../../EditWorld/Items#sceneries)** - there are secondary design unit. Sceneries can be hidden
 when did opened a path which placed over them.
 
-**Paths** - are allows to player move between level points and map
+**[Paths](../../EditWorld/Items#paths)** - are allows to player move between level points and map
 locations. Usually paths are hidden and appearing when player pass
 the level which placed nearly to them.
 
-**Level entrances** - there are a special units, which are allowing
+**[Level entrances](../../EditWorld/Items#level-entrances)** - there are a special units, which are allowing
 to enter into specified level or teleport player to other map
 coorditates. Levels are can have multiple entrances, but can have
 different warp points inside a level. Also level point is used as a
@@ -86,5 +86,5 @@ game start point. If start point is not declared (world map has no
 level entrance point with "Game start" flag), player will start game
 at 0:0 coordinates.
 
-**Music Boxes** - there are a special units which are switching a
+**[Music Boxes](../../EditWorld/Items#music-boxes)** - there are a special units which are switching a
 playing music when playable character stands on them.

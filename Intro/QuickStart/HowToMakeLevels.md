@@ -79,7 +79,7 @@ _Level editing interface_
 
 ## Level units and items
 
-**The main level unis is a section**. Section - is a separated sub-area of
+**The main level unit is a section**. Section - is a separated sub-area of
 level which have it's own settigs: music, background, physics, etc.
 Player can move between sections via special points - warps. All sections
 placed in a united space, and you can see many sections in one space,
@@ -87,12 +87,12 @@ but you have able set settings for one section at same time.
 
 ### Items
 
-**Items** - are a main content of each level. To make level you should
+**[Items](../../EditLevel/Items)** - are a main content of each level. To make level you should
 place them to make universe of your level.
 
 <u>Click to the name of item type to learn more about them:</u>
 
-**Blocks** - are a solid objects which are tiles with its shape and size.
+**[Blocks](../../EditLevel/Items#blocks)** - are a solid objects which are tiles with its shape and size.
 The main construction material of which level consists. The majority of
 blocks interacts from players on whom it can stand about which the player
 can hit which can be a limiting wall. There are blocks which hurts to the
@@ -105,32 +105,32 @@ allows walk throught them only for one of characters, for other characters
 theese blocks working as normal, etc. As there is a special type of blocks
 which can have any size. This is a Sizable blocks.
 
-**Background objects** - are a sceneries. But some BGO can have special
+**[Background objects](../../EditLevel/Items#bgo)** - are a sceneries. But some BGO can have special
 features: platform movement paths, will define movement paths for moting
 "platforms", reverser, what will revert platform's speed back. Some BGO
 allows to clibmb on them. BGO can be background and foreground.
 Foreground BGO placing over all other level items.
 
-**Non-playable characters** - are a main game unit, what building the game
+**[Non-playable characters](../../EditLevel/Items#npc)** - are a main game unit, what building the game
 process: theese is a enemies, friends, items, power-ups, sceneries, etc.
 Each NPC have his algorithm, and can be programmed.
 
-**Warps** - are a special units, which allow to player teleport from first
+**[Warp/Door points](../../EditLevel/Items#warps)** - are a special units, which allow to player teleport from first
 warp point (Entrance) to second (Exit). Player can teleport between
 difference places of one section, and also player can teleport between
 sections. This is a one way for enter to another section, but exclusion
 is some NPCs, what can generate warp to other section.
 
-**Physical environment area** (Water, Quicksand, etc.) - this is a
+**[Physical environment area](../../EditLevel/Items#physical-environments)** (Water, Quicksand, etc.) - this is a
 specual unit which defining the physical environment inside its rectangle.
 
 
 ### Special units
 
-**Layers** - are a groups of items which can be used for fast access to
+**[Layers](../../EditLevel/Layers)** - are a groups of items which can be used for fast access to
 them by special events.
 
-**Events** - are a special data of level which can dinamicly define and
+**[Events](../../EditLevel/Events)** - are a special data of level which can dinamicly define and
 change the game process options. For example: section settings, hide/show
 objects on target layers, move objects on layer, made scrolling of
 section, etc.

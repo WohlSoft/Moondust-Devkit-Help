@@ -300,8 +300,8 @@ new Docute({
                     link: '/EditWorld/About'
                 },
                 {
-                    title: 'Properties',
-                    link: '/EditWorld/Properties'
+                    title: 'World Settings',
+                    link: '/EditWorld/WorldSettings'
                 },
                 {
                     title: 'Item Toolbox',

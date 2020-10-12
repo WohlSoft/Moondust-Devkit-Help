@@ -24,7 +24,7 @@ settings of items, section, etc. Also you can copy selected items or
 paste them from clipboard back. PGE Editor have a status bar where
 you can see some difference messages. When you will work with items
 on the level and on the world map, to have access to their properties
-you have the context menu to use. \[**Context menu** is a useful menu
+you have the context menu to use. \[**[Context menu](../../Editing/ContextMenu)** is a useful menu
 with settings and features which can be opened by right (or left for
 lefthander mouse) mouse button click\].
 

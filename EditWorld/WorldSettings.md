@@ -1,4 +1,4 @@
-# Properties
+# World Settings
 ## Overview
 This is a main toolbox which allow to you tp configure the world map and episode settings.
 

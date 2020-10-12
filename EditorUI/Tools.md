@@ -2,7 +2,7 @@
 
 Interface of the editor has a draggable and sizable toolboxes and toolbars. You can drag and drop any toolboxes and toolbars wherever you like.
 
-_Toolbars_
+*Toolbars*
 
 <ImageZoom 
   alt="toolbars"
@@ -10,7 +10,7 @@ _Toolbars_
   :border="true" 
 />
 
-_Toolbox and Toolbar placement zones_
+*Toolbox and Toolbar placement zones*
 
 <ImageZoom 
   alt="toolbars"
