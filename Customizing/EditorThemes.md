@@ -12,7 +12,7 @@ Editor have a possible to re-design user interface by replacing some or complete
    * ...
   * ...
   
-Images can be included into sub-folders which make theme folder more orderer.
-theme.ini - is a theme config file which defining the images which will be replaced in the editor.
+Images can be included into sub-folders which make theme folder more ordered.
+theme.ini - is a theme configure file which defining the images which will be replaced in the editor.
    
-You can read full referance of theme.ini file here: https://wohlsoft.ru/pgewiki/Theme_pack_for_editor
+You can read full reference of theme.ini file here: https://wohlsoft.ru/pgewiki/Theme_pack_for_editor

@@ -11,16 +11,16 @@ type which have item which was clicked for execute context menu.
 
 ## Rubber brush/range tool
 
-For swithc into erasing mode, select the Rubber tool "![Rubber](screenshots/LevelEditing/rubber.png)".
+To switch into erasing mode, select the Rubber tool "![Rubber](screenshots/LevelEditing/rubber.png)".
 And cursor will be switched into rubber: ![EC](screenshots/LevelEditing/cur_rubber.png).
 
 Click on the item for remove them. You can hold mouse button and remove items
 under mouse pointer by its movement, but if you start movement from item.
 If you start mouse movement from empty space, you will remove item by rectangle
-range. When you release mouse button all items inside drawed rectangle will be
+range. When you release mouse button all items inside drawn rectangle will be
 removed. Use this tool correctly!
 
-_Erasing by brush (Activating if you start holded movement from any item)_
+_Erasing by brush (Activated by holding mouse button down and moving mouse)_
 
 <ImageZoom
   alt="Removing_brush"

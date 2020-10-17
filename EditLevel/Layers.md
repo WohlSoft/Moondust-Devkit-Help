@@ -1,11 +1,7 @@
 # Layers
-**Layers** - Special item groups, whist give direct access to all his members. 
-Layers can be used for attach group of blocks to moving NPC, example, for make
-a moving bridge. Also layers can be controlled by event actions: hide, show,
-move with speed to direction, etc.
+**Layers** - Special item groups, whist give direct access to all his members. Layers can be used for attach group of blocks to moving NPC, example, for make a moving bridge. Also layers can be controlled by event actions: hide, show, move with speed to direction, etc.
 
 Layers can be added by "add" button and by context menu with add to them all selected items.
- 
 
 <p class="tip">
     You can drag layers items in a list to change their order

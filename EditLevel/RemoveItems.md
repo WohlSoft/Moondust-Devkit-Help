@@ -8,15 +8,11 @@ You can remove item group by context menu. Will be removed items only of same ty
 You also can remove the group of selected items by a simple pressing of the **DEL** key.
 
 ## By a rubber tool
-To switch into erasing mode, choose the Rubber tool "![rubber](screenshots/LevelEditing/rubber.png)". 
-Cursor will be turned into rubber: ![rubberCursor](screenshots/LevelEditing/cur_rubber.png).
+To switch into erasing mode, choose the Rubber tool "![rubber](screenshots/LevelEditing/rubber.png)". Cursor will be turned into rubber: ![rubberCursor](screenshots/LevelEditing/cur_rubber.png).
 
-Click on the item to remove them. You can hold mouse button and remove items under
-mouse pointer by its movement, but if you start movement from item. If you start mouse movement
-from empty space, you will remove item by rectangle range. When you release mouse button
-all items inside drawed rectangle will be removed. **Use this tool properly!**
+Click on the item to remove them. You can hold mouse button and remove items under mouse pointer by its movement, but if you start movement from item. If you start mouse movement from empty space, you will remove item by rectangle range. When you release mouse button all items inside the rectangle will be removed. **Use this tool properly!**
 
-_Erasing by brush (Activating if you start holded movement from any item)_
+_Erasing by brush (Activated by holding mouse button on an item, then moving the mouse)_
 
 <ImageZoom
   alt="erase"

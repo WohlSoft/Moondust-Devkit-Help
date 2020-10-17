@@ -1,6 +1,6 @@
 # World Settings
 ## Overview
-This is a main toolbox which allow to you tp configure the world map and episode settings.
+This is a main toolbox which allow you to configure the world map and episode settings.
 
 * **World Title** - the episode name which will be displayed in the episode list of the game menu.
 * **Hub-styled world map** - this option disable using of the world map, but you must set intro level

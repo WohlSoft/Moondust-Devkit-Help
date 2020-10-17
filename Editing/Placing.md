@@ -9,9 +9,9 @@ button.
 - **Rectangle** - the tool which placing the items by filling of rectangle
 zones. This useful for draw big walls or fill lot of holes.
 - **Circle** - the tool which placing the items by filling of round zones.
-Works similar to Rectnalgle.
+Works similar to Rectangle.
 - **Line** - the tool which allow draw line of items. This tool useful for
-draw slopes, colomns, and long platforms.
+draw slopes, columns, and long platforms.
 - **Flood fill** - the tool which allow fill closed range of random shape.
 This tool useful if you need to fill with items the zone of random-shape.
 - **Overwrite mode** - This feature giving able to replace items already
@@ -102,7 +102,7 @@ with selected item.
 Notes:
 
 -For safety reasons flood filling process will be aborted after 3 seconds.
-If you acidentally filled whole map, you can undo them.
+If you accidentally filled whole map, you can undo them.
 
 -You can limit flood-fill with section boundaries if you will enable
 flag in the  \[Edit -> Don't fill out of section\].

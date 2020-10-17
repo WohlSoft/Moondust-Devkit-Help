@@ -1,7 +1,7 @@
 # Context menu
 
-Every item has its context menu. By a righthander mouse, it can be opened by a 
-right mouse button (for lefthanders - by left mouse button) while the mouse cursor 
+Every item has its context menu. By a right hand mouse, it can be opened by a 
+right mouse button (left hand mouse - by left mouse button) while the mouse cursor 
 points an item on the scene or a selected group.
 
 By a context menu, you can change some of the basic settings of one item or of all
@@ -46,7 +46,7 @@ warp entry.
 
 **Non-playable Character features**
 * Set Direction - In this sub-menu you can change NPC's direction
-* Friendly - NPC will not communicate with playable chatacter and with other NPC's. Friendly NPC can'e be killed, can't hurt to player, can't be taken or grabbed. Playable character and other NPC's can't stay on top of friendly NPCs.
+* Friendly - NPC will not communicate with playable character and with other NPC's. Friendly NPC can'e be killed, can't hurt to player, can't be taken or grabbed. Playable character and other NPC's can't stay on top of friendly NPCs.
 * Not movable - NPC will be idle irrespective of its algorithm.
 * Set message - Open the message text editing dialog for change NPC's talk message.
 * Set as boss - (Inside SMBX this option named as "Legacy Boss")

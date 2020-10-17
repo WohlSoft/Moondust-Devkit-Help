@@ -1,5 +1,5 @@
 # Opasity Masks
-The SMBX come with opasity mask images using. For correctly work with old files and also for creating the new graphics for old SMBX engine, you must use the opasity mask images. If you will use the images in the PGE, recommended to use PNG graphics with own transparency without any mask images.
+The SMBX come with opacity mask images using. For correctly work with old files and also for creating the new graphics for old SMBX engine, you must use the opacity mask images. If you will use the images in the PGE, recommended to use PNG graphics with own transparency without any mask images.
 
 ## What is a Mask?
 A mask is an Alpha-channel coding image. Each Pixel of the mask defining the level of opacity of the same pixel on the source image:

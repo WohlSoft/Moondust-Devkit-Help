@@ -2,7 +2,7 @@
 ## Overview
 Main content and part of any world maps. There are a construction material, sceneries, level entrances, paths, etc.
 ## Terrain tiles
-The main design units which are used for creation of terrian design of the world map. Terrain tiles aren't communicating with other elements, there are always static. (except water terrain tiles)
+The main design units which are used for creation of terrain design of the world map. Terrain tiles are not communicating with other elements, there are always static. (except water terrain tiles)
 
 <ImageZoom
   alt="wld_tiles"
@@ -25,8 +25,8 @@ Allow to player move between level points and map locations. Usually paths are h
   url="screenshots/WorldEditing/Items/wld_paths.png" 
   :border="true" 
 />
-## Level entrances ([Properties](LevelEntranceProperties))
-There are a special units, which are allowing you to enter into defined level or teleport player to other map coorditates. Levels can have multiple entrances, but can have difference warp points inside a level. Also level point using as game start point. If point is not defined, player will start from 0x0 coordinates.
+## Level entrances
+There are a special units, which are allowing you to enter into defined level or teleport player to other map coordinates. Levels can have multiple entrances, but can have difference warp points inside a level. Also level point using as game start point. If point is not defined, player will start from 0x0 coordinates.
 
 <ImageZoom 
   alt="wld_levels"
@@ -44,7 +44,7 @@ There are a special units, which are allowing you to enter into defined level or
 
 **Level ID** - ID of level item which defined in the global configuration.
 
-**Array ID** - the connection indes of selected item.
+**Array ID** - the connection nodes of selected item.
 
 **Background path** - under level point image will be displayed path image
 

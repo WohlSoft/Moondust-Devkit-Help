@@ -1,7 +1,6 @@
 # Context menu
 
-Every item has its context menu. By a righthander mouse, it can be opened by a 
-right mouse button (for lefthanders - by left mouse button) while the mouse cursor 
+Every item has its context menu. By a right hand mouse, it can be opened by a right mouse button (for left hand mice - by left mouse button) while the mouse cursor 
 points an item on the scene or a selected group.
 
 By a context menu, you can change some of the basic settings of one item or of all
@@ -46,7 +45,7 @@ Applying to the group of item of the same type.
 - **Copy** - Copy selected items into the internal clipboard (**Not supported by warp points**).
 - **Cut** - Copy selected items into the internal clipboard and remove them (**Not supported by warp points**).
 - **Remove** - Selected items will be removed
-- **Transform into** - gives ability to replace type of item (for example one block wiht another). Available for Blocks, BGO's and NPC's, Terrain tiles, Scenery, Paths, Levels points.
+- **Transform into** - gives ability to replace type of item (for example one block with another). Available for Blocks, BGO's and NPC's, Terrain tiles, Scenery, Paths, Levels points.
 - **Transform all ITEM-X into** - gives ability to replace type of all items with same ID on the map. Available for Blocks, BGO's and NPC's, Terrain , Scenery, Paths, Level points.
 - **Properties** - will open the item properties' dialog for selected item group.
 
@@ -55,7 +54,7 @@ Applying to the group of item of the same type.
 
 Applying to the single item.
 
-- **Resize** - Will switch into resizing mode of one seleted item. Not apply to item group, only for single item. 
+- **Resize** - Will switch into resizing mode of one selected item. Not apply to item group, only for single item. 
 Supported by some blocks (sizable blocs) and by physic environments zones.
 - **Jump to Exit/Entrance** - You will jump to opposite warp point, if it already placed on the map.
 

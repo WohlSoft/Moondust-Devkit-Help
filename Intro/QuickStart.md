@@ -1,5 +1,5 @@
 # Quick start
-**PGE Editor** - is advanced and echangable level and world editor which giving able to create levels and episodes for your games!
+**PGE Editor** - is an advanced and changeable level and world editor which giving able to create levels and episodes for your games!
 
 _<Sorry, this paragraph in under construction>_
 

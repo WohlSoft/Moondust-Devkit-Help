@@ -1,14 +1,8 @@
 # Item browser toolbox
 
-**Item browser toolbox** - The special toolbox which contains a lists of
-available items to place into current level section. To switch current
-mode into item placing mode, you need only press on necessary item, and
-you can place items into level section.
+**Item browser toolbox** - The special toolbox which contains a lists of available items to place into current level section. To switch current mode into item placing mode, you need only press on necessary item, and you can place items into level section.
 
-For convenience in the item toolbox are groups which are spliting large
-item packs, categories which are split items by their type and roles.
-
- 
+For convenience in the item toolbox are groups which are splitting large item packs, categories which are split items by their type and roles.
 
 **Notes**:
 - To show elements with a <u>custom graphics</u> on current level, you can open the **\[custom\]** category.
@@ -18,7 +12,6 @@ item packs, categories which are split items by their type and roles.
 _Level Item toolbox_
 
 ![0toolbox_items](screenshots/LevelEditing/Items/0toolbox_items.png)
-
 
 Also you can find necessary item(s) into current list by it's name, or by it's ID.
 
@@ -36,7 +29,6 @@ _Vertical view of item toolbox_
   url="screenshots/LevelEditing/Items/0toolbox_items_pos1.png" 
   :border="true" 
 />
-
 
 _Horisontal view of item toolbox_
 

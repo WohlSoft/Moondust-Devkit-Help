@@ -80,7 +80,7 @@ _Level editing interface_
 ## Level units and items
 
 **The main level unit is a section**. Section - is a separated sub-area of
-level which have it's own settigs: music, background, physics, etc.
+level which have it's own settings: music, background, physics, etc.
 Player can move between sections via special points - warps. All sections
 placed in a united space, and you can see many sections in one space,
 but you have able set settings for one section at same time.
@@ -99,20 +99,20 @@ can hit which can be a limiting wall. There are blocks which hurts to the
 game character on touch, and some are may to kill it instantly, and also
 able to destroy other objects which have touched them. There are special
 blocks with own algorithm of interaction with the player. For example:
-switch, switching wall, what changing his state frol lock to unlock and
+switch, switching wall, what changing his state from lock to unlock and
 back; switches between player characters and character limit blocks, what
-allows walk throught them only for one of characters, for other characters
-theese blocks working as normal, etc. As there is a special type of blocks
+allows walk through them only for one of characters, for other characters
+these blocks working as normal, etc. As there is a special type of blocks
 which can have any size. This is a Sizable blocks.
 
 **[Background objects](../../EditLevel/Items#bgo)** - are a sceneries. But some BGO can have special
-features: platform movement paths, will define movement paths for moting
-"platforms", reverser, what will revert platform's speed back. Some BGO
-allows to clibmb on them. BGO can be background and foreground.
+features: platform movement paths, will define movement paths for moving
+"platforms", reverse block, what will revert platform's speed back. Some BGO
+allows to climb on them. BGO can be background and foreground.
 Foreground BGO placing over all other level items.
 
 **[Non-playable characters](../../EditLevel/Items#npc)** - are a main game unit, what building the game
-process: theese is a enemies, friends, items, power-ups, sceneries, etc.
+process: these is a enemies, friends, items, power-ups, sceneries, etc.
 Each NPC have his algorithm, and can be programmed.
 
 **[Warp/Door points](../../EditLevel/Items#warps)** - are a special units, which allow to player teleport from first
@@ -130,7 +130,7 @@ specual unit which defining the physical environment inside its rectangle.
 **[Layers](../../EditLevel/Layers)** - are a groups of items which can be used for fast access to
 them by special events.
 
-**[Events](../../EditLevel/Events)** - are a special data of level which can dinamicly define and
+**[Events](../../EditLevel/Events)** - are a special data of level which can dynamically define and
 change the game process options. For example: section settings, hide/show
 objects on target layers, move objects on layer, made scrolling of
 section, etc.

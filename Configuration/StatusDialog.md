@@ -2,7 +2,7 @@
 Configuration manager allow control and select the global game configurations.
 
 ## Configuration status
-This dialog allow to check states of current game config and find errors if they exists.																					
+This dialog allow to check states of current game configuration and find errors if they exists.																					
 <ImageZoom 
   alt="008_ConfigStatusBox"
   url="screenshots/Tools/008_ConfigStatusBox.png" 
@@ -23,4 +23,4 @@ This feature allows to reload global configuration settings without restarting o
 />
 
 ## Change configuration
-You can work with other game configurations. To switch the game configutation you need open menu item: Tools -> Global configuration -> Change configuration... After switch of configuration you need to restart editor to start work with new configuration.
+You can work with other game configurations. To switch the game configuration you need open menu item: Tools -> Global configuration -> Change configuration... After switch of configuration you need to restart editor to start work with new configuration.

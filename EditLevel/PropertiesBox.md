@@ -1,9 +1,6 @@
 # Properties box
 
-It's a toolbox that can be opened via a context menu of the selected item 
-or the group of items. Also, this toolbox appearing when you select 
-the item to place it on the scene/map, and you can define the properties 
-of an item that you want to place on the map.
+It's a toolbox that can be opened via a context menu of the selected item or the group of items. Also, this toolbox appearing when you select the item to place it on the scene/map, and you can define the properties of an item that you want to place on the map.
 
 _Item properties tool boxes: Block, BGO and NPC_
 

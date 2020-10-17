@@ -7,11 +7,11 @@ world maps and NPC configurations. With them you can create own levels,
 world maps, episodes and even whole games!
 
 Editor have a lots of tools which will help you to create your levels
-and worlds convetient, fast, progressive and qualitative!
+and worlds convenient, fast, progressive and qualitative!
 
 Moondust Editor - is a part of developing Moondust game engine project 
 which based on SMBX64 standard - a tech stuff of SMBX Engine. 
-Moondust going to be successof of old SMBX Engine to give more 
+Moondust going to be successor of old SMBX Engine to give more 
 freedom of customization and giving able use it more useful for 
 creation of any platform games!
 
@@ -61,7 +61,7 @@ you able undo it and fix your wrongs without re-opening of editor.
 
 - you will never get "overflow" message because PGE Editor have
 more space to hold your items. If you try to save level or world
-into SMBX format, you will be noticed about exiding of it's limit
+into SMBX format, you will be noticed about existing limits 
 which giving you able remove junk items to take able open your
 level in the SMBX correctly.
 
@@ -70,4 +70,3 @@ search, you have able use **Tileset Item Box** which giving you
 tileset box which more similar to original SMBX toolbox, but
 you have special "Custom" tab where you have able to make
 your own tilesets! 
-

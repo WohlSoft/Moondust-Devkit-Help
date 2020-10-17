@@ -1,8 +1,6 @@
 # Level Items
 
-**Items** - main content and part of any levels. There are a construction
-material, sceneries, items, characters, etc.
-
+**Items** - main content and part of any levels. There are a construction material, sceneries, items, characters, etc.
 
 <u>**Avalilable item types:**</u>
 * [Blocks](#blocks)
@@ -12,21 +10,10 @@ material, sceneries, items, characters, etc.
 * [Physical environments (Known in SMBX as Water/Quicksand)](#physical-environments)
 * [Player's start points](#player-points)
 
-
 ## Blocks
 
-**Blocks** - the a solid objects which are tiles with his shape and size.
-The main construction material of which level consists. The majority of
-blocks interacts from players on whom it can stand about which the player
-can hit which can be a limiting wall. There are blocks the touch to which
-hurt to the game character, and some are capable to kill instantly not only
-it, but also to destroy other objects which have touched them. There are
-special blocks with own algorithm of interaction with the player.
-For example: switch, switching wall, what changing his state from lock to
-unlock and back; switches between player characters and character limit
-blocks, what allows walk throught them only for one of characters, for
-other characters theese blocks working as normal, etc. As there is a
-special type of blocks which can have any size. This is a Sizable blocks.
+**Blocks** - the a solid objects which are tiles with his shape and size. The main construction material of which level consists. The majority of blocks interacts from players on whom it can stand about which the player can hit which can be a limiting wall. There are blocks the touch to which hurt to the game character, and some are capable to kill instantly not only it, but also to destroy other objects which have touched them. There are special blocks with own algorithm of interaction with the player. For example: switch, switching wall, what changing his state from lock to unlock and back; switches between player characters and character limit
+blocks, what allows walk through them only for one of characters, for other characters these blocks working as normal, etc. As there is a special type of blocks which can have any size. This is a Sizable blocks.
 
 _Placing of blocks_
 
@@ -62,8 +49,8 @@ All items at first are a members of the "Default" layer.
 
 **Each block have the event slots:**
 
-* **Destroyed** - this slot activating if block was be breaked, crashed, destroyed, etc.
-* **Hit** - This slot activating if blocks was be hit, kicked, beated from side or bottom.
+* **Destroyed** - this slot activating if block was be broke, crashed, destroyed, etc.
+* **Hit** - This slot activating if blocks was be hit, kicked, beat from side or bottom.
 * **Layer is empty** - (In SMBX this slot was  called as "<u>No more objects in layer</u>")
 this slot activating when was activated the "destroyed" slot and when layer which
 owner of this block is haven't other objects.
@@ -79,8 +66,7 @@ _Block Properties toolbox_
 
 ### Sizable blocks
 
-This is a special block type which can have any sizes. Unlike standard blocks,
-this block placing by rectangle drawing and it's size is defining by size of
+This is a special block type which can have any sizes. Unlike standard blocks, this block placing by rectangle drawing and it's size is defining by size of
 rectangle when you release mouse key:
 
 _Drawing of sizable blocks_
@@ -93,20 +79,12 @@ _Drawing of sizable blocks_
 />
 
 
+This blocks can be resized. Unlike standard blocks, these blocks displaying in the low background layer and displaying always under BGO (but some BGO in the exception can be shown under sizable blocks).
 
-This blocks can be resized. Unlike standard blocks, these blocks displaying
-in the low background layer and displaying always under BGO (but some BGO in
-the exception can be shown under sizable blocks).
-
-To start resizing, you should open the "Resize" context menu item and you
-will see a blue rectangle which a "sizer". Move corner dots or sides to
-define new size of block. When you done resizing press the ENTER key to
-accept new size, and then block will have a new size. If you will press
-the ESC key you will cancel resizing and block will keep current it's size.
+To start resizing, you should open the "Resize" context menu item and you will see a blue rectangle which a "sizer". Move corner dots or sides to define new size of block. When you done resizing press the ENTER key to accept new size, and then block will have a new size. If you will press the ESC key you will cancel resizing and block will keep current it's size.
 
 <p class="tip">
-    Note: If you wish to get more features of resizer box (green net which
-    defined new size of section), click inside of them by right mouse button.
+    Note: If you wish to get more features of resize box (green net which defined new size of section), click inside of them by right mouse button.
 </p>
 
 The context menu has actions:
@@ -127,17 +105,9 @@ _Resizing of sisable blocks_
   :border="true" 
 />
 
-
-
-
-
 ## BGO
 
-**Background objects** - is a sceneries. But some BGO can have special features:
-platform movement paths, will define movement paths for moting "platforms",
-reverser, what will revert platform's speed back. Some BGO allows to clibmb
-on them. BGO can be background and foreground. Foreground BGO placing over all
-other level items.
+**Background objects** - is a sceneries. But some BGO can have special features: platform movement paths, will define movement paths for moving "platforms", reverse block, what will revert platform's speed back. Some BGO allows to climb on them. BGO can be background and foreground. Foreground BGO placing over all other level items.
 
 _Placing of BGO_
 
@@ -164,17 +134,12 @@ Each BGO now have only two options:
 
 * **Layer** - here defined the layer, what is owner of this BGO. All items at first are a members of "Default" layer.
 
-* **Z-Layer** - defining the displaying priority: over or under other items.
-(Avaialbe only for LVLX format)
-* **Z-Offset** - Is a helpful value which allow to order BGO's which
-displaying over/under each other. (Avaialbe only for LVLX format)
+* **Z-Layer** - defining the displaying priority: over or under other items. (Available only for LVLX format)
+* **Z-Offset** - Is a helpful value which allow to order BGO's which displaying over/under each other. (Available only for LVLX format)
 
-* **Sorting priority** - The special option using only for SMBX LVL file format
-saving process as workaround, but not save into them.
+* **Sorting priority** - The special option using only for SMBX LVL file format saving process as workaround, but not save into them.
 
-This option can be used only as hack of SMBX to force display background BGO as
-foreground. This option don't defining Z-value, which a real foreground/background
-position index. This option defining the sequence of array items for BGO in file.
+This option can be used only as hack of SMBX to force display background BGO as foreground. This option don't defining Z-value, which a real foreground/background position index. This option defining the sequence of array items for BGO in file.
 
 _BGO Properties toolbox_
 
@@ -184,36 +149,22 @@ _BGO Properties toolbox_
   :border="true" 
 />
 
-
-
 ### Hack: Z-Order in SMBX
 
-Legacy SMBX Engine doesn't supports customization of Z-order natively. However,
-it's possible with a workaround. This working ONLY if you saving into SMBX file
-format. And will not saving in them. Aftter reopen same file you need to
-define this value again.
+Legacy SMBX Engine doesn't supports customization of Z-order natively. However, it's possible with a workaround. This working ONLY if you saving into SMBX file format. And will not saving in them. Aftter reopen same file you need to define this value again.
 
 
-1) All data, include BGOs, in files written in defined sequence: 
+**1)** All data, include BGOs, in files written in defined sequence: 
 
 ![Pseudo-foregroundBGO-1](screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-1.png)
 
-2) When we using the sort priority value, we will tell to BGO's place in the
-begin, middle or in the end of array:
+**2)** When we using the sort priority value, we will tell to BGO's place in the begin, middle or in the end of array:
 
 ![Pseudo-foregroundBGO-2](screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-2.png)
 
-SMBX render algorithm displaying BGOs by special groups - layers, and BGO order
-is very important for this case. So, if we are will do a change of the order,
-we are will let a first BGO, which marked as "Foreground", to made all next
-BGOs to be foreground too, even if there are hasn't a "foreground" flag.
-Knowing this thing is possible to force display any background BGOs as foreground.
+SMBX render algorithm displaying BGOs by special groups - layers, and BGO order is very important for this case. So, if we are will do a change of the order, we are will let a first BGO, which marked as "Foreground", to made all next BGOs to be foreground too, even if there are hasn't a "foreground" flag. Knowing this thing is possible to force display any background BGOs as foreground.
 
-3) To allow this feature work, you must to place to the map any of
-true "Foreground" BGO in the any position (if your level has no those BGO's,
-place one of them out of section to get it on the level space). This trick
-requires a one of foreground BGO under our BGO's which we are want to make
-foreground too.
+**3)** To allow this feature work, you must to place to the map any of true "Foreground" BGO in the any position (if your level has no those BGO's, place one of them out of section to get it on the level space). This trick requires a one of foreground BGO under our BGO's which we are want to make foreground too.
 
 <ImageZoom 
   alt="001_bgo_hack"
@@ -241,11 +192,8 @@ __(bush in the right drawn over playable characters)__
   :border="true"
 />
 
-
 ## NPC
-**Non-playable characters** - is a main game unit which building the game
-process: there are enemies, friends, items, power-ups, sceneries, etc.
-Each NPC have it's algorithm, and can be programmed.
+**Non-playable characters** - is a main game unit which building the game process: there are enemies, friends, items, power-ups, sceneries, etc. Each NPC have it's algorithm, and can be programmed.
 
 _Placing of NPC's_
 
@@ -298,11 +246,11 @@ _Message box editing_
 Some NPCs can have a special values:
 
 * **Contents** - this option have an ID of other NPC which included into this NPC. Available for NPCs which marker as "containers".
-* **Spin box with numeric value** - Some NPCs can have the numeric special value, for example, position of firebar segment.
+* **Spin box with numeric value** - Some NPCs can have the numeric special value, for example, position of fire-bar segment.
 * **Special combo-box** - some NPCs can have switchable algorithms which cab set individual NPCs algorithm from the list.
 
 * **Layer** - here is defined the layer which is an owner of this NPC. All items at first are a members of the "Default" layer.
-* **Attach layer** - This is a special option: all membered statical items of attached layer will move together with this NPC.
+* **Attach layer** - This is a special option: all members statical items of attached layer will move together with this NPC.
 
 
 Each NPC have the event slots:
@@ -336,25 +284,13 @@ _NPC Properties toolbox: Generator, NPC-Container, NPC-Container with spin box s
 
 ### NPC-Containers
 
-Everyone who worked with Legacy SMBX Engine, know the "Egg", "Buried", "Bubble"
-and "Lakuti" flags. These flags packing selected item into the special NPC
-which calling as Container. Container can have included into them NPC's which
-can be extracted when container will be destroyed, or will be spawned by
-container before it will destroyed.
+Everyone who worked with Legacy SMBX Engine, know the "Egg", "Buried", "Bubble" and "Lakuti" flags. These flags packing selected item into the special NPC which calling as Container. Container can have included into them NPC's which can be extracted when container will be destroyed, or will be spawned by container before it will destroyed.
 
-In the SMBX we are pressing the "Bubble=Yes" or "Buried=Yes" to place "Packed
-into the herb" or "Packet into the bubble" NPC.
+In the SMBX we are pressing the "Bubble=Yes" or "Buried=Yes" to place "Packed into the herb" or "Packet into the bubble" NPC.
 
-In PGE-Editor you can edit Containers. And therefore, for example, Herb will be
-more useful in the SMB2 group, because "The Lakutus are throwing Lakitus!" in
-the SMBX - is a secret tab which need for a lot of actions to open them. Even
-in the PGE-Editor same "tab" is a non-secret "group". To place "burred" items,
-we should select "herb" item and set its content before we will place them or
-you can set contents to already placed items by editing it's properties. In
-the PGE secrets are absence - all Free and Open Source!
+In PGE-Editor you can edit Containers. And therefore, for example, Herb will be more useful in the SMB2 group, because "The Lakutus are throwing Lakitus!" in the SMBX - is a secret tab which need for a lot of actions to open them. Even in the PGE-Editor same "tab" is a non-secret "group". To place "burred" items, we should select "herb" item and set its content before we will place them or you can set contents to already placed items by editing it's properties. In the PGE secrets are absence - all Free and Open Source!
 
-If we will pick up any NPC from the "Containers" cathegory and they will be
-placed to the map with empty contents:
+If we will pick up any NPC from the "Containers" category and they will be placed to the map with empty contents:
 
 <ImageZoom
   alt="001_placed_containers"
@@ -403,7 +339,6 @@ Done, now Bubble have gold key as content:
   :border="true"
 />
 
-
 Same operations to set Butterfly's bullets:
 
 <ImageZoom
@@ -424,7 +359,7 @@ And same to set content of egg:
 
 But how to place container with already included content?
 
-1) Take necessary NPC from the item toolbox:<br/>
+**1)** Take necessary NPC from the item toolbox:<br/>
 <ImageZoom
   alt="006_placing_container"
   url="screenshots/LevelEditing/Items/NPC-Container/006_placing_container.png"
@@ -432,7 +367,7 @@ But how to place container with already included content?
   :border="true"
 />
 
-2) Set in the opened Properties window contents of NPC and after place them
+**2)** Set in the opened Properties window contents of NPC and after place them
 to the map:
 <ImageZoom
   alt="007_herb_with_contains"
@@ -537,35 +472,19 @@ _Context menu of warp point_
 
 **Values and options**
 
-Stars lock. Stars - are a collectable conventional units which are identifies
-entrance permissions to specific warps / rooms / sections / levels. There are
-can be used to make games be more interested with a quest to find those units.
-In various games stars are has different name. For example, in the A2XT game,
+Stars lock. Stars - are a collectible conventional units which are identifies entrance permissions to specific warps / rooms / sections / levels. There are can be used to make games be more interested with a quest to find those units. In various games stars are has different name. For example, in the A2XT game,
 there are leeks.
 
-* **Stars needed** - This is a limit of star number. Player can enter into this
-warp when he/she collect a definied number of stars.
-* **Need a stars message** - Show this message on attempt to enter into this
-warp without necessary number of stars.
-* **Don't show stars number** - if this warp follows to another level, number
-of stars on target level are will not be shown.
-* **X** and **Y** - This is an exit to world map with target coordinates. If
-coordinates are defined, this warp will be an exit into the world map with
-teleporting to target point by coordinates.
-
+* **Stars needed** - This is a limit of star number. Player can enter into this warp when he/she collect a defined number of stars.
+* **Need a stars message** - Show this message on attempt to enter into this warp without necessary number of stars.
+* **Don't show stars number** - if this warp follows to another level, number of stars on target level are will not be shown.
+* **X** and **Y** - This is an exit to world map with target coordinates. If coordinates are defined, this warp will be an exit into the world map with teleporting to target point by coordinates.
 * **Warp type** - Definition of the warp type: Instant, Pipe or Door.
-* **Pipe directions** - This is a directions of warp, which can be used for
-"pipe" warp type only.
-
+* **Pipe directions** - This is a directions of warp, which can be used for "pipe" warp type only.
 * **Warp type** - Definition of the warp type: Instant, Pipe or Door.
-* **Pipe directions** - This is a directions of warp, which can be used for
-"pipe" warp type only.
-
-* **Level file name** - This is a definition of the entrance into another
-level file to make a warp into them.
-* **Door #** - (In the SMBX this option was named as "Warp to"). If value
-is 0 (Normal entrance) player will start target level from his(her) default
-start point, else player will entered into level by target warp point by ID.
+* **Pipe directions** - This is a directions of warp, which can be used for "pipe" warp type only.
+* **Level file name** - This is a definition of the entrance into another level file to make a warp into them.
+* **Door #** - (In the SMBX this option was named as "Warp to"). If value is 0 (Normal entrance) player will start target level from his(her) default start point, else player will entered into level by target warp point by ID.
 
 <p class="tip">
     Note: If you was removed some warp entry(ies), to re-count warp ID's you
@@ -575,8 +494,7 @@ start point, else player will entered into level by target warp point by ID.
 
 ### Warp types
 
-The warps have a three types: Instant, Pipe, Door and Portal **(which is not
-available in SMBX 1.3)**.
+The warps have a three types: Instant, Pipe, Door and Portal **(which is not available in SMBX 1.3)**.
 
 <ImageZoom
   alt="006_WarpTypes"
@@ -585,10 +503,7 @@ available in SMBX 1.3)**.
   :border="true"
 />
 
-**Instant or Portal** - Player will be instantly teleported on any contact
-with entrance warp point. Different between Instant and Portal is that
-Instant zeroes X speed after teleport, but when player entered into the
-Portal, player keeps same motion/flying speed.
+**Instant or Portal** - Player will be instantly teleported on any contact with entrance warp point. Different between Instant and Portal is that instant zeroes X speed after teleport, but when player entered into the Portal, player keeps same motion/flying speed.
 
 <ImageZoom
   alt="008_Instants"
@@ -597,8 +512,7 @@ Portal, player keeps same motion/flying speed.
   :border="true"
 />
 
-**Door** - Player can enter into this warp only when it contacted with
-entrance point and when player will press up key.
+**Door** - Player can enter into this warp only when it contacted with entrance point and when player will press up key.
 
 <ImageZoom
   alt="007_Doors"
@@ -608,9 +522,7 @@ entrance point and when player will press up key.
 />
 
 
-**Pipe** - this is a directional warp. To enter into this warp player need
-to contact with entrance warp point and press the key equal to defined
-direction. Player will be exited from exit point with defined exit direction.
+**Pipe** - this is a directional warp. To enter into this warp player need to contact with entrance warp point and press the key equal to defined direction. Player will be exited from exit point with defined exit direction.
 
 <ImageZoom
   alt="009_Pipes1"
@@ -631,15 +543,13 @@ direction. Player will be exited from exit point with defined exit direction.
 
 ### Create the warp entry
 
-Each warp have an own entry. At first you need to add a new warp entry
-into the list:
+Each warp have an own entry. At first you need to add a new warp entry into the list:
 
 ![002_addWarp](screenshots/LevelEditing/Warps/002_addWarp.png)
 
 And now, you can place points (or you can define warp options before).
 
-To place entrance or exit point, you should to press the "Set Entrance"
-to place or jump to, if already placed, entrance point
+To place entrance or exit point, you should to press the "Set Entrance" to place or jump to, if already placed, entrance point
 
 <ImageZoom
   alt="003_setEntrance"
@@ -686,11 +596,7 @@ _Placing of the Exit warp point to the map_
 
 ### Two-way warp
 
-To make a two-way warps just use a "Two-side warp" check box, and player
-will be able enter to this warp from both sides. However Legacy
-SMBX Engine (both official and 38A (older than 1.4.3) released) doesn't
-supports that, and if you making levels to play on it, you should to
-make a second warp entry with opposite point placements:
+To make a two-way warps just use a "Two-side warp" check box, and player will be able enter to this warp from both sides. However Legacy SMBX Engine (both official and 38A (older than 1.4.3) released) doesn't supports that, and if you making levels to play on it, you should to make a second warp entry with opposite point placements:
 
 <ImageZoom
   alt="012_two-way_doors"
@@ -729,8 +635,7 @@ _Locked door_
 />
 
 
-To lock warp entrance with stars, you must set a number of stars which
-needed for ability to enter into this warp:
+To lock warp entrance with stars, you must set a number of stars which needed for ability to enter into this warp:
 
 <ImageZoom
   alt="021_Stared_door"
@@ -744,9 +649,7 @@ needed for ability to enter into this warp:
 
 There are a special flags which allowing to place alone warp point.
 
-**Level entrance** - allows to place alone exit point. Set this flag if you
-wish to use this warp as entrance into this level. With this flag warp will
-have no entrance point.
+**Level entrance** - allows to place alone exit point. Set this flag if you wish to use this warp as entrance into this level. With this flag warp will have no entrance point.
 
 <ImageZoom
   alt="014_entrance_to_level"
@@ -771,13 +674,11 @@ when player will enter into this warp.
 
 Player will be entered into another level if he(she) enter into this warp.
 
-You should simply define the level filename in the Level file field. You also
-can browse the level file and select necessary file from list
+You should simply define the level filename in the Level file field. You also can browse the level file and select necessary file from list
 
 ![016_target_warp_ID](screenshots/LevelEditing/Warps/016_target_warp_ID.png)
 
-The number of door will show: where player must be entered. If value is a
-zero - player will start level from his(her) default start point.
+The number of door will show: where player must be entered. If value is a zero - player will start level from his(her) default start point.
 
 _Level file list of same folder which contains editing level file_
 
@@ -791,12 +692,9 @@ _Level file list of same folder which contains editing level file_
     
 ### Warp to world map
 
-You also can create the exit to specified coordinates of the world map.
-You need to simply define the world map coordinates to make exit into
-the world map:
+You also can create the exit to specified coordinates of the world map. You need to simply define the world map coordinates to make exit into the world map:
 
-You also can press the "Set" button and select target point on the world
-map in interactive mode!
+You also can press the "Set" button and select target point on the world map in interactive mode!
 
 ![017_World_map_coordinates](screenshots/LevelEditing/Warps/017_World_map_coordinates.png)
 
@@ -816,29 +714,17 @@ units that defining the physical environment inside of their rectangular area.
 
 **Available environment types:**
 * **Water** - a swimmable liquid environment.
-* **Qucksand** - is a loose substance environment. Everything stucks inside it
-with low ability to jump. To escape from it, need to apply many effort to jump.
-* **Gravitational field** - **\[WIP\]** neutral environment (which keeps global
-environment or environment of other environment rectangles) which slows or
-redirects a gravitation coefficient.
-* **Touch event (Once)** - **\[WIP\]** neutral environment which once triggers
-specific event when playable character touches this environment.
-* **Touch event (Every frame)** - **\[WIP\]** neutral environment which triggers
-event every game loop while playable character keeps a contact with this
-environments.
-* **NPC Touch event (Once)** - **\[WIP\]** neutral environment which once
-triggers specific event when any NPC touches this environment.
-* **NPC Touch event (Every frame)** - **\[WIP\]** neutral environment which
-triggers event every game loop while any NPC keeps a contact with this
-environments.
-* **Mouse click event** - **\[WIP\]** neutral environment which triggers event
-when player will clicks it with a mouse pointer.
+* **Qucksand** - is a loose substance environment. Everything stuck inside it with low ability to jump. To escape from it, need to apply many effort to jump.
+* **Gravitational field** - **\[WIP\]** neutral environment (which keeps global environment or environment of other environment rectangles) which slows or redirects a gravitation coefficient.
+* **Touch event (Once)** - **\[WIP\]** neutral environment which once triggers specific event when playable character touches this environment.
+* **Touch event (Every frame)** - **\[WIP\]** neutral environment which triggers event every game loop while playable character keeps a contact with this environments.
+* **NPC Touch event (Once)** - **\[WIP\]** neutral environment which once triggers specific event when any NPC touches this environment.
+* **NPC Touch event (Every frame)** - **\[WIP\]** neutral environment which triggers event every game loop while any NPC keeps a contact with this environments.
+* **Mouse click event** - **\[WIP\]** neutral environment which triggers event when player will clicks it with a mouse pointer.
 * **Collision script** - **\[WIP\]**
-* **Mouse click script** - **\[WIP\]** neutral environment which executes a
-script function when player will clicks it with a mouse pointer.
+* **Mouse click script** - **\[WIP\]** neutral environment which executes a script function when player will clicks it with a mouse pointer.
 * **Collision event** - **\[WIP\]**
-* **Air chamber** - Air environment which overrides other physical environments
-with air environment.
+* **Air chamber** - Air environment which overrides other physical environments with air environment.
 
 <p class="warning">
     Important: Legacy SMBX Engine supports only two types of physical
@@ -846,17 +732,14 @@ with air environment.
     supported by Legacy SMBX Engine. Only PGE Engine and SMBX-38A.
 </p>
 
-Because Physical environment zone is a sizable element, placing process is
-going by rectangle drawing. To place them, you need to select on toolbar one
-of two icons:
+Because Physical environment zone is a sizable element, placing process is going by rectangle drawing. To place them, you need to select on toolbar one of two icons:
 
 ![DW](screenshots/LevelEditing/Physics/draw_water.png) ![DQ](screenshots/LevelEditing/Physics/draw_sand.png)
 
 <span style="color: blue;">Blue</span> - draw water zone,
 <span style="color: #fde910;">Yellow</span> - draw quicksand zone.
 
-Placed physical environment rectangles:
-Green - water, Yellow - quicksand
+Placed physical environment rectangles: Green - water, Yellow - quicksand
 
 <ImageZoom
   alt="05_paced_areas"
@@ -877,11 +760,7 @@ You have an ability to change environment type of the placed rectangle by a cont
 
 Also, you can easily resize an environment rectangle:
 
-To start resizing, you should open the "Resize" context menu item and you will
-see a yellow rectangle which a "sizer". Move corner dots or sides to define new
-size of block. When you done resizing press the ENTER key to accept new size,
-and then block will have a new size. If you will press the ESC key you will
-cancel resizing and block will keep current it's size.
+To start resizing, you should open the "Resize" context menu item and you will see a yellow rectangle which a "sizer". Move corner dots or sides to define new size of block. When you done resizing press the ENTER key to accept new size, and then block will have a new size. If you will press the ESC key you will cancel resizing and block will keep current it's size.
 
 <p class="tip">
     Note: If you wish to get more features of resizer box (green net which defined
@@ -894,8 +773,7 @@ cancel resizing and block will keep current it's size.
 * **Cut right here** - moves right boundary of box to current mouse position
 * **Cut bottom here** - moves bottom boundary of box to current mouse position
 * **Don't snap to grid** - disables grid snapping on moving of box boundaries
-* **Disable minimal size limit** - gives ability to set size less than
-minimally available size
+* **Disable minimal size limit** - gives ability to set size less than minimally available size
 
 <ImageZoom
   alt="PhysEnvResizing"
@@ -904,23 +782,14 @@ minimally available size
   :border="true"
 />
 
-
-
 ## Player points
 
-This is a point that defines an initial position of a playable character on the level. 
-Every time you starting a level, the playable character will appear at this point.
+This is a point that defines an initial position of a playable character on the level. Every time you starting a level, the playable character will appear at this point.
 
-To place a player point, you need to click one of the toolbar buttons (![P1](screenshots/LevelEditing/players/player1_start.png) or ![P2](screenshots/LevelEditing/players/player2_start.png)): 
-where is red - it's for a 1'st player and the green for 2'nd.
+To place a player point, you need to click one of the toolbar buttons (![P1](screenshots/LevelEditing/players/player1_start.png) or ![P2](screenshots/LevelEditing/players/player2_start.png)): where is red - it's for a 1'st player and the green for 2'nd.
 
-In the editor start points will be shown as flags (They are may look
-differently with a dependence on a currently used UI theme):
+In the editor start points will be shown as flags (They are may look differently with a dependence on a currently used UI theme):
 
 ![PlayerPoints](screenshots/LevelEditing/Items/Player_startPoints_2.png)
 
-If points will not be defined, the level will automatically end, because
-it hasn't available playable characters on the level. Also, you can use doors
-as player's start points, but you need to define the array index of this door
-in the world map or on another level.
-
+If points will not be defined, the level will automatically end, because it hasn't available playable characters on the level. Also, you can use doors as player's start points, but you need to define the array index of this door in the world map or on another level.

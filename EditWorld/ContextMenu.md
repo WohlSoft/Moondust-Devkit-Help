@@ -1,7 +1,7 @@
 # Context Menu features
-Each item have it's context menu. For righthander's mouse it can be opened by right mouse button (for lefthanders - by left mouse-button).
+Each item have it's context menu. For right hand mouse it can be opened by right mouse button (for left hand mice - by left mouse-button).
 
-By context menu you can change the basic settings of one item or of all selected items. You can play music which defined by musicbox.For Level entrance point possible for fast open target level file.																																			
+By context menu you can change the basic settings of one item or of all selected items. You can play music which defined by music box.For Level entrance point possible for fast open target level file.																																			
 <ImageZoom 
   alt="ContextMenu_tl_pt_sc"
   url="screenshots/WorldEditing/Items/ContextMenu_tl_pt_sc.png" 
