@@ -314,7 +314,15 @@ new Docute({
                 {
                     title: 'Context Menu',
                     link: '/EditWorld/ContextMenu'
-                }
+                },
+                {
+                    title: 'Placing tools',
+                    link: '/EditLevel/PlacingTools'
+                },
+                {
+                    title: 'Remove items',
+                    link: '/EditLevel/RemoveItems'
+                },
             ]
         },
         {
@@ -364,10 +372,38 @@ new Docute({
             title: 'Tools',
             children: [
                 {
-                    title: '<WIP>',
-                    link: '/WIP/WIP'
+                    title: 'Application settings',
+                    link: '/Tools/ApplicationSettings'
+                },
+                {
+                    title: 'Console tools',
+                    link: '/Tools/ConsoleTools'
+                },
+                {
+                    title: 'Development console',
+                    link: '/Tools/DevConsole'
+                },
+                {
+                    title: 'Debugger',
+                    link: '/Tools/Debugger'
+                },
+                {
+                    title: 'Tileset item box',
+                    link: '/Tools/TilesetBox'
+                },
+                {
+                    title: 'Custom data helper tools',
+                    link: '/Tools/CustomData'
                 }
             ]
+        },
+        {
+            title: 'FAQ',
+            link: 'https://wohlsoft.ru/pgewiki/Frequently_Asked_Questions'
+        },
+        {
+            title: 'License',
+            link: '/GPLv3'
         },
         {
             title: 'Our friends',
