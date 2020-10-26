@@ -1,4 +1,4 @@
-/* globals "1.17.1" */
+/* globals "1.22.0" */
 import Vue from 'vue';
 import Vuex from 'vuex';
 import marked from './utils/marked';
@@ -164,16 +164,16 @@ var store = new Vuex.Store({
         // Dedupe
         return arr.indexOf(lang) === i && prismLanguages.builtin.indexOf(lang) === -1;
       }).map(function (lang) {
-        return "https://unpkg.com/prismjs@" + "1.17.1" + "/components/prism-" + lang + ".js";
+        return "https://unpkg.com/prismjs@" + "1.22.0" + "/components/prism-" + lang + ".js";
       }), 'prism-languages');
     }
   },
   getters: {
     target: function target(_ref4) {
-      var _target = _ref4.originalConfig.target;
-      if (!_target) return 'docute';
-      if (_target[0] === '#') return _target.slice(1);
-      return _target;
+      var target = _ref4.originalConfig.target;
+      if (!target) return 'docute';
+      if (target[0] === '#') return target.slice(1);
+      return target;
     },
     languageOverrides: function languageOverrides(_ref5) {
       var originalConfig = _ref5.originalConfig;
@@ -212,7 +212,7 @@ var store = new Vuex.Store({
       var originalConfig = _ref8.originalConfig;
       var currentLocalePath = _ref9.currentLocalePath,
           languageOverrides = _ref9.languageOverrides;
-      return languageOverrides ? Object.assign({}, originalConfig, {}, languageOverrides[currentLocalePath]) : originalConfig;
+      return languageOverrides ? Object.assign({}, originalConfig, languageOverrides[currentLocalePath]) : originalConfig;
     },
     homePaths: function homePaths(_, _ref10) {
       var languageOverrides = _ref10.languageOverrides;
@@ -236,7 +236,7 @@ var store = new Vuex.Store({
     },
     cssVariables: function cssVariables(_, _ref13) {
       var config = _ref13.config;
-      return Object.assign({}, config.theme === 'dark' ? darkCssVariables : defaultCssVariables, {}, typeof config.cssVariables === 'function' ? config.cssVariables(config.theme) : config.cssVariables);
+      return Object.assign({}, config.theme === 'dark' ? darkCssVariables : defaultCssVariables, typeof config.cssVariables === 'function' ? config.cssVariables(config.theme) : config.cssVariables);
     }
   }
 });

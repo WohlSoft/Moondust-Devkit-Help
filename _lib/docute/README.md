@@ -1,7 +1,9 @@
+## ATTENTION: this project is no longer actively maintained (I still push some code once in a while), if you want to see improvements on this project, please consider [sponsoring me](https://github.com/sponsors/egoist).
+
 
 # Docute
 
-[![npm version](https://badgen.net/npm/v/docute)](https://npm.im/docute) [![jsdelivr downloads](https://data.jsdelivr.com/v1/package/npm/docute/badge?style=rounded)](https://www.jsdelivr.com/package/npm/docute) [![circleci](https://badgen.net/circleci/github/leptosia/docute/master)](https://circleci.com/gh/leptosia/docute/tree/master)  [![donate](https://badgen.net/badge/support%20me/donate/ff69b4)](https://patreon.com/egoist)
+[![npm version](https://badgen.net/npm/v/docute)](https://npm.im/docute) [![jsdelivr downloads](https://data.jsdelivr.com/v1/package/npm/docute/badge?style=rounded)](https://www.jsdelivr.com/package/npm/docute) [![circleci](https://badgen.net/circleci/github/egoist/docute/master)](https://circleci.com/gh/egoist/docute/tree/master)  [![donate](https://badgen.net/badge/support%20me/donate/ff69b4)](https://patreon.com/egoist)
 
 Effortless documentation, done right.
 
@@ -14,14 +16,13 @@ Effortless documentation, done right.
 
 ## Documentation
 
-Check out: https://docute.org
-
-Are you looking for the v3 docs? See [here](https://v3.docute.org).
+- **v4 (latest) docs**: https://docute.org
+- v3 (legacy) docs: https://v3.docute.org
 
 ## Resources
 
-- [Official Plugins](https://github.com/leptosia/docute-plugins)
-- [Awesome Docute](https://github.com/leptosia/awesome-docute)
+- [Official Plugins](https://github.com/egoist/docute-plugins)
+- [Awesome Docute](https://github.com/egoist/awesome-docute)
 
 ## Contributing
 
@@ -33,7 +34,7 @@ Are you looking for the v3 docs? See [here](https://v3.docute.org).
 
 ## Author
 
-**Docute** © [Leptosia](https://github.com/leptosia), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by EGOIST with help from contributors ([list](https://github.com/leptosia/docute/contributors)).
+**Docute** © [EGOIST](https://github.com/egoist), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by EGOIST with help from contributors ([list](https://github.com/egoist/docute/contributors)).
 
-> [github.com/leptosia](https://github.com/leptosia) · GitHub [@leptosia](https://github.com/leptosia) · Twitter [@leptosia](https://twitter.com/leptosia)
+> [Website](https://egoist.sh) · GitHub [@EGOIST](https://github.com/egoist) · Twitter [@_egoistlily](https://twitter.com/_egoistlily)
