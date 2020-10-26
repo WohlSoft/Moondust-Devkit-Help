@@ -52,6 +52,6 @@ The NPC.txt have limited options for using, and PGE can use more options than SM
 | image |Defines the sprite image file name in the editor. Allows to have a custom image file names |["string"] |
 | script |Custom NPC-AI Algorithm script in PGE |["string"] |
 
-<p class="warning">
+<Note type="warning">
 Original SMBX have a bug: do not use decimal values in NPC codes if you want use them with SMBX. It causes crashing of SMBX for some people. In the PGE and in the SMBX2 this bug absence, and you have a full freedom for use decimal values. But if you want use decimal values inside SMBX, you must have in the "International 	standards" settings the dot "." character instead a comma "," character as decimal separator.
-</p>
+</Note>
