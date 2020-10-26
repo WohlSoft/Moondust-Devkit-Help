@@ -1,0 +1,206 @@
+:root {
+  --accent-color: rgb(6, 125, 247);
+  --sidebar-bg: white;
+  --sidebar-section-title-color: rgb(136, 136, 136);
+  --border-color: #eaeaea;
+  --header-height: 60px;
+  --code-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+.markdown-body >*:first-child {
+    margin-top: 0;
+  }
+
+.markdown-body a {
+    text-decoration: none
+  }
+
+.markdown-body a:hover {
+      text-decoration: underline;
+    }
+
+.markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3,
+  .markdown-body h4,
+  .markdown-body h5,
+  .markdown-body h6 {
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+.markdown-body h1 {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+  }
+
+.markdown-body h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 7rem;
+    padding-bottom: 5px;
+  }
+
+.markdown-body h3 {
+    font-size: 1.7rem;
+    margin: 40px 0 30px 0;
+  }
+
+.markdown-body h4 {
+    font-size: 1.4rem;
+  }
+
+.markdown-body h5 {
+    font-size: 1.1rem;
+  }
+
+.markdown-body p {
+    margin: 15px 0;
+  }
+
+.markdown-body table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+.markdown-body table th {
+    font-weight: 600;
+  }
+
+.markdown-body table th,
+  .markdown-body table td {
+    padding: 6px 13px;
+    border: 1px solid #dfe2e5;
+  }
+
+.markdown-body table tr {
+    background-color: #fff;
+    border-top: 1px solid #c6cbd1;
+  }
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+  }
+
+.markdown-body .pre-wrapper {
+    margin: 2rem 0;
+    position: relative;
+    border-radius: 4px;
+    background: #fdfaf6;
+    box-shadow: inset 0 0 0 1px #faede5
+  }
+
+.markdown-body .pre-wrapper:before {
+      content: attr(data-lang);
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 12px;
+      color: #cacaca;
+    }
+
+.markdown-body pre, .markdown-body .code-mask {
+    overflow: auto;
+    position: relative;
+    font-size: 13px;
+    margin: 0;
+    z-index: 2;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    font-family: var(--code-font)
+  }
+
+.markdown-body pre code, .markdown-body .code-mask code {
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      border: none;
+      font-size: 100%;
+      background: transparent;
+    }
+
+.markdown-body pre {
+    padding: 20px;
+  }
+
+.markdown-body .code-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    white-space: pre;
+    padding-top: 20px;
+    border: none;
+    color: transparent;
+  }
+
+.markdown-body .code-line {
+    display: block;
+    padding: 0 20px
+  }
+
+.markdown-body .code-line.highlighted {
+      background: #faede5;
+      position: relative
+    }
+
+.markdown-body .code-line.highlighted:before {
+        content: '';
+        display: block;
+        width: 3px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #f1beb6;
+        position: absolute;
+      }
+
+.markdown-body code {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    font-family: var(--code-font);
+    background: #fdfaf6;
+    margin: 0 .2rem;
+    padding: .2rem .5rem;
+    white-space: nowrap;
+    font-size: 90%;
+    box-shadow: inset 0 0 0 1px #faede5;
+    border-radius: 4px;
+  }
+
+.markdown-body > ul, .markdown-body > ol {
+    padding-left: 20px;
+    margin: 1rem 0;
+  }
+
+.markdown-body img {
+    max-width: 100%;
+  }
+
+.markdown-body blockquote {
+    background: #f1f1f1;
+    border-left: 8px solid #ccc;
+    margin: 20px 0;
+    padding: 14px 16px;
+    color: #6a737d
+  }
+
+.markdown-body blockquote p {
+      margin: 15px 0 0 0;
+    }
+
+.markdown-body blockquote>*:first-child {
+      margin-top: 0;
+    }
+
+.markdown-body hr {
+    height: 1px;
+    padding: 0;
+    margin: 3rem 0;
+    background-color: #e1e4e8;
+    border: 0;
+  }
