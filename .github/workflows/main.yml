@@ -18,6 +18,7 @@ jobs:
         with:
           flags: '-lrvuO --delete --exclude=".*"'
           options: ''
-          ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+          ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-dss'
           src: './*'
           dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.PGE_HELP_REMOTE }}'
+
