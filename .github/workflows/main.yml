@@ -4,19 +4,11 @@ on: [push]
 
 jobs:
   upload:
-<<<<<<< HEAD
-    name: Upload help to server
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clone the repo
-        run: git clone -b master --depth=1 https://github.com/WohlSoft/PGE-Editor-Help.git .
-=======
     name: Upload docute-based help to server
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo
         run: git clone -b docute --depth=1 https://github.com/WohlSoft/PGE-Editor-Help.git .
->>>>>>> docute
       - name: List all content of the repo
         run: ls -al
       - name: Deploy to server
@@ -26,12 +18,6 @@ jobs:
         with:
           flags: '-lrvuO --delete --exclude=".*"'
           options: ''
-<<<<<<< HEAD
-          ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
-          src: './*'
-          dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.PGE_HELP_REMOTE }}'
-=======
           ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-dss'
           src: './*'
           dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.EDITOR_HELP_REMOTE }}'
->>>>>>> docute
