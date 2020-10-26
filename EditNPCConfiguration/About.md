@@ -1,4 +1,4 @@
-№ What is NPC.txt?
+# What is NPC.txt?
 ## Overview
 NPC.txt is a custom configuration file which have name like npc-12.txt, npc-46.txt and contains the some parameters for custom NPC. The NPC.txt came from SMBX 1.3 and this is a part of SMBX64 standard.
 ## Parameters
