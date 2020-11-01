@@ -29,16 +29,6 @@ _Erasing by brush (Activated by holding mouse button down and moving mouse)_
   :border="true"
 />
 
-_Erasing by rectangle (activating if you start pressed mouse movement from empty space)_
-
-<ImageZoom
-  alt="Removing_rectangle"
-  url="screenshots/LevelEditing/Removing_rectangle.png"
-  width="200px"
-  :border="true"
-/>
-
-
 ## By Keyboard
 
 You also can remove selected items by DEL key.
