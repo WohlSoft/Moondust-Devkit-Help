@@ -3,12 +3,13 @@
 Here you can configure the Editor application.
 
 ## Main
-* **Autoplay music** - Music will always start playing on file load
-* **Animation** - On the map will play animations of items.
-* **Animation items limit** - This limit disable animation when on the map will be too many items.
-* **Collision detection** - This feature enable checking of collisions when you move items.
-* **Document view** - You can define view of opened documents: as subwindows or as tabs.
-* **Associate file extensions** - This feature allow to open files from your file manager directly.
+* **Autoplay music** - Automatically start music playing on file opening.
+* **Animation** - Enable item animations playing.
+* **Animation items limit** - Automatically disable any animations playing when level or world map gets too many elements. 
+This feature should help you to avoid Editor lag on slower computers. 
+* **Collision detection** - This feature enables a checking of collisions on items move.
+* **Document view** - The definition of opened document layout: as sub-windows or as tabs.
+* **Associate file extensions** - This feature allows direct file opening from your file manager.
 
 <ImageZoom
   alt="AppSettingsMain"
@@ -19,12 +20,15 @@ Here you can configure the Editor application.
 ## Editor
 Here you can enable or disable editing process features.
 
-* **Duplicate selected items into mouse position** - this means: when you press middle mouse button, all selected items will be duplicated into current mouse position relative to left-top corner.
-* **Switch placing mode of selected item** - this means: you can switch placing mode if you select one of items. This feature nearly to SMBX's selection tool which always switch placing mode of selected item.
-* Switch to drag scroll - if your map haven't selected items, you will switch into drag scroll mode.
+* Middle mouse button actions:
+  * **Duplicate selected items into mouse position** - this means: when you press middle mouse button, all selected items will be duplicated into current mouse position relative to left-top corner.
+  * **Switch placing mode of selected item** - this means: you can switch placing mode if you select one of items. This feature nearly to SMBX's selection tool which always switch placing mode of selected item.
+  * **Switch to drag scroll** - if your map haven't selected items, you will switch into drag scroll mode.
 
 * **Don't show properties box on taking item to place** - Properties box will not be shown when you take items from item boxes. To open properties dialog use the "Properties" button on the toolbar.
+* **Default zoom** - Allows you to set the initial zoom state for any files.
 * **Max history entries limit** - Defines how much history actions can be remembered.
+* **Screen capture default size** - Defines the initial size for the yellow box when capturing the scene area for image exporting.
 
 <ImageZoom
   alt="AppSettingsEditor"
@@ -43,7 +47,7 @@ Here you can redefine initial state of properties boxes when you placing element
 
 ## View
 Here you can set up some view settings. For example, tab direction of the toolboxes.
-Also, here you can change icon theme if it was installed into `themes/` directory.
+Also, here you can change the font size and interface theme from the `themes/` directory.
 
 <ImageZoom
   alt="AppSettingsView"
@@ -65,5 +69,17 @@ Here you can set log file, where editor will write its work process logs.
 <ImageZoom
   alt="AppSettingsView"
   url="screenshots/AppSettings/AppSettings_logging.png"
+  :border="true"
+/>
+
+## Extra
+Here you can find some special and unusual settings.
+
+* **Enable auto-scaling on high-DPI monitors** - Enables UI scaling together with the system wide monitor scale factor.
+To apply the change for this option you need to restart the Editor application.
+
+<ImageZoom
+  alt="AppSettingsView"
+  url="screenshots/AppSettings/AppSettings_extra.png"
   :border="true"
 />
