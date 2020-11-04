@@ -2,6 +2,11 @@
 
 ![PgeOrSmbx](Intro/QuickStart/PGEorSMBX.png)
 
+<Note type="warning">
+This article is not so useful, I probably remove it. 
+The whole "Quick Start" should be rewritten. 
+</Note>
+
 ## First of all
 
 **SMBX** - is a game with internal engine which written in
