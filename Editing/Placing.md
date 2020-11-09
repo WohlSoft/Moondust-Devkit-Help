@@ -38,7 +38,6 @@ _Placing items with rectangle tool_
 <ImageZoom
   alt="demo-place-rect"
   url="demos/demo-place-rect.gif"
-  width="200px"
   :border="true"
 />
 
@@ -56,7 +55,6 @@ _Placing blocks with circle tool_
 <ImageZoom
   alt="demo-place-circle"
   url="demos/demo-place-circle.gif"
-  width="200px"
   :border="true"
 />
 
@@ -78,15 +76,8 @@ _Placing items with line tool_
 <ImageZoom
   alt="demo-place-line"
   url="demos/demo-place-line.gif"
-  width="200px"
-  :border="true"
-/><ImageZoom
-  alt="place_blocks_line2"
-  url="screenshots/LevelEditing/Items/place_blocks_line2.png"
-  width="200px"
   :border="true"
 />
-
 
 ## Flood fill
 
@@ -100,11 +91,9 @@ item group, you must draw the line on the map and it will be filled
 with selected item.
 
 Notes:
-
--For safety reasons flood filling process will be aborted after 3 seconds.
+- For safety reasons flood filling process will be aborted after 3 seconds.
 If you accidentally filled whole map, you can undo them.
-
--You can limit flood-fill with section boundaries if you will enable
+- You can limit flood-fill with section boundaries if you will enable
 flag in the  \[Edit -> Don't fill out of section\].
 
 _Filling with blocks_
@@ -112,7 +101,6 @@ _Filling with blocks_
 <ImageZoom
   alt="demo-place-flood"
   url="demos/demo-place-flood.gif"
-  width="200px"
   :border="true"
 />
 
@@ -128,6 +116,5 @@ _Draw with overwrite mode_
 <ImageZoom
   alt="demo-override-mode"
   url="demos/demo-override-mode.gif"
-  width="200px"
   :border="true"
 />

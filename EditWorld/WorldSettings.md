@@ -14,8 +14,8 @@ in a game save slot choosing menu.
 
 * **Credits** - the special field which allow add credit list which will be shown in the credits screen
 after end of the game.
-<Note type="warning">
-Note: If you saving a world map into SMBX64-WLD and older, all lines after 5'th are will be lost.
+<Note type="danger">
+If you save a world map into SMBX64-WLD and older, all lines after the 5th are will be lost.
 </Note>
 * **Disable character** - these flags disabling possibles for select the character in the game menu.
 

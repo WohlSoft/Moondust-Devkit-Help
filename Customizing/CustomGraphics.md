@@ -7,7 +7,7 @@ The process is quite simple, but for those of you who don't know how, here is an
 When using custom graphics, it's not necessary to replace any global data, you simply have to put your graphics in the per level or per episode folder of your game. All level files of an episode are placed together in this one folder.
 
 Level Custom Folders - are folders which have the same name as the level file. For example, the
-folder name for the level `Dracula.lvlx` would be "Dracula".
+folder name for the level `MyLevel.lvlx` would be `"MyLevel"`.
 
 ![Tree](screenshots/Customizing/tree.png)
 
