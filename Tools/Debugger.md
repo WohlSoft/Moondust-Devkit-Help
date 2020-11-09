@@ -21,10 +21,10 @@ This is a special feature which allow count all items of target bunch of ID's.
 
 You can add and remove any counters in this list by your wish. **To edit or remove counter use the context menu**.
 
-<p class="tip">
+<Note type="tip">
 Note: Due to performance reasons custom counters don't updating automatically. You should refresh custom counters 
 manually by a "refresh" button!
-</p>
+</Note>
 
 
 _Custom counter editor dialog_

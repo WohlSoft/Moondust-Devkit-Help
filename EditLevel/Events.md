@@ -11,13 +11,13 @@ There are some built-in events which you can't remove:
 - "**P Switch - Start**" - starts if you will activate the special item called as "P-Switch". You can make, for example, a showing of layers with a surprise for your playable character.
 - "**P Switch - stop**" - This event starts if P-Switch timer was end. This event can be used, for example, to hide the same layer with a surprise.
 
-<p class="tip">
-     You can drag event items in a list to change their order
-</p>
+<Note type="tip">
+You can drag event items in a list to change their order
+</Note>
 
-<p class="tip">
-    You can rename event by double click on layer name. New name of event will be applied to all items which using them without losing of connections.
-</p>
+<Note type="tip">
+You can rename event by double click on layer name. New name of event will be applied to all items which using them without losing of connections.
+</Note>
 
 _Events toolbox_
 
@@ -43,9 +43,9 @@ For add layer into the list, please, select them in list, and press to "+" for a
 
 For remove layer from list, select layer in one of three lists and press "-".
 
-<p class="warning">
-    Note: If you have an SMBX64 LVL file format, you will get a limit of layers for every list in 20 entries. Layers outed from 20 items per list will not be saved in SMBX format. By SMBX 1.3 Editor it's possible to add 21 layer into each list, however, here is a bug, that makes no way to remove layers from a list. Instead, it copies the last layer entry instead of removed layer.
-</p>
+<Note type="warning">
+Note: If you have an SMBX64 LVL file format, you will get a limit of layers for every list in 20 entries. Layers outed from 20 items per list will not be saved in SMBX format. By SMBX 1.3 Editor it's possible to add 21 layer into each list, however, here is a bug, that makes no way to remove layers from a list. Instead, it copies the last layer entry instead of removed layer.
+</Note>
 
 _Layer visibly tab_
 
@@ -84,21 +84,21 @@ _Layer move list_
 ## Auto-scroll sections
 Here you can define auto-scrolling of target section.
 
-<p class="warning">
-    <strong>Notes!</strong><br/>
-    <ul>
-        <li>Don't forget to define target section size in the section properties
-        of same event. If you wasn't redefine of section. 
-        Auto-scroll will not be working.</li>
-        <li><span style="color: darkred;">If you want to use auto-scrolling in the SMBX, 
-        <span style="color: red;">be careful</span>, 
-        because SMBX engine has a bug: 
-        Auto-scroll will work only for one section and only if this section contains a 
-        start point of playable character and when event contains auto-scrolling definition
-        will be triggered via special "Level - Start" event. If you will try auto-scroll
-        another section, it will not work!</span></li>
-    </ul>
-</p>
+<Note type="warning">
+<strong>Notes!</strong><br/>
+<ul>
+    <li>Don't forget to define target section size in the section properties
+    of same event. If you wasn't redefine of section. 
+    Auto-scroll will not be working.</li>
+    <li><span style="color: #af0000;">If you want to use auto-scrolling in the SMBX, 
+    <span style="color: red;">be careful</span>, 
+    because SMBX engine has a bug: 
+    Auto-scroll will work only for one section and only if this section contains a 
+    start point of playable character and when event contains auto-scrolling definition
+    will be triggered via special "Level - Start" event. If you will try auto-scroll
+    another section, it will not work!</span></li>
+</ul>
+</Note>
 
 **Horizontal speed**:
 - If <0 - move to left.
@@ -139,9 +139,9 @@ _Layer move list_
 
 3) Set the number of section which will be auto-scrolled and the speed X and speed Y values.
 
-<p class="warning">
+<Note type="warning">
     Don't forget to mark this event to auto start! (requires by SMBX, if you will play same level in the PGE Engine, auto-scroll can be toggled via side event triggers (blocks or NPC's))
-</p>
+</Note>
 
 If you made everything correctly, the screen will start scrolling when this level will be started, when you will enter into section with defined auto-scrolling and when you will toggle auto-scroll via side event triggers.
 
@@ -196,9 +196,9 @@ _Message box editing_
   :border="true"
 />
 
-<p class="warning">
+<Note type="warning">
     Keep a note that all new-line characters will be removed if you save into SMBX64 LVL format. Use extra-spaces as a workaround.
-</p>
+</Note>
 
 
 ## Force player controls

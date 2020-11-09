@@ -161,10 +161,6 @@ new Docute({
                     link: '/Intro/QuickStart/WhatsAnEditor'
                 },
                 {
-                    title: 'Moondust or SMBX?',
-                    link: '/Intro/QuickStart/PgeOrSMBX'
-                },
-                {
                     title: 'How to make levels',
                     link: '/Intro/QuickStart/HowToMakeLevels'
                 },

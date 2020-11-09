@@ -61,6 +61,6 @@ _You will get the broken image:_
 and you got the broken image.
 
  
-<p class="warning">
+<Note type="warning">
 Be careful while you creating the masked images manually!
-</p>
+</Note>

@@ -6,10 +6,10 @@ While you work on your levels, you would want to quickly run your level in actio
 
 Editor has a support of level testing via different run-time engines. You may use any of supported engines and optionally change their settings by a special sub-menu.
 
-<p class="warning">
-    In a dependency from a configure pack used, a different engine may be used as default run time. 
-    Also it may disable an ability to choose any other engine than default for a level testing.
-</p>
+<Note type="warning">
+In a dependency from a configure pack used, a different engine may be used as default run time. 
+Also it may disable an ability to choose any other engine than default for a level testing.
+</Note>
 
 To start a level testing, open the **Test** menu and select the **Test level** menu item,  or simply press the **F5** key on your keyboard. Alternatively, you can use menu of each supported engine to run a level test on a different engine than used by default.
 
@@ -41,9 +41,9 @@ It's a dialog of generic settings which allows you to configure some features: c
 - **Physics debug** - Enables drawing of hit boxes of all objects include invisible (PGE Engine only).
 
 ## PGE Engine
-<p class="warning">
-    Be careful, Engine part is under construction, and a lots of features wasn't implemented yet.
-</p>
+<Note type="warning">
+Be careful, Engine part is under construction, and a lots of features wasn't implemented yet.
+</Note>
 
 ![testMenu](screenshots/menus/005_test_pge_engine.png)
 

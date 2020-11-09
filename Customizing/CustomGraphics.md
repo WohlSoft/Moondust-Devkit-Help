@@ -15,18 +15,18 @@ Placing custom graphic files with a bunch of level files together means they wil
 
 It's also possible to replace graphics in world maps. Accordingly, the same goes for creating a World Custom Folder, the folder which has the same name as the world map file.
 
-<p class="tip">
+<Note type="tip">
 If you're going to play your episode with the SMBX game engine, you shouldn't make a world custom folder, as SMBX does not support custom folders for world maps. Instead you'll have to place the graphics in the episode folder along with the world map files.
-</p>
+</Note>
 
 ## Customizing level graphics
 
 To replace the blocks, you'll need to create graphic files with names such as `block-*.ext`. The `*` standing for the ID of the block you are replacing, and "ext" is an image file extension. SMBX uses the GIF format
 without a transparency. If you want to use transparency, you will have to create a transparency mask
 for your image. The mask image should have a name like "block-*m.ext". An example would be "block-23.gif" for the source image and "block-23m.gif" for the mask image, which defines the transparency pixels. The filename of the target image file you're customizing, can be found in the global image directory of your config pack.
-<p class="tip">
+<Note type="tip">
 Keep in mind that for SMBX you should use the GIF format for mask images. The blocks have three types of graphics: Static, Animated and Sizabled.
-</p>
+</Note>
 
 Static blocks have one static frame. You can use images with any sizes, but you have to use 
 the same format which your game config uses for levels and episodes. ![Brick](screenshots/Customizing/brick.png)
@@ -38,9 +38,9 @@ Resizable blocks are one image divided into 9 pieces which are called "Corners",
 Resizable blocks can also have any size along with being resized. Resizable blocks are displayed under most of the BGOs.																																						
 ![BlockSizable](screenshots/Customizing/block_sizable.png)
 
-<p class="warning">
+<Note type="warning">
 If you're customizing a sizeabled block for SMBX, the image should have an image size of 96x96 pixels.
-</p>
+</Note>
 Background objects are the simple scenery of levels. Sceneries have only two types which are, static and animated. BGO images are similar to Blocks, but have one difference: If you're going to use your episode with SMBX, the images must have the exact same size as the original sprite. The image filenames of BGO's usually are something like "background-*.ext".
 Be careful when using BGOs: the BGOs are shared by the Z-position: background-2 Z-level, which is the lowest Z-level, these BGOs are displayed under sizable blocks. Background-1 Z-level is displayed over sizable blocks, but under playable characters, NPCs, and blocks. The foreground level is a displaying over anything, but under blocks and BGO's which the "foreground-2" Z-level. Note related to SMBX: In SMBX the BGOs define their Z-position by an array data position. I.e. each BGO has its own sorting priority which defines the BGO's Z-position.																												
 <ImageZoom 
@@ -107,18 +107,18 @@ backgrounds do not move vertically. The summary height of both images must be gr
   :border="false" 
 />
 
-<p class="tip">
+<Note type="tip">
 Editor related note: Single-row and Double-row backgrounds will only be displayed at the bottom
 or top (according to the attachment types that have these backgrounds) with only horizontal repeating.
 If you want to see your background in a tiled like way, when exporting the image check the
 "Tiled background" box. Additionally, in the INI configs there is an available flag called "tiled in
 the editor", which will cause your single-row background to be tiled-like, although only in the editor,
 as in the game your background will be displayed in it's original state.
-</p>
+</Note>
 
-<p class="danger">
+<Note type="danger">
 Be careful when replacing single-row backgrounds as they repeat only horizontally, and in the editor you'll then only see the attached image. You can use background images in any size, but when you customize the animated background, its sprite must have the same number of frames as the original background. A background image must also have a height that is at least half the height of the screen (in SMBX the screen height is 600 pixels).
-</p>
+</Note>
 
 Tiled backgrounds repeat in both directions, horizontally and vertically. The image can have any size.																	
 <ImageZoom 
@@ -127,9 +127,9 @@ Tiled backgrounds repeat in both directions, horizontally and vertically. The im
   :border="false" 
 />
 
-<p class="tip">
-	Some backgrounds have the magic effect, that divides the image into strips which move at different speeds.
-</p>																																									
+<Note type="tip">
+Some backgrounds have the magic effect, that divides the image into strips which move at different speeds.
+</Note>																																									
 <ImageZoom 
   alt="Background_singleRow_magic"
   url="screenshots/Customizing/Background_singleRow_magic.gif" 
@@ -145,7 +145,7 @@ These graphics are similar to the BGOs used in levels. The images have two types
 
 * **Levels** - they have some minor differences in comparison to other images. They always attach to an item's bottom-center position, where they are used. The image files of levels are usually named something like "level-*.ext".
 
-<p class="warning">
+<Note type="warning">
 When customizing an animated item, make sure that your sprite has the same number of frames as in the original image.
 
 - Remember that if the size of a custom BGO is larger than the original image you are replacing, it will be cropped in SMBX. In other words, don't use custom images larger than the image you're replacing if you intend to use them in levels created for SMBX. This also applies to Tiles, Sceneries, Paths and Levels in the World map.
@@ -153,7 +153,7 @@ When customizing an animated item, make sure that your sprite has the same numbe
 - When customizing a NPC, you'll have to create the image sprite with the same image size and number of frames as the original. If you're creating a custom image size, remember to create the npc-*.txt config file for defining the properties of your custom NPC.
 
 - Remember to be careful with how you name your files under UNIX-like operating systems, an example would be "thecat" and "TheCat", remember that both are recognized as entirely different files.
-</p>	
+</Note>	
 
 ## Graphic formats supported
 

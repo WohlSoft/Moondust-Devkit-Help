@@ -3,15 +3,15 @@
 
 Layers can be added by "add" button and by context menu with add to them all selected items.
 
-<p class="tip">
+<Note type="tip">
     You can drag layers items in a list to change their order
-</p>
+</Note>
 
-<p class="tip">
+<Note type="tip">
     You can rename layer by a double click on layer name. 
     New name of layer will be set to all member items 
     and to all events, what using them.
-</p>
+</Note>
 
 _Layers toolbox and example of layer members:_
 

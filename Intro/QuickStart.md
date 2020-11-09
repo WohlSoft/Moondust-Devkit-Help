@@ -1,16 +1,10 @@
 # Quick start
-**PGE Editor** - is an advanced and changeable level and world editor which giving able to create levels and episodes for your games!
-
-_<Sorry, this paragraph in under construction>_
+**Moondust Editor** - is an enhanced and flexible level and world editor which gives an ability 
+to build your levels and episodes for your games!
 
 [![PgeEditor](Intro/QuickStart/WhatIsPGEEditor.png)](QuickStart/WhatsAnEditor.md)
 
 [What's a Moondust Editor?](QuickStart/WhatsAnEditor.md)
-
-
-[![PgeOrSmbx](Intro/QuickStart/PGEorSMBX.png)](QuickStart/PgeOrSMBX.md)
-
-[PGE or SMBX? What difference?](QuickStart/PgeOrSMBX.md)
 
 
 [![HowToLevels](Intro/QuickStart/HowToMakeLevels.png)](QuickStart/HowToMakeLevels.md)

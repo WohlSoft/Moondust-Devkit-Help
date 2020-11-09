@@ -83,9 +83,9 @@ This blocks can be resized. Unlike standard blocks, these blocks displaying in t
 
 To start resizing, you should open the "Resize" context menu item and you will see a blue rectangle which a "sizer". Move corner dots or sides to define new size of block. When you done resizing press the ENTER key to accept new size, and then block will have a new size. If you will press the ESC key you will cancel resizing and block will keep current it's size.
 
-<p class="tip">
-    Note: If you wish to get more features of resize box (green net which defined new size of section), click inside of them by right mouse button.
-</p>
+<Note type="tip">
+Note: If you wish to get more features of resize box (green net which defined new size of section), click inside of them by right mouse button.
+</Note>
 
 The context menu has actions:
 
@@ -174,12 +174,12 @@ SMBX render algorithm displaying BGOs by special groups - layers, and BGO order 
 />
 
 
-<p class="warning">
-    Don't forget, that if you saving file into SMBX1...64 LVL format, on
-    next open of this file you must to redefine the sorting priority value
-    again, because in doesn't saving into SMBX level file. Backup saved into
-    LVLX file format is suggested.
-</p>
+<Note type="warning">
+Don't forget, that if you saving file into SMBX1...64 LVL format, on
+next open of this file you must to redefine the sorting priority value
+again, because in doesn't saving into SMBX level file. Backup saved into
+LVLX file format is suggested.
+</Note>
 
 
 **Result of BGO hack in action**
@@ -236,11 +236,11 @@ _Message box editing_
   :border="true" 
 />
 
-<p class="tip">
-    Note: Don't forget: all new-line characters will not work correctly 
-    with SMBX Engine (but will work in Moondust Engine natively).
-    As workaround for SMBX Engine, use the extra-spaces to cause a words wrap.
-</p>
+<Note type="tip">
+Note: Don't forget: all new-line characters will not work correctly 
+with SMBX Engine (but will work in Moondust Engine natively).
+As workaround for SMBX Engine, use the extra-spaces to cause a words wrap.
+</Note>
 
 
 Some NPCs can have a special values:
@@ -486,10 +486,10 @@ there are leeks.
 * **Level file name** - This is a definition of the entrance into another level file to make a warp into them.
 * **Door #** - (In the SMBX this option was named as "Warp to"). If value is 0 (Normal entrance) player will start target level from his(her) default start point, else player will entered into level by target warp point by ID.
 
-<p class="tip">
-    Note: If you was removed some warp entry(ies), to re-count warp ID's you
-    should reload level (press F8 key)!
-</p> 
+<Note type="tip">
+Note: If you was removed some warp entry(ies), to re-count warp ID's you
+should reload level (press F8 key)!
+</Note> 
 
 
 ### Warp types
@@ -567,10 +567,10 @@ and "Set Exit" to place or jump to, if already placed, exit point.
   :border="true"
 />
 
-<p class="tip">
-    Note: If adjacent checbox is checked - this point is already placed,
-    and you will jump to placed point when you press a point button.
-</p>
+<Note type="tip">
+Note: If adjacent checkbox is checked - this point is already placed,
+and you will jump to placed point when you press a point button.
+</Note>
 
 _Placing of the Exit warp point to the map_
 
@@ -582,16 +582,16 @@ _Placing of the Exit warp point to the map_
 />
 
 
-<p class="warning">
-    Don't forget to set up warp settings!
-</p>
+<Note type="warning">
+Don't forget to set up warp settings!
+</Note>
 
-<p class="tip">
-    Note: the warp entry must have both placed points or warp entry will
-    be marked as broken and will not be saved into the file.
-    Exclusion: You can have single-point warp entries when they are have
-    one of those flags: "Level Exit" or "Level entrance".
-</p>
+<Note type="tip">
+Note: the warp entry must have both placed points or warp entry will
+be marked as broken and will not be saved into the file.
+Exclusion: You can have single-point warp entries when they are have
+one of those flags: "Level Exit" or "Level entrance".
+</Note>
 
 
 ### Two-way warp
@@ -726,11 +726,11 @@ units that defining the physical environment inside of their rectangular area.
 * **Collision event** - **\[WIP\]**
 * **Air chamber** - Air environment which overrides other physical environments with air environment.
 
-<p class="warning">
-    Important: Legacy SMBX Engine supports only two types of physical
-    environments: Water and Quicksand. Other physical environment types are not
-    supported by Legacy SMBX Engine. Only PGE Engine and SMBX-38A.
-</p>
+<Note type="warning">
+Important: Legacy SMBX Engine supports only two types of physical
+environments: Water and Quicksand. Other physical environment types are not
+supported by Legacy SMBX Engine. Only PGE Engine and SMBX-38A.
+</Note>
 
 Because Physical environment zone is a sizable element, placing process is going by rectangle drawing. To place them, you need to select on toolbar one of two icons:
 
@@ -762,10 +762,10 @@ Also, you can easily resize an environment rectangle:
 
 To start resizing, you should open the "Resize" context menu item and you will see a yellow rectangle which a "sizer". Move corner dots or sides to define new size of block. When you done resizing press the ENTER key to accept new size, and then block will have a new size. If you will press the ESC key you will cancel resizing and block will keep current it's size.
 
-<p class="tip">
-    Note: If you wish to get more features of resizer box (green net which defined
-    new size of section), click inside of them by right mouse button.
-</p> 
+<Note type="tip">
+Note: If you wish to get more features of resizer box (green net which defined
+new size of section), click inside of them by right mouse button.
+</Note> 
 
 **The context menu has actions**
 * **Cut top here** - moves top boundary of box to current mouse position

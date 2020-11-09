@@ -63,9 +63,10 @@ Sections can have any size. You can resize section, if you will open Section pro
 
 The <u>minimal section size</u> is a 800x600, but later will be implemented special setting for change this limit, for example, create games with NES/SNES screen size.
 
-<p class="tip">Note: If you wish to get more features of resize box (green net which
+<Note type="tip">
+Note: If you wish to get more features of resize box (green net which
 defined new size of section), click inside of them by right mouse button.
-</p>
+</Note>
 
 The context menu has actions:
 * **Cut top here** - moves top boundary of box to current mouse position

@@ -99,10 +99,11 @@ _Variant of menu on Windows with Integration config pack_
 
 * **Run testing** - will run testing of current level in Engine.
 Will be available interprocessing.
-<p class="tip">Note: when you have used Integration config pack,
+<Note type="tip">Note: when you have used Integration config pack,
 "Run Testing" may be redefined to start LunaTester. In this case
 you still be able to run PGE Engine by opening it in the
-"PGE Engine" menu</p>
+"PGE Engine" menu
+</Note>
 
 * **Run testing of saved file** - will start testing of saved file
 without interprocessing.
@@ -132,7 +133,11 @@ mode. This feature is useful for tablets.
 by grid.
 * **Animation on/off** - Enable or disable item animations.
 This option will not be work, if on level map placed too many
-items.<p class="tip">You can disable this option for speed up.</p>
+items.
+
+<Note type="tip">
+You can disable the animation option if you feel that Editor works laggy.
+</Note>
 
 
 
