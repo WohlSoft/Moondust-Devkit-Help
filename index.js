@@ -157,8 +157,8 @@ new Docute({
             title: "Quick start",
             children: [
                 {
-                    title: 'What\'s a Moondust Editor?',
-                    link: '/Intro/QuickStart/WhatsAnEditor'
+                    title: 'What is Moondust Editor?',
+                    link: '/Intro/QuickStart/WhatIsEditor'
                 },
                 {
                     title: 'How to make levels',
