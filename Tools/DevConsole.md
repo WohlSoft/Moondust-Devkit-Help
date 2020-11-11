@@ -1,9 +1,9 @@
 # Development console
-This is a development console. Here will be logged all log events of editor working, 
-also you can type some commands to control the editor's settings. Also, this is a single way to enter
-cheats into engine part while level is testing.
+It's a development console. Here will be printed all log events during the Editor workflow. 
+Also, you can type some commands to control the editor's settings. The console can be used 
+for cheats into the engine part while the level is testing.
 
-To open console simply open menuitem  `Help -> Show Developement Console`.
+To open a console, open the `Help -> Show Development Console` menu item.
 
 <ImageZoom
   alt="AppSettingsView"
@@ -11,8 +11,8 @@ To open console simply open menuitem  `Help -> Show Developement Console`.
   :border="true"
 />
 
-### Available comsole commands:
-Now console available for tests and have a few commands. This list will be exchanged while developing process is going.
+### Available console commands:
+Here is a list of available commands you can use for various tests and works.
 
 | Command | Description |
 |---------|-------------|
@@ -21,7 +21,7 @@ Now console available for tests and have a few commands. This list will be excha
 | version | display version information of the editor application |
 | md5 | **Args:** `{SomeString}` Calculating MD5 hash of string |
 | strarr | **Args:** `{String array}` validating the PGE-X string array |
-| savesettings | write application settings into config file (usually settings writing on exit) |
+| savesettings | Do write application settings into the config file now (otherwise, settings will save on application quit) |
 | playmusic | **Args** `{Music type (lvl wld spc), Music ID}` Play default music by specific ID |
 | pgex | **Arg:** `{Path to file}` tests if the file contains the valid PGE-X data format |
 | strarr | **Arg:** `{String array}` validates the PGE-X string array |
