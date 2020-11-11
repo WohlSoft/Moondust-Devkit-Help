@@ -3,7 +3,7 @@
 to build your levels and episodes for your games!
 
 [Editor overview and guide](QuickStart/WhatsAnEditor.md)<br/>
-[![PgeEditor](Intro/QuickStart/WhatIsPGEEditor.png)](QuickStart/WhatsAnEditor.md)
+[![PgeEditor](Intro/QuickStart/WhatIsPGEEditor.png)](QuickStart/WhatIsEditor.md)
 
 
 [Levels in details](QuickStart/HowToMakeLevels.md)<br/>
@@ -12,4 +12,3 @@ to build your levels and episodes for your games!
 
 [World maps in details](QuickStart/HowToMakeWorlds.md)<br/>
 [![HowToWorlds](Intro/QuickStart/HowToMakeWorlds.png)](QuickStart/HowToMakeWorlds.md)
-
