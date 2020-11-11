@@ -15,7 +15,7 @@ you can draw yourself. This idea I found in the SMBX fan game,
 but main deficiency of SMBX is a strict data standard and closing
 to the Mario fan game series.
 
-Engine is going to be 100% compatible with SMBX. The main parts
+Engine is going to be compatible with SMBX. The main parts
 it would contain would be a (SMBX compatible) game engine and a
 tool-kit for creating games.
 
@@ -28,10 +28,7 @@ that can open/play/save in the SMBX64 format is very much in need.
 
 
 
-
 ## History
-
-
 In December 2013 I had a desire to create [SMBX](WhatIsSMBX.md)-compatible
 game engine, and in doing so, give it a new life. The game that inspired me is
 called [Hedgewars](http://hedgewars.org/), a clone of the game
@@ -50,11 +47,9 @@ For the project I decided to use [Qt](http://qt.io) and
 cross-platform: for Windows, GNU/Linux, and Mac OS. The project will
 live if it is libre, open source.
 
-
 **The Project is Currently Under Construction**, as of now, the editor
 is currently available as a standalone application. All sources are
 published on the GitHub repository.
-
 
 
 Development of a game engine requires much responsibility and hard
@@ -65,3 +60,5 @@ goal to be achieved.
 
 _Does this project sound interesting to you? You can show your
 support and [join us](http://wohlsoft.ru/forum/)!_
+
+_We at Discord:_ https://discord.gg/qPBsvMy
