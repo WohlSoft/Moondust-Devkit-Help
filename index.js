@@ -360,7 +360,7 @@ new Docute({
             children: [
                 {
                     title: 'Configuration manager',
-                    link: '/Configuration/StatusDialog'
+                    link: '/Configuration/ConfigManager'
                 }
             ]
         },
