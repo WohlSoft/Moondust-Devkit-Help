@@ -2,27 +2,27 @@
 
 ![HowToWorlds](Intro/QuickStart/HowToMakeWorlds.png)
 
-**World map** - is an interactive list of levels which available
-to player(s) for play.
+**World map** - is the interactive list of levels available for a player(s) to play.
 
-World map - is a key unit of game or episode!
+World map - is a main unit of the game or an episode!
 
-World map also can be a hub-styled, I.e. world map will not be
-used. Instead of world map you will use the special level, which
-called as hub. In the hub player can enter into levels though warps.
+World maps also can be a hub-styled, I.e. world map will not be
+used. Instead, the special level will be used as the list of levels for play,
+which is called as a HUB. In the hub player can enter into levels though warps.
 
-To start make world map, first of all you need open the
-"File" -> "New" -> "World" menuitem. When you did it you will
+To start building the world map, first of all you need open the
+`"File" -> "New" -> "World"` menuitem. When you did it you will
 see the main editing interface which contains editing space
 where you will need to place objects.
 
-If you wish to edit exist level, you can open the "File" -> "Open"
-menu and select necessary file in the explorer. You also can
-drag&drop file into editor's window directly to open them. You
-also can associate all supported by PGE Editor files with editor
-in the "Tools" -> "Application Settings" menu.
+If you wish to work with existing world map, you can open the "File" -> "Open"
+menu and select necessary file in the explorer. To open file, you also can 
+drag & drop a file into the window of the Editor directly. You can associate
+all supported by PGE Editor files with the Editor inside of the
+`"Tools" -> "Application Settings"` menu to open them from a file manager by
+double-clicking on them.
 
-To make world map you need to place any items which you can found
+To make a world map you need to place any items which you can found
 in the special item toolbox. The world map also settings of
 your episode.
 
@@ -66,20 +66,20 @@ _World map editor interface_
 of a design of the world map. Terrain tiles aren't communicating with
 other items.
 
-**[Scenery](../../EditWorld/Items#sceneries)** - there are secondary design unit. Sceneries can be hidden
-when did opened a path which placed over them.
+**[Scenery](../../EditWorld/Items#sceneries)** - there are secondary design unit. Sceneries will hide when
+path cells that placed over sceneries gets opened.
 
-**[Paths](../../EditWorld/Items#paths)** - are allows to player move between level points and map
-locations. Usually paths are hidden and appearing when player pass
+**[Paths cells](../../EditWorld/Items#paths)** - are units that allows player to move between different
+level points and map locations. Usually, paths cells are hidden by default, and appearing when player passes
 the level which placed nearly to them.
 
-**[Level entrances](../../EditWorld/Items#level-entrances)** - there are a special units, which are allowing
-to enter into specified level or teleport player to other map
-coordinates. Levels are can have multiple entrances, but can have
-different warp points inside a level. Also level point is used as a
-game start point. If start point is not declared (world map has no
-level entrance point with "Game start" flag), player will start game
-at 0:0 coordinates.
+**[Level entrances](../../EditWorld/Items#level-entrances)** - there are
+a special units, which allows player to enter into specified level or
+teleport player to other map coordinates. Levels are can have multiple entrances,
+but can have different warp points inside a level. Also, level point using as a
+game start point. If start point wasn't placed (world map has no
+level entrance point with the "Game start" flag enabled), player will start game
+at the 0:0 position.
 
-**[Music Boxes](../../EditWorld/Items#music-boxes)** - there are a special units which are switching a
-playing music when playable character stands on them.
+**[Music Boxes](../../EditWorld/Items#music-boxes)** - there are a special units that switching a playing
+music when playable character stands on them.
