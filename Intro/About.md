@@ -6,51 +6,50 @@ _A Platform Game Engine by Wohlstand_
 _This project is distributed under [GNU GNLv3](../license.html)._
 
 
-**So what exactly is this?** This is an free and open source game engine and
-toolkit which giving able to create games of platform genre.
+**So what exactly is this?** It's a free/open-source game engine and
+toolkit which gives the ability to create games of the platforming genre.
 
-The main and important idea of project - to give possible for any user
-to creating platform games from exists media which you have or which
-you can draw yourself. This idea I found in the SMBX fan game,
-but main deficiency of SMBX is a strict data standard and closing
-to the Mario fan game series.
+The basic idea of this project is to make it possible for every user
+to create platformers with existing or self-drawn sprites. This idea I
+found in the SMBX fan game, but the main drawback of SMBX is a strict data
+standard and it's attachment to Nintendo's "Super Mario" franchise.
 
-Engine is going to be compatible with SMBX. The main parts
-it would contain would be a (SMBX compatible) game engine and a
-tool-kit for creating games.
+The Engine will be compatible with SMBX. It's main components would be a
+(SMBX compatible) game engine and a tool-kit for creating games.
 
 I've been working on this project since at least December 2013.
 
 ## History
 
 ### Beginning
-In December 2013 I had a desire to create [SMBX](WhatIsSMBX.md)-compatible
+In December 2013 I had the desire to create a [SMBX](WhatIsSMBX.md)-compatible
 game engine, and in doing so, give it a new life. The game that inspired me is
 called [Hedgewars](http://hedgewars.org/), a clone of the game
 "Worms" by the company Team17. I decided to create a new game engine,
-with the source code open under the GPLv3 License.
+with the source-code being open under the GPLv3 License.
 
 One of the most important parts of this project in my opinion is the
-NAME. Because of the NAME of his project, Redigit came to grief with
-Nintendo. Therefore, the engine which I will publish will not be
-named after "Mario", and the new name will be a replacement to this.
-However, the engine will be fully compatible with SMBX, meaning it
+NAME. Because of the NAME he gave SMBX, Redigit was confronted with legal
+consequences by Nintendo, and was forced to take the game down. Therefore,
+the engine which I will publish won't be named after "Mario", or any other
+Nintendo properties.
+Despite this, it will be fully compatible with SMBX, meaning it
 IS possible to use SMBX files with my engine.
 
 For the project I decided to use [Qt](http://qt.io) and
 [SDL libraries](http://libsdl.org) with C++. I want to make the engine
 cross-platform: for Windows, GNU/Linux, and Mac OS. The project will
-live if it is libre, open source.
+live if it is free, libre, open-source.
 
 ### The Birth of the Editor
-My introduction wasn't met by the SMBX community as they thought it 
+My introduction wasn't met well by the SMBX community, as they thought it 
 was one another fake and the scum, until the time later. After completing
-the initial research works, I started the actual development of Editor
+the initial research, I started the actual development of the Editor
 on March 24th, 2014. The Editor project started as a part of my 
 SMBX Research Works that started some months before. 
 On April 28th, 2014, Kevsoft joined the PGE Project, and shortly 
-afterward, Editor version 0.0.7-Alpha was released. The first
-fully-featured version with file reading/writing ability, history
+afterwards, Editor version 0.0.7-Alpha was released. The first
+fully-featured version with the ability to read/write files, a history
 manager, and full support of NPC rendering was 0.0.8-Alpha, which
 was released on July 13th, 2014. On October 20th of 2014, after
 a long time of development, the first stable and fully-featured
