@@ -6,10 +6,10 @@ This dialog allows you to check states of current game configuration and find er
 
 ![007_configStatus](screenshots/Tools/007_configStatus.png)
 
-<ImageZoom 
+<ImageZoom
   alt="008_ConfigStatusBox"
   url="screenshots/Tools/008_ConfigStatusBox.png" 
-  :border="true" 
+  :border="true"
 />
 
 ## Reload global configuration
