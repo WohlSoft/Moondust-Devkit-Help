@@ -346,8 +346,8 @@ new Docute({
                     link: '/Customizing/CustomAudio'
                 },
                 {
-                    title: 'Opacity Masks (Transparency Masks)',
-                    link: '/Customizing/OpacityMasks'
+                    title: 'Bit masks (for Vanilla SMBX)',
+                    link: '/Customizing/BitMasks'
                 },
                 {
                     title: 'Editor Themes',
@@ -372,10 +372,6 @@ new Docute({
                     link: '/Tools/ApplicationSettings'
                 },
                 {
-                    title: 'Console tools',
-                    link: '/Tools/ConsoleTools'
-                },
-                {
                     title: 'Development console',
                     link: '/Tools/DevConsole'
                 },
@@ -390,6 +386,27 @@ new Docute({
                 {
                     title: 'Custom data helper tools',
                     link: '/Tools/CustomData'
+                }
+            ]
+        },
+        {
+            title: 'Console tools',
+            children: [
+                {
+                    title: 'GIFs2PNG',
+                    link: '/Tools/Console/GIFs2PNG'
+                },
+                {
+                    title: 'PNG2GIFs',
+                    link: '/Tools/Console/PNG2GIFs'
+                },
+                {
+                    title: 'PaletteFilter',
+                    link: '/Tools/Console/PaletteFilter'
+                },
+                {
+                    title: 'LazyFixTool',
+                    link: '/Tools/Console/LazyFixTool'
                 }
             ]
         },
