@@ -342,7 +342,7 @@ new Docute({
                     link: '/Customizing/CustomGraphics'
                 },
                 {
-                    title: 'Music and sound formats support',
+                    title: 'Music and SFX formats',
                     link: '/Customizing/CustomAudio'
                 },
                 {
