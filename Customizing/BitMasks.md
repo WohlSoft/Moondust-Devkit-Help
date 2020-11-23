@@ -32,6 +32,18 @@ so on (the sprites), for GUI icons, and for video titling and other image mixing
 Although related (due to being used for the same purposes), transparent colors and alpha channels are techniques
 which do not involve the image pixel mixage by binary masking. 
 
+## Lazily-made masks
+
+Lazily-made / Noob-made / noob drawing / result of lazy effort - These are pairs of an image and mask, created
+via simple copies of the original image, with a white color.
+
+![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_src1m.gif)
+
+This is a bad method that it's not recommended for sprite making. Instead, use the [PNG2GIFs](/Tools/Console/PNG2GIFs) 
+utility to convert PNG image into the valid bit-mask ready front and mask pair. If you have a dozen of lazily-made
+graphics, you can fix the by using the special [LazyFix Tool](/Tools/Console/LazyFixTool) utility.
+
+
 ## Links 
 * [Wikipedia article about bit masks](https://en.wikipedia.org/wiki/Mask_(computing)#Image_masks)
 * [Bit Blit explanation](https://en.wikipedia.org/wiki/Bit_blit)
