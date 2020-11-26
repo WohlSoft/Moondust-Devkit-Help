@@ -10,8 +10,7 @@ _This project is distributed under [GNU GNLv3](../license.html)._
 toolkit which gives the ability to create games of the platforming genre.
 
 The basic idea of this project is to make it possible for every user
-to create platformers with existing or self-drawn sprites. This idea I
-found in the SMBX fan game, but the main drawback of SMBX is a strict data
+to create platformers with existing or self-drawn sprites. This idea was inspired by the SMBX fan game, but the main drawback of SMBX is a strict data
 standard and it's attachment to Nintendo's "Super Mario" franchise.
 
 The Engine will be compatible with SMBX. It's main components would be a
@@ -41,8 +40,8 @@ cross-platform: for Windows, GNU/Linux, and Mac OS. The project will
 live if it is free, libre, open-source.
 
 ### The Birth of the Editor
-My introduction wasn't met well by the SMBX community, as they thought it 
-was one another fake and the scum, until some time later. After completing
+My introduction wasn't met well by the SMBX community, as they first thought I 
+was another scammer advertizing a fake SMBX 1.4. After completing
 the initial research, I started the actual development of the Editor
 on March 24th, 2014. The Editor project began as a part of my 
 SMBX Research Works that started some months before. 
@@ -79,7 +78,7 @@ that took a lot of time. I had no desire to work so much at Editor as
 I already announced that it's already fine as-is for the current usage.
 I wanted to develop Engine as I see it's one most important part of the
 PGE Project. The team wanted more and more features in the Editor. I was
-worked on that a lot. The SMBX2 team didn't saw any perspectives against
+worked on that a lot. The SMBX2 team didn't saw any perspectives for
 PGE Engine, and instead, they were focused on the LunaLua development.
 In 2016, I have described the nature of SMBX2 as the "Biggest
 workaround in the Universe". Horikawa Otane agreed with me. She supported
@@ -87,7 +86,7 @@ my development of the Engine. However, a while later, the SMBX2 team
 majorly changed when Horikawa Otane left the project because of personal reasons. After 2016, I started to procrastinate
 and switch to other projects. My biggest mistake was to care a lot
 about the SMBX2 development. At the end of 2019,
-I finally considered reducing the attention to SMBX2 and focus on
+I finally decided to reduce my attention to SMBX2 and focus on
 my own development process.
 
 ### SMBX source code was published, founding TheXTech
