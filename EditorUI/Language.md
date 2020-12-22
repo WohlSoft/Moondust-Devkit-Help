@@ -16,7 +16,7 @@ You can switch between these languages:
 * <u>Ukrainian</u>
 * etc.
 
-To switch a language go to "Help > Language > \[the language\]".
+To switch a language go to the `Help -> Language -> [the language]` menu.
 
 _Languages list_
 
