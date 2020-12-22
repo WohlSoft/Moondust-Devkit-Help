@@ -54,8 +54,7 @@
 |F9 |Disable/Enable collisions ||
 |F10 |Disable/Enable animations ||
 |F11 |Play/Stop music ||
-|F12 |Export selected fragment of Level or World map||
-|into the image file||
+|F12 |Export selected fragment of Level or World map into the image file||
 
 ## Resizing process hor keys
 | Hotkey | Description | Extras |
