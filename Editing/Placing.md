@@ -1,39 +1,36 @@
-# Placing items
+# Items placing
 
-Placing of new elements on the level or world map can be done with multiple various ways.
+Placing new elements on the level or world map can be done in multiple various ways.
 
 **Available placing ways**
-- **Brush placing** - the standard placing tool. Individual items are placing
-by mouse click or by "drawing" curves while moving mouse cursor with a held
-button.
-- **Rectangle** - the tool which placing the items by filling of rectangle
-zones. This useful for draw big walls or fill lot of holes.
-- **Circle** - the tool which placing the items by filling of round zones.
-Works similar to Rectangle.
-- **Line** - the tool which allow draw line of items. This tool useful for
-draw slopes, columns, and long platforms.
-- **Flood fill** - the tool which allow fill closed range of random shape.
-This tool useful if you need to fill with items the zone of random-shape.
+- **Brush placing** - the standard placing tool. Individual items are placing by mouse click 
+  or by "drawing" curves while moving the mouse cursor with a hold button.
+- **Rectangle** - the tool which placing the items by filling rectangular
+  zones. This useful to draw big walls or fill a lot of holes.
+- **Circle** - the tool which placing the items by filling circular zones. 
+  It works like a rectangular placing.
+- **Line** - the tool which allows draw line of items. This tool useful for
+  draw slopes, columns, and long platforms.
+- **Flood fill** - this tool gives you the ability to fill a closed range of random shapes.
+  This tool useful if you need to fill with items in the zone of random-shape.
 - **Overwrite mode** - This feature giving able to replace items already
-placed on the map.
+  placed on the map.
 
 
 ![PI](screenshots/LevelEditing/Items/PlacingTools.png)
 
 
-## Rectangle placing
+## Rectangle
 
-This is a special tool, which can be used for speed place of item group
-on the map.
+It's a tool that allows quick placing of item groups on the map.
 
-This feature available for BGO and Blocks. And in the world map editor
-available for any items.
+This feature available for BGO and Blocks. And in the world map editor available for any items.
 
-For use this feature, you must press on the "Rectangle" icon, and for
-place item group, you must draw the rectangle on the map and it will be
-filled with selected item.
+To use this feature, you need to press on the "Rectangle" icon, and to place item groups,
+you need to draw the rectangle on the map. Once you release your mouse button, the selected
+area will be filled with an item group.
 
-_Placing items with rectangle tool_
+_Placing items by rectangle tool_
 
 <ImageZoom
   alt="demo-place-rect"
@@ -42,13 +39,15 @@ _Placing items with rectangle tool_
 />
 
 
-## Circle placing
+## Circle
 
-This is a special tool, which can be used to place item group to the
-map quickly.
+It's a tool that allows quick placing of item groups on the map.
 
-This feature available for BGO and Blocks. And in the world map editor
-available for any items.
+This feature available for BGO and Blocks. And in the world map editor available for any items.
+
+To use this feature, you need to press on the "Circle" icon, and to place item groups,
+you need to draw the circle on the map. Once you release your mouse button, the selected
+area will be filled with an item group.
 
 _Placing blocks with circle tool_
 
@@ -59,17 +58,15 @@ _Placing blocks with circle tool_
 />
 
 
-## Line placing
+## Line
 
-This is a special tool, which can be used to place item group to the
-map quickly.
+It's a tool that allows quick placing of item groups on the map.
 
-This feature available for BGO, Blocks and for NPCs. And in the world
-map editor available for any items.
+This feature available for BGO, Blocks, and NPCs. And in the world map editor available for any items.
 
-For use this feature, you must press on the "Line" icon, and for place
-item group, you must draw the line on the map and it will be filled with
-selected item.
+To use this feature, you need to press on the "Line" icon, and to place item groups,
+you need to draw the circle on the map. Once you release your mouse button, the linear
+area will be filled with an item group.
 
 _Placing items with line tool_
 
@@ -81,20 +78,15 @@ _Placing items with line tool_
 
 ## Flood fill
 
-This is a special tool which will fill closed shape of items.
+It's a tool that allows the filling of closed areas built by items.
 
-This feature available for BGO and for Blocks. And in the world map
-editor available for any items but no music boxes.
- 
-For use this feature, you must press on the "Fill" icon, and for place
-item group, you must draw the line on the map and it will be filled
-with selected item.
+This feature available for BGO and Blocks. And in the world map editor available for any items.
 
-Notes:
-- For safety reasons flood filling process will be aborted after 3 seconds.
-If you accidentally filled whole map, you can undo them.
-- You can limit flood-fill with section boundaries if you will enable
-flag in the  \[Edit -> Don't fill out of section\].
+To use this feature, you need to press on the "Fill" icon, and to place item groups, you need to click on the empty area you want to fill.
+
+**Notes:**
+- For safety reasons, the flood filling process will stop after 3 seconds. If you accidentally filled the whole map, you can undo them.
+- You can limit flood-fill with section boundaries if you will enable flag in the `Edit -> Don't fill out of section`.
 
 _Filling with blocks_
 
@@ -107,9 +99,9 @@ _Filling with blocks_
 
 ## Overwrite mode
 
-This feature allow replace items, placed on the map. For use them, switch
-the "Overwrite mode" icon on the toolbar and when you place some item on
-the map, all colliding items will be removed.
+This feature allows you to replace items placed on the map. To use them, switch
+the "Overwrite mode" icon on the toolbar. All new-placed items will cause
+a removal of all collided items which was placed at the position place before.
 
 _Draw with overwrite mode_
 

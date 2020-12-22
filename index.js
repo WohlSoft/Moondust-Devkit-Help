@@ -175,11 +175,11 @@ new Docute({
             title: "Editing",
             children: [
                 {
-                    title: 'Placing elements',
+                    title: 'Items placing',
                     link: '/Editing/Placing'
                 },
                 {
-                    title: 'Removing items',
+                    title: 'Items removing',
                     link: '/Editing/RemoveItems'
                 },
                 {
