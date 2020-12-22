@@ -13,7 +13,7 @@ same type as the clicked item will be removed.
 To switch into erasing mode, select the Rubber tool "![Rubber](screenshots/LevelEditing/rubber.png)".
 Then, the cursor will change look into rubber: ![EC](screenshots/LevelEditing/cur_rubber.png).
 
-Click on the item to remove them. You can hold a mouse button and move your mouse
+Click on an item to remove it. You can hold a mouse button and move your mouse
 to remove any items touched by the cursor.
 
 _Erasing by brush (Activated by holding the mouse button down and moving the mouse)_
