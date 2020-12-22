@@ -1,6 +1,6 @@
 # Toolboxes, Toolbars, Panels
 
-Interface of the editor has a draggable and sizable toolboxes and toolbars. You can drag and drop any toolboxes and toolbars wherever you like.
+Editor's interface has draggable and sizable toolboxes and toolbars. You can drag and drop any toolboxes and toolbars wherever you like.
 
 *Toolbars*
 
