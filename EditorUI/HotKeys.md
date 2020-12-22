@@ -1,7 +1,7 @@
 # Hot keys
 
 ## Common
-| Hot key | Description | Extras |
+| Hotkey | Description | Extras |
 |---------|-------------|--------|
 | Ctrl+O |Open exist file ||
 | Ctrl+S |Save current file ||
@@ -17,7 +17,7 @@
 | Alt+Enter(Return) |Switch between fullscreen and normal mode ||
 
 ## Level/World Editing
-| Hot key | Description | Extras |
+| Hotkey | Description | Extras |
 |---------|-------------|--------|
 |Mouse Wheel |Scroll vertically ||
 |Ctrl+Mouse Wheel |Scroll horizontally ||
@@ -46,7 +46,7 @@
 |Shift+F |Toggle a flood-fill place mode ||
 
 ## Functional keys
-| Hot key | Description | Extras |
+| Hotkey | Description | Extras |
 |---------|-------------|--------|
 |F1 |Help contents ||
 |F5 |Launch a testing of current level ||
@@ -58,7 +58,7 @@
 |into the image file||
 
 ## Resizing process hor keys
-| Hot key | Description | Extras |
+| Hotkey | Description | Extras |
 |---------|-------------|--------|
 |Enter |Accept new size and return to select mode ||
-|Esc |Cancel resizing, keep current size and return to select mode ||
+|Esc |Cancel resizing, keep current size, and switch back to the selecting mode ||
