@@ -1,13 +1,9 @@
 # History Manager
 
-This editor records all actions in a history manager. You can undo and redo action you made.
-Currently only the level editor supports the History Manager.
-
+This editor records all actions in a history manager. You can undo and redo the remembered actions you made.
 
 <Note type="note">
-Don't rely on the History Manager. Because this editor is a
-work in progress, it can always be that some actions aren't recorded
-yet. You should always make a backup of your current level file!
+There are some types of actions that may be not tracked.  Please [report them as a bug](https://github.com/WohlSoft/PGE-Project/issues/new/choose).
 </Note>
 
 _History manager in action_
