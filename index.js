@@ -217,7 +217,7 @@ new Docute({
                     link: '/EditorUI/Clipboard'
                 },
                 {
-                    title: 'Sub-Window view',
+                    title: 'Document view',
                     link: '/EditorUI/SubWindow'
                 },
                 {
