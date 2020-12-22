@@ -1,9 +1,6 @@
 # Item properties toolbox
 
-This toolbox can be called only by context menu on the selected item or
-item group. Also this toolbox appearing when you select item for place
-on the map, and you can define properties for item which you want to
-place on the map.
+It's a toolbox that gives access to all supported properties of items. You can open this toolbox through a context menu only. This toolbox also can appear while placing new items on the map: you can specify properties of new-placed items in this toolbox.
 
 _Item properties tool boxes: Block, BGO and NPC_
 
