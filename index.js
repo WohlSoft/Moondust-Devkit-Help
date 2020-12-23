@@ -263,12 +263,12 @@ new Docute({
                     link: '/EditLevel/Events'
                 },
                 {
-                    title: 'Placing tools',
-                    link: '/EditLevel/PlacingTools'
+                    title: 'Items placing',
+                    link: '/Editing/Placing'
                 },
                 {
-                    title: 'Remove items',
-                    link: '/EditLevel/RemoveItems'
+                    title: 'Items removing',
+                    link: '/Editing/RemoveItems'
                 },
                 {
                     title: 'Context menu',
@@ -313,11 +313,11 @@ new Docute({
                 },
                 {
                     title: 'Placing tools',
-                    link: '/EditLevel/PlacingTools'
+                    link: '/Editing/Placing'
                 },
                 {
                     title: 'Remove items',
-                    link: '/EditLevel/RemoveItems'
+                    link: '/Editing/RemoveItems'
                 },
             ]
         },
