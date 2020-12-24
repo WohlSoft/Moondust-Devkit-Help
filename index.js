@@ -280,7 +280,7 @@ new Docute({
                 },
                 {
                     title: 'Item search',
-                    link: '/EditLevel/ItemSearch'
+                    link: '/Editing/Search'
                 },
                 {
                     title: 'Testing',
