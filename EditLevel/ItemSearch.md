@@ -1,14 +1,12 @@
 # Item search
 
-Also, you can find on the level map the necessary item by known properties.
-
-Search toolbox available in the toolbar and have this icon: ![search](screenshots/LevelEditing/Search/SeatchIcon.png).
+Using this toolbox, you can find on the level map the necessary item by known properties. Search toolbox available at the toolbar and have the next icon:  ![S](screenshots/LevelEditing/Search/SearchIcon.png). You can use this toolbox to select all found items and perform actions using a [context menu](ContextMenu).
 
 _Search of blocks_
 
 <ImageZoom 
   alt="box"
-  url="screenshots/LevelEditing/Search/SeatchBlock.png"
+  url="screenshots/LevelEditing/Search/SearchBlock.png"
   width="200px"
   :border="true" 
 />
