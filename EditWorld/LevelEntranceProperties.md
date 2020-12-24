@@ -2,7 +2,7 @@
 
 This toolbox allow to you edit properties of one item or item group.
 
-![](../screenshots/WorldEditing/LevelItemProps.png)
+![levelItemProps](../screenshots/WorldEditing/LevelItemProps.png)
 
 **Position** - Displaying current coordinated of selected item.
 

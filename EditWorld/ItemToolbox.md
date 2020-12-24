@@ -1,17 +1,13 @@
 # Search Browser
 
-**Search browser** - The toolbox which contains a list of available items to add to the
-current level section or the world map. 
+**Search browser** - The toolbox which contains a list of available items to add to the current level section or the world map. 
 
-Click a necessary object in the list to pick it
-up for adding to the level or world map.
+Click a necessary object in the list to pick it up for adding to the level or world map.
 
-Unlike the Search Browser at the Level Editor, the Search Browser at the World Editor 
-has no filtering. 
+Unlike the Search Browser at the Level Editor, the Search Browser at the World Editor has no filtering. 
 
 <Note type="tip">
-You can play music through music boxes list when you click any music list item.
-If music player enabled, the music playing will be started once you will select it from the item box.
+You can play music through music boxes list when you click any music list item. If music player enabled, the music playing will be started once you will select it from the item box.
 </Note>
 
 <ImageZoom 
