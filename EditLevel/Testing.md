@@ -1,25 +1,24 @@
 # Testing
 ## Overview
-While you work on your levels, you would want to quickly run your level in action to verify the behavior.
+While you work on your levels, you would want to run your level file in action to verify the behavior.
 
 ![testMenu](screenshots/menus/005_test.png)
 
-Editor has a support of level testing via different run-time engines. You may use any of supported engines and optionally change their settings by a special sub-menu.
+The editor has the support of level testing via different run-time engines. You may use any of the supported engines and optionally change their settings by a special sub-menu.
 
 <Note type="warning">
-In a dependency from a configure pack used, a different engine may be used as default run time. 
-Also it may disable an ability to choose any other engine than default for a level testing.
+Depending on the configure pack used, a different engine may use as the default run time. Also, it may prevent the choose any other runtime engine than the default for level testing.
 </Note>
 
-To start a level testing, open the **Test** menu and select the **Test level** menu item,  or simply press the **F5** key on your keyboard. Alternatively, you can use menu of each supported engine to run a level test on a different engine than used by default.
+To start a level testing, open the **Test** menu, select the **Test level** menu item, or press the **F5** key on your keyboard. Alternatively, you can use a menu of each supported engine to run a level test on a different runtime engine instead of the default.
 
-For some cases, you may want to **Test a saved file**: you will run a testing of a level file state currently saved on the disk. This option doesn't support an Editor integration.
+For some cases, you may want to **Test a saved file**: you will run testing of a level file from the state on a disk. This option doesn't support an Editor integration.
 
-You may want to **Start Game** if you want to change your game control setup or run an episode playing.
+You may want to **Start Game** if you desire to change your game control setup or run an episode playing.
 
-If needed, you can tune your **Testing options** to select playable characters, count of players, enable some cheating or debug features, set a specific state of playable characters, etc.
+If needed, you can tune your **Testing options** to select playable characters, count players, enable some cheating or debug features, set a specific state of playable characters, etc.
 
-For engines are working on Windows, Editor has a support for an IPC bridges which can work on Wine. Therefore, if you use Editor on a non-Windows operating system, you will find an extra menu item in menus of LunaTester and SMBX-38A which allowing you to configure Wine usage and even choose a different Wine installation (see [Wine Settings](#wine-settings)).
+For Windows-only engines, Editor has support for an IPC bridge that can work on Wine. When Editor works on a non-Windows operating system, you will find an extra menu item in the menus of LunaTester and SMBX-38A, which allows you to configure Wine usage and even choose a different Wine installation (see [Wine Settings](#wine-settings)).
 
 ## Test settings
 <ImageZoom
@@ -29,37 +28,37 @@ For engines are working on Windows, Editor has a support for an IPC bridges whic
   :border="true"
 />
 
-It's a dialog of generic settings which allows you to configure some features: choose 1 or 2 players game, select playable characters and their states, add vehicles/mounts, etc.
+It's a dialog of generic settings that allows you to configure some features: choose 1 or 2 players game, select playable characters and their states, add vehicles/mounts, etc.
 
 **There are some extra settings:**
 - **God Mode** - Makes your playable character being invincible to dangerous NPCs and surfaces.
-- **Unlimited Flight** - Allows your playable character to fly up by using of Alt-Jump key (PGE Engine only).
+- **Unlimited Flight** - Gives an ability for your playable character to fly up by using the "Alt-Jump" key (PGE Engine only).
 - **Bulldozer mode** - Allows your playable character to destroy any nearest objects by Alt-Run key (PGE Engine only).
 - **Walk Anywhere** - Allows your playable character to walk on a world map out of paths (PGE Engine only).
-- **Debug info** - Enables printing of various debug information on the screen (PGE Engine only).
-- **Show frame speed** - Enables printing of FPS count at left-top corner (SMBX-38A and TheXTech only).
-- **Physics debug** - Enables drawing of hit boxes of all objects include invisible (PGE Engine only).
+- **Debug info** - Enables printing of various to debug information on the screen (PGE Engine only).
+- **Show frame speed** - Enables printing of FPS count at the left-top corner (SMBX-38A and TheXTech only).
+- **Physics debug** - Enables drawing of hitboxes of all objects include invisible (PGE Engine only).
 
 ## PGE Engine
 <Note type="warning">
-Be careful, Engine part is under construction, and a lots of features wasn't implemented yet.
+Be careful: the Engine part is under construction. It has many features that are weren't implemented yet.
 </Note>
 
 ![testMenu](screenshots/menus/005_test_pge_engine.png)
 
-This is an own run-time engine of PGE Project. This engine has the full integration with Editor and supports all main features. You can run testing of new-made or unsaved files on the fly. While test is running, you can select any of elements on Editor's tile set box or item search browser and place them into running game window directly.
+It's an own run-time engine of the PGE Project. This engine has full integration with Editor and supports all main features. You can run testing of new-made or unsaved files on the fly. While the test work, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly.
 
-It's recommended to read the manual written in the [Engine.Readme.txt](https://raw.githubusercontent.com/Wohlhabend-Networks/PGE-Project/master/Content/readmes/Engine.Readme.txt) file included with PGE Engine.
+We recommend reading the manual written in the [Engine.Readme.txt](https://raw.githubusercontent.com/Wohlhabend-Networks/PGE-Project/master/Content/readmes/Engine.Readme.txt) file included with PGE Engine.
 
 **Menu options:**
-- **Test level/world** - Start a direct testing of currently loaded level data even file is unsaved.
-- **Test saved level/world** - Starts a testing of currently opened level by opening it from a disk.
-- **Start Game** - Start a normal game with using of a currently loaded configuration package. 
+- **Test level/world** - Start the direct testing of currently loaded level data even file is unsaved.
+- **Test saved level/world** - Starts testing of current opened level by opening it from a disk.
+- **Start Game** - Start a game by using a currently loaded configuration package.
 
 ## TheXTech
 ![testMenu](screenshots/menus/005_test_thextech.png)
 
-It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of vanilla SMBX engine with the full Editor integration support and some other PGE standard extras. You can run testing of new-made or unsaved files on the fly. While test is running, you can select any of elements on Editor's tile set box or item search browser and place them into running game window directly. You can pick-up elements by mouse click on elements inside of running game. Use a middle mouse button to turn on the eraser to remove elements around.
+It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of the vanilla SMBX engine with the full Editor integration support and some other PGE standard extras. You can run testing of new-made or unsaved files on the fly. While the test is running, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly. You can pick-up elements by mouse click on elements inside of the running game. Use a middle mouse button to turn on the eraser to remove elements around.
 
 **Menu options:**
 - **Test level** - Start a direct testing of currently loaded level data even file is unsaved.
@@ -67,19 +66,14 @@ It's the full C++ port of SMBX Engine 1.3, created from the source code publishe
 - **Test saved level** - Starts a testing of currently opened level by opening it from a disk.
 - **Graphics type** - Select a graphical sub-system for use.
   - **Default** - Graphical sub-system will be automatically detected.
-  - **Software rendering** - Use a software rendering without acceleration. Use this if hardware 
-  acceleration does not work, or it works incorrectly and glitchy. May work slow on some systems.
+  - **Software rendering** - Use a software rendering without acceleration. Use this if hardware acceleration does not work, or it works incorrectly and glitchy. May work slow on some systems.
   - **Accelerated** - Use a hardware-accelerated rendering sub-system. Used by default.
   - **Accelerated with V-Sync** - Use a hardware-accelerated rendering sub-system with using of 
-  vertical synchronization to make a smoother rendering. May slow-down the game process, suggested 
-  to switch the monitor refresh rate into 75 hz if possible.
-- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as 
-placing new elements taken in tile sets and item browsers.
-- **Enabme max FPS** - disables limit on FPS count and turns on the free rendering. In some cases may look
-like Fast-Forwarding of a video cassette.
+  vertical synchronization to make a smoother rendering. May slow-down the game process, suggested to switch the monitor refresh rate into 75 hz if possible.
+- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as placing new elements taken in tile sets and item browsers.
+- **Enabme max FPS** - disables limit on FPS count and turns on the free rendering. In some cases may look like Fast-Forwarding of a video cassette.
 - **Enable grab all** - Allows playable character to grab any NPC without exceptions.
-- **Change the path to TheXTech** - Allows you to select the executable path to make testing work. You may
-choice a different assembly of TheXTech to use for some moment.  
+- **Change the path to TheXTech** - Allows you to select the executable path to make testing work. You may choice a different assembly of TheXTech to use for some moment.  
 - **Start Game** - Start a normal game with using of a currently loaded configuration package. 
 
 ## LunaTester
