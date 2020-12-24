@@ -118,7 +118,7 @@ Playable character hit-box editing is not possible for vanilla SMBX.
 
 ### Backgrounds
 Backgrounds - Are the images which are displayed under all the items in a level. Backgrounds usually
-have image filenames like "background-2-*.ext".
+have image filenames like `background2-*.ext`.
 
 Backgrounds mainly has two types of images: static, and animated like BGOs. Although backgrounds
 also have their own displaying modes, which are single-row, double-row and tiled.
