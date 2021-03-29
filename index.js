@@ -435,6 +435,312 @@ new Docute({
     overrides: {
         '/': {
             language: 'English'
+        },
+        '/es/' : {
+            language: 'Español',
+            editLinkText: 'Edit this page on GitHub ',
+            sidebar: [
+                {
+                    title: 'Main',
+                    children: [
+                        {
+                            title: 'Intro',
+                            link: '/es/'
+                        }
+                    ]
+                },
+                {
+                    title: 'Getting started',
+                    children: [
+                        {
+                            title: 'Quick Start',
+                            link: '/es/Intro/QuickStart',
+                        },
+                        {
+                            title: 'About',
+                            link: '/es/Intro/About'
+                        }
+                    ]
+                },
+                {
+                    title: "Quick start",
+                    children: [
+                        {
+                            title: 'What is Moondust Editor?',
+                            link: '/es/Intro/QuickStart/WhatIsEditor'
+                        },
+                        {
+                            title: 'How to make levels',
+                            link: '/es/Intro/QuickStart/HowToMakeLevels'
+                        },
+                        {
+                            title: 'How to make world maps',
+                            link: '/es/Intro/QuickStart/HowToMakeWorlds'
+                        }
+                    ]
+                },
+                {
+                    collapsable: true,
+                    title: "Editing",
+                    children: [
+                        {
+                            title: 'Items placing',
+                            link: '/es/Editing/Placing'
+                        },
+                        {
+                            title: 'Items removing',
+                            link: '/es/Editing/RemoveItems'
+                        },
+                        {
+                            title: 'Context menu',
+                            link: '/es/Editing/ContextMenu'
+                        },
+                        {
+                            title: 'Item Properties',
+                            link: '/es/Editing/ItemProperties'
+                        },
+                        {
+                            title: 'Search',
+                            link: '/es/Editing/Search'
+                        }
+                    ]
+                },
+                {
+                    collapsable: true,
+                    title: 'Editor GUI',
+                    children: [
+                        {
+                            title: 'Toolboxes, Toolbars, panels',
+                            link: '/es/EditorUI/Tools'
+                        },
+                        {
+                            title: 'Switch application language',
+                            link: '/es/EditorUI/Language'
+                        },
+                        {
+                            title: 'History (Undo/Redo)',
+                            link: '/es/EditorUI/HistoryManager'
+                        },
+                        {
+                            title: 'Clipboard',
+                            link: '/es/EditorUI/Clipboard'
+                        },
+                        {
+                            title: 'Document view',
+                            link: '/es/EditorUI/SubWindow'
+                        },
+                        {
+                            title: 'Menu bar',
+                            link: '/es/EditorUI/Menubar'
+                        },
+                        {
+                            title: 'Hot keys',
+                            link: '/es/EditorUI/HotKeys'
+                        }
+                    ]
+                },
+                {
+                    collapsable: true,
+                    title: 'Level editing',
+                    children: [
+                        {
+                            title: 'About',
+                            link: '/es/EditLevel/About'
+                        },
+                        {
+                            title: 'Set level title',
+                            link: '/es/EditLevel/SetTitle'
+                        },
+                        {
+                            title: 'Sections',
+                            link: '/es/EditLevel/Sections'
+                        },
+                        {
+                            title: 'Item browser',
+                            link: '/es/EditLevel/ItemBrowser'
+                        },
+                        {
+                            title: 'Level Items',
+                            link: '/es/EditLevel/Items'
+                        },
+                        {
+                            title: 'Layers',
+                            link: '/es/EditLevel/Layers'
+                        },
+                        {
+                            title: 'Events',
+                            link: '/es/EditLevel/Events'
+                        },
+                        {
+                            title: 'Items placing',
+                            link: '/es/Editing/Placing'
+                        },
+                        {
+                            title: 'Items removing',
+                            link: '/es/Editing/RemoveItems'
+                        },
+                        {
+                            title: 'Context menu',
+                            link: '/es/EditLevel/ContextMenu'
+                        },
+                        {
+                            title: 'Properties box',
+                            link: '/es/EditLevel/PropertiesBox'
+                        },
+                        {
+                            title: 'Item search',
+                            link: '/es/Editing/Search'
+                        },
+                        {
+                            title: 'Testing',
+                            link: '/es/EditLevel/Testing.md'
+                        }
+                    ]
+                },
+                {
+                    title: 'World map editing',
+                    children: [
+                        {
+                            title: 'About',
+                            link: '/es/EditWorld/About'
+                        },
+                        {
+                            title: 'World Settings',
+                            link: '/es/EditWorld/WorldSettings'
+                        },
+                        {
+                            title: 'Item Toolbox',
+                            link: '/es/EditWorld/ItemToolbox'
+                        },
+                        {
+                            title: 'Items',
+                            link: '/es/EditWorld/Items'
+                        },
+                        {
+                            title: 'Context Menu',
+                            link: '/es/EditWorld/ContextMenu'
+                        },
+                        {
+                            title: 'Placing tools',
+                            link: '/es/Editing/Placing'
+                        },
+                        {
+                            title: 'Remove items',
+                            link: '/es/Editing/RemoveItems'
+                        },
+                    ]
+                },
+                {
+                    title: 'Custom NPC configuration editing',
+                    children: [
+                        {
+                            title: 'What is NPC.txt?',
+                            link: '/es/EditNPCConfiguration/About'
+                        },
+                        {
+                            title: 'NPC.txt Editor features',
+                            link: '/es/EditNPCConfiguration/EditorFeature'
+                        }
+                    ]
+                },
+                {
+                    title: 'Customizing',
+                    children: [
+                        {
+                            title: 'How to use custom graphics',
+                            link: '/es/Customizing/CustomGraphics'
+                        },
+                        {
+                            title: 'Music and SFX formats',
+                            link: '/es/Customizing/CustomAudio'
+                        },
+                        {
+                            title: 'Bit masks (for Vanilla SMBX)',
+                            link: '/es/Customizing/BitMasks'
+                        },
+                        {
+                            title: 'Editor Themes',
+                            link: '/es/Customizing/EditorThemes'
+                        }
+                    ]
+                },
+                {
+                    title: 'Configurations',
+                    children: [
+                        {
+                            title: 'Configuration manager',
+                            link: '/es/Configuration/ConfigManager'
+                        }
+                    ]
+                },
+                {
+                    title: 'Tools',
+                    children: [
+                        {
+                            title: 'Application settings',
+                            link: '/es/Tools/ApplicationSettings'
+                        },
+                        {
+                            title: 'Development console',
+                            link: '/es/Tools/DevConsole'
+                        },
+                        {
+                            title: 'Debugger',
+                            link: '/es/Tools/Debugger'
+                        },
+                        {
+                            title: 'Tileset item box',
+                            link: '/es/Tools/TilesetBox'
+                        },
+                        {
+                            title: 'Custom data helper tools',
+                            link: '/es/Tools/CustomData'
+                        }
+                    ]
+                },
+                {
+                    title: 'Console tools',
+                    children: [
+                        {
+                            title: 'GIFs2PNG',
+                            link: '/es/Tools/Console/GIFs2PNG'
+                        },
+                        {
+                            title: 'PNG2GIFs',
+                            link: '/es/Tools/Console/PNG2GIFs'
+                        },
+                        {
+                            title: 'PaletteFilter',
+                            link: '/es/Tools/Console/PaletteFilter'
+                        },
+                        {
+                            title: 'LazyFixTool',
+                            link: '/es/Tools/Console/LazyFixTool'
+                        }
+                    ]
+                },
+                {
+                    title: 'FAQ',
+                    link: 'https://wohlsoft.ru/pgewiki/Frequently_Asked_Questions'
+                },
+                {
+                    title: 'License',
+                    link: '/GPLv3'
+                },
+                {
+                    title: 'Our friends',
+                    children: [
+                        {
+                            title: 'Hedgewars',
+                            link: 'http://hedgewars.org/'
+                        },
+                        {
+                            title: 'Talkhaus',
+                            link: 'http://talkhaus.raocow.com/'
+                        }
+                    ]
+                }
+            ]
         }
     }
 });
