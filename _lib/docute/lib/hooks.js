@@ -10,93 +10,7 @@ function _await(value, then, direct) {
   return then ? value.then(then) : value;
 }
 
-var Hooks =
-/*#__PURE__*/
-function () {
-  function Hooks() {
-    this.hooks = {};
-  }
-
-  var _proto = Hooks.prototype;
-
-  _proto.add = function add(name, fn) {
-    this.hooks[name] = this.hooks[name] || [];
-    this.hooks[name].push(fn);
-    return this;
-  };
-
-  _proto.invoke = function invoke(name) {
-    var hooks = this.hooks[name] || [];
-
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    for (var _iterator = hooks, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-      var _ref;
-
-      if (_isArray) {
-        if (_i >= _iterator.length) break;
-        _ref = _iterator[_i++];
-      } else {
-        _i = _iterator.next();
-        if (_i.done) break;
-        _ref = _i.value;
-      }
-
-      var fn = _ref;
-      fn.apply(void 0, args);
-    }
-
-    return this;
-  };
-
-  _proto.process = function process(name, arg) {
-    var hooks = this.hooks[name] || [];
-
-    for (var _iterator2 = hooks, _isArray2 = Array.isArray(_iterator2), _i2 = 0, _iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();;) {
-      var _ref2;
-
-      if (_isArray2) {
-        if (_i2 >= _iterator2.length) break;
-        _ref2 = _iterator2[_i2++];
-      } else {
-        _i2 = _iterator2.next();
-        if (_i2.done) break;
-        _ref2 = _i2.value;
-      }
-
-      var fn = _ref2;
-      arg = fn(arg) || arg;
-    }
-
-    return arg;
-  };
-
-  _proto.processPromise = function processPromise(name, arg) {
-    try {
-      var _this2 = this;
-
-      var hooks = _this2.hooks[name] || [];
-      return _continue(_forOf(hooks, function (fn) {
-        // eslint-disable-next-line no-await-in-loop
-        return _await(fn(arg), function (_fn) {
-          arg = _fn || arg;
-        });
-      }), function () {
-        return arg;
-      });
-    } catch (e) {
-      return Promise.reject(e);
-    }
-  };
-
-  return Hooks;
-}();
-
-var _iteratorSymbol =
-/*#__PURE__*/
-typeof Symbol !== "undefined" ? Symbol.iterator || (Symbol.iterator = Symbol("Symbol.iterator")) : "@@iterator";
+var _iteratorSymbol = /*#__PURE__*/typeof Symbol !== "undefined" ? Symbol.iterator || (Symbol.iterator = Symbol("Symbol.iterator")) : "@@iterator";
 
 function _settle(pact, state, value) {
   if (!pact.s) {
@@ -128,9 +42,7 @@ function _settle(pact, state, value) {
   }
 }
 
-var _Pact =
-/*#__PURE__*/
-function () {
+var _Pact = /*#__PURE__*/function () {
   function _Pact() {}
 
   _Pact.prototype.then = function (onFulfilled, onRejected) {
@@ -216,7 +128,7 @@ function _forTo(array, body, check) {
 
 function _forOf(target, body, check) {
   if (typeof target[_iteratorSymbol] === "function") {
-    var _cycle2 = function _cycle2(result) {
+    var _cycle = function _cycle(result) {
       try {
         while (!(step = iterator.next()).done && (!check || !check())) {
           result = body(step.value);
@@ -225,7 +137,7 @@ function _forOf(target, body, check) {
             if (_isSettledPact(result)) {
               result = result.v;
             } else {
-              result.then(_cycle2, reject || (reject = _settle.bind(null, pact = new _Pact(), 2)));
+              result.then(_cycle, reject || (reject = _settle.bind(null, pact = new _Pact(), 2)));
               return;
             }
           }
@@ -246,7 +158,7 @@ function _forOf(target, body, check) {
         pact,
         reject;
 
-    _cycle2();
+    _cycle();
 
     if (iterator.return) {
       var _fixup = function _fixup(value) {
@@ -291,5 +203,71 @@ function _forOf(target, body, check) {
 function _continue(value, then) {
   return value && value.then ? value.then(then) : then(value);
 }
+
+function _createForOfIteratorHelperLoose(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; return function () { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } it = o[Symbol.iterator](); return it.next.bind(it); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var Hooks = /*#__PURE__*/function () {
+  function Hooks() {
+    this.hooks = {};
+  }
+
+  var _proto = Hooks.prototype;
+
+  _proto.add = function add(name, fn) {
+    this.hooks[name] = this.hooks[name] || [];
+    this.hooks[name].push(fn);
+    return this;
+  };
+
+  _proto.invoke = function invoke(name) {
+    var hooks = this.hooks[name] || [];
+
+    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    for (var _iterator = _createForOfIteratorHelperLoose(hooks), _step; !(_step = _iterator()).done;) {
+      var fn = _step.value;
+      fn.apply(void 0, args);
+    }
+
+    return this;
+  };
+
+  _proto.process = function process(name, arg) {
+    var hooks = this.hooks[name] || [];
+
+    for (var _iterator2 = _createForOfIteratorHelperLoose(hooks), _step2; !(_step2 = _iterator2()).done;) {
+      var fn = _step2.value;
+      arg = fn(arg) || arg;
+    }
+
+    return arg;
+  };
+
+  _proto.processPromise = function processPromise(name, arg) {
+    try {
+      var _this2 = this;
+
+      var hooks = _this2.hooks[name] || [];
+      return _continue(_forOf(hooks, function (fn) {
+        // eslint-disable-next-line no-await-in-loop
+        return _await(fn(arg), function (_fn) {
+          arg = _fn || arg;
+        });
+      }), function () {
+        return arg;
+      });
+    } catch (e) {
+      return Promise.reject(e);
+    }
+  };
+
+  return Hooks;
+}();
 
 export default new Hooks();

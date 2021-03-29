@@ -2,9 +2,7 @@ import Vue from 'vue';
 import InjectedComponents from './components/InjectedComponents';
 import hooks from './hooks';
 
-var PluginAPI =
-/*#__PURE__*/
-function () {
+var PluginAPI = /*#__PURE__*/function () {
   function PluginAPI(_ref) {
     var plugins = _ref.plugins,
         store = _ref.store,
