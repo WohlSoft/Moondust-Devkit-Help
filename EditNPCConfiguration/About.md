@@ -2,7 +2,7 @@
 ## Overview
 NPC.txt is a custom configuration file which have name like npc-12.txt, npc-46.txt and contains the some parameters for custom NPC. The NPC.txt came from SMBX 1.3 and this is a part of SMBX64 standard.
 ## Parameters
-The NPC.txt have limited options for using, and PGE can use more options than SMBX. Unknown options will be ignored by SMBX.
+The NPC.txt have limited options for using, and Moondust can use more options than SMBX. Unknown options will be ignored by SMBX.
 
 | SMBX64 Standard Parameters | Description | Values |
 |---------|-------------|--------|
@@ -50,11 +50,11 @@ The NPC.txt have limited options for using, and PGE can use more options than SM
 | gridoffsety |Defines vertical offset at aligned by grid coordinate value in the editor |[+/-numbers] |
 | gridalign |Defines align mode in the editor: 0 - at center of the global cell, 1 - at edge of the global cell |[0,1] |
 | image |Defines the sprite image file name in the editor. Allows to have a custom image file names |["string"] |
-| script |Custom NPC-AI Algorithm script in PGE |["string"] |
+| script |Custom NPC-AI Algorithm script in Moondust |["string"] |
 
 <Note type="warning">
 Original SMBX have a bug: do not use decimal values in NPC codes if you want use them with SMBX.
-It causes crashing of SMBX for some people. In the Moondust, X-Tech, SMBX2, and SMBX-38A this bug is absence, 
+It causes crashing of SMBX for some people. In the Moondust, TheXTech, SMBX2, and SMBX-38A this bug is absence,
 and you have a full freedom for use decimal values. But if you want use decimal values for vanilla SMBX,
 you must have in the "International standards" settings the dot "." character instead a comma "," character 
 as decimal separator.

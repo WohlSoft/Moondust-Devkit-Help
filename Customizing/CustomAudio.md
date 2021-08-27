@@ -1,6 +1,6 @@
 # Music and sound formats support
 
-The PGE supports next audio-formats:
+The Moondust supports next audio-formats:
 
 | Format (Common) | Description |
 |---------|-------------|

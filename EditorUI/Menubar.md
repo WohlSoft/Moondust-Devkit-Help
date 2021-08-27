@@ -71,7 +71,7 @@ Editor's menu bar provides full access to almost all supported features of Edito
 
 * **Run testing of the saved file** - will start testing of the saved file. Inter-processing integration will not work.
 
-* **PGE Engine** (Moondust Engine) - The sub-menu of extra actions and features related to the Moondust Engine - the default and main engine of a Moondust Project.
+* **Moondust Engine** (formerly PGE Engine) - The sub-menu of extra actions and features related to the Moondust Engine - the default and main engine of a Moondust Project.
 
 * **TheXTech** - The sub-menu of extra actions and features related to the X-Tech engine - the modern port of SMBX Engine.
 

@@ -95,7 +95,7 @@ section instantly.
 <Note type="warning">
 Although there is a button to the right for adding sections beyond Section 20, 
 such extended sections are not currently supported by vanilla SMBX, by SMBX-38A, and by SMBX2.
-Adding sections beyond Section 20 is only supported by <strong>PGE Engine</strong> and 
+Adding sections beyond Section 20 is only supported by <strong>Moondust Engine</strong> and 
 by <strong>TheXTech</strong> engines.
 </Note>
 

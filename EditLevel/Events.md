@@ -140,7 +140,7 @@ width="200px"
 3) Set the number of a section that will be auto-scrolled and the speed X and speed Y values.
 
 <Note type="warning">
-Don't forget to mark this event to auto start! (requires by SMBX, if you will play the same level in the PGE Engine, auto-scroll can be toggled via side event triggers (blocks or NPC's))
+Don't forget to mark this event to auto start! (requires by SMBX, if you will play the same level in the Moondust Engine, auto-scroll can be toggled via side event triggers (blocks or NPC's))
 </Note>
 
 If you made everything correctly, the screen will start scrolling when this level will be started, when you will enter into a section with defined auto-scrolling, and when you will toggle auto-scroll via side event triggers.

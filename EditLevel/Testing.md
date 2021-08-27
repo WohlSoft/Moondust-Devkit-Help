@@ -32,23 +32,23 @@ It's a dialog of generic settings that allows you to configure some features: ch
 
 **There are some extra settings:**
 - **God Mode** - Makes your playable character being invincible to dangerous NPCs and surfaces.
-- **Unlimited Flight** - Gives an ability for your playable character to fly up by using the "Alt-Jump" key (PGE Engine only).
-- **Bulldozer mode** - Allows your playable character to destroy any nearest objects by Alt-Run key (PGE Engine only).
-- **Walk Anywhere** - Allows your playable character to walk on a world map out of paths (PGE Engine only).
-- **Debug info** - Enables printing of various to debug information on the screen (PGE Engine only).
+- **Unlimited Flight** - Gives an ability for your playable character to fly up by using the "Alt-Jump" key (Moondust Engine only).
+- **Bulldozer mode** - Allows your playable character to destroy any nearest objects by Alt-Run key (Moondust Engine only).
+- **Walk Anywhere** - Allows your playable character to walk on a world map out of paths (Moondust Engine only).
+- **Debug info** - Enables printing of various to debug information on the screen (Moondust Engine only).
 - **Show frame speed** - Enables printing of FPS count at the left-top corner (SMBX-38A and TheXTech only).
-- **Physics debug** - Enables drawing of hitboxes of all objects include invisible (PGE Engine only).
+- **Physics debug** - Enables drawing of hitboxes of all objects include invisible (Moondust Engine only).
 
-## PGE Engine
+## Moondust Engine
 <Note type="warning">
 Be careful: the Engine part is under construction. It has many features that are weren't implemented yet.
 </Note>
 
 ![testMenu](screenshots/menus/005_test_pge_engine.png)
 
-It's an own run-time engine of the PGE Project. This engine has full integration with Editor and supports all main features. You can run testing of new-made or unsaved files on the fly. While the test work, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly.
+It's an own run-time engine of the Moondust Project. This engine has full integration with Editor and supports all main features. You can run testing of new-made or unsaved files on the fly. While the test work, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly.
 
-We recommend reading the manual written in the [Engine.Readme.txt](https://raw.githubusercontent.com/Wohlhabend-Networks/PGE-Project/master/Content/readmes/Engine.Readme.txt) file included with PGE Engine.
+We recommend reading the manual written in the [Engine.Readme.txt](https://raw.githubusercontent.com/WohlSoft/Moondust-Project/master/Content/readmes/Engine.Readme.txt) file included with Moondust Engine.
 
 **Menu options:**
 - **Test level/world** - Start the direct testing of currently loaded level data even file is unsaved.
@@ -58,7 +58,7 @@ We recommend reading the manual written in the [Engine.Readme.txt](https://raw.g
 ## TheXTech
 ![testMenu](screenshots/menus/005_test_thextech.png)
 
-It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of the vanilla SMBX engine with the full Editor integration support and some other PGE standard extras. You can run testing of new-made or unsaved files on the fly. While the test is running, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly. You can pick-up elements by mouse click on elements inside of the running game. Use a middle mouse button to turn on the eraser to remove elements around.
+It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of the vanilla SMBX engine with the full Editor integration support and some other Moondust standard extras. You can run testing of new-made or unsaved files on the fly. While the test is running, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly. You can pick-up elements by mouse click on elements inside of the running game. Use a middle mouse button to turn on the eraser to remove elements around.
 
 **Menu options:**
 - **Test level** - Start a direct testing of currently loaded level data even file is unsaved.

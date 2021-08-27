@@ -15,7 +15,7 @@ need to place objects.
 If you wish to work with existing level, you can open the "File" -> "Open"
 menu and select necessary file in the explorer. To open file, you also can 
 drag & drop a file into the window of the Editor directly. You can associate
-all supported by PGE Editor files with the Editor inside of the
+all supported by Moondust Editor files with the Editor inside of the
 `"Tools" -> "Application Settings"` menu to open them from a file manager by
 double-clicking on them.
 

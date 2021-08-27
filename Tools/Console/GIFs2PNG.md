@@ -29,7 +29,7 @@ USAGE:
 Where: 
 
    -C </path/to/config/pack>,  --config </path/to/config/pack>
-     Allow usage of default masks from specific PGE config pack (Useful for
+     Allow usage of default masks from specific Moondust config pack (Useful for
      cases where the GFX designer didn't make a mask image)
 
    -O </path/to/output/directory/>,  --output </path/to/output/directory/>

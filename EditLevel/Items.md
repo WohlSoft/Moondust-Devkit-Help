@@ -283,7 +283,7 @@ Everyone who worked with Legacy SMBX Engine, knows the "Egg", "Buried", "Bubble"
 
 In the SMBX we are pressing the "Bubble=Yes" or "Buried=Yes" to place "Packed into the herb" or "Packet into the bubble" NPC.
 
-In PGE-Editor you can edit Containers. And therefore, for example, Herb will be more useful in the SMB2 group, because "The Lakutus are throwing Lakitus!" in the SMBX - is a secret tab that needs a lot of actions to open. Even in the PGE-Editor same "tab" is a non-secret "group". To place "burred" items, we should select the "herb" item and set its content before we will place them or you can set contents to already placed items by editing its properties. In the PGE secrets are absent - all Free and Open Source!
+In Moondust Editor you can edit Containers. And therefore, for example, Herb will be more useful in the SMB2 group, because "The Lakutus are throwing Lakitus!" in the SMBX - is a secret tab that needs a lot of actions to open. Even in the Moondust Editor same "tab" is a non-secret "group". To place "burred" items, we should select the "herb" item and set its content before we will place them or you can set contents to already placed items by editing its properties. In the Moondust Project secrets are absent - all Free and Open Source!
 
 If we will pick up any NPC from the "Containers" category and they will be placed on the map with empty contents:
 
@@ -388,8 +388,8 @@ width="200px"
 * **Projectile** - NPC will be sharply shooted from the generator.
 
 
-In SMBX Editor generators haven't markers. In PGE Editor each generator have
-his marker as generator direction arrow:
+In SMBX Editor generators haven't markers. In Moondust Editor each generator have
+their own marker as generator direction arrow:
 
 
 _Generator types_
@@ -427,8 +427,8 @@ width="200px"
 
 All warp entries are shown in the special list:
 
-In the SMBX all warps entries are hidden and you can't see them. In the
-PGE-Editor is possible to get a full list of warps:
+In the SMBX all warps entries are hidden, and you can't see them. 
+In the Moondust Editor is possible to get a full list of warps:
 
 <ImageZoom
 alt="LevelGlobalWarpList"
@@ -723,7 +723,7 @@ units that defining the physical environment inside of their rectangular area.
 * **Air chamber** - Air environment which overrides other physical environments with air environment.
 
 <Note type="warning">
-Important: Legacy SMBX Engine and SMBX2 support only two types of physical environments: Water and Quicksand. SMBX 1.3 and SMBX2 doesn't support other physical environment types. Only PGE Engine and SMBX-38A.
+Important: Legacy SMBX Engine, TheXTech, and SMBX2 has the support for only two types of physical environments: Water and Quicksand. SMBX 1.3 and SMBX2 doesn't support other physical environment types. Only Moondust Engine and SMBX-38A.
 </Note>
 
 Because the Physical environment zone is a sizable element, the placing process is going by rectangle drawing. To place them, you need to select on toolbar one of two icons:

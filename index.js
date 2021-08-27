@@ -2,7 +2,7 @@ let docuteSourceRoot = './';
 
 new Docute({
     target: '#docute',
-    title: 'Moondust Editor - Documentation',
+    title: 'Moondust Devkit - Editor Documentation',
     sourcePath: docuteSourceRoot,
     darkThemeToggler: true,
     fetchOptions: {
@@ -10,7 +10,7 @@ new Docute({
     },
     detectSystemDarkTheme: true,
     highlight: ['typescript', 'bash'],
-    editLinkBase: 'https://github.com/WohlSoft/PGE-Editor-Help/edit/master/',
+    editLinkBase: 'https://github.com/WohlSoft/Moondust-Devkit-Help/edit/master/',
     editLinkText: 'Edit this page on GitHub',
     componentMixins: [
         {
@@ -123,7 +123,7 @@ new Docute({
         },
         {
             title: 'GitHub repository',
-            link: 'https://github.com/WohlSoft/PGE-Project'
+            link: 'https://github.com/WohlSoft/Moondust-Project'
         },
         {
             title: 'Moondust',

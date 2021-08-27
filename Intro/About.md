@@ -1,7 +1,7 @@
 # About
 
-## Moondust
-_A Platform Game Engine by Wohlstand_
+## Moondust Project
+_A Platform Game Engine project by Wohlstand_
 
 _This project is distributed under [GNU GNLv3](../license.html)._
 
@@ -17,6 +17,11 @@ The Engine will be compatible with SMBX. It's main components would be a
 (SMBX compatible) game engine and a tool-kit for creating games.
 
 I've been working on this project since at least December 2013.
+
+
+### Name of project
+The Project initially had the "PlatGenWohl" codename ("**P**latform **G**ame **e**ngine by **Wohl**stand"), later the Project was renamed into "PGE Project" codename (a short of "**P**latform **G**ame **E**ngine"). However, a time later the discussion about the final name for the project was started as the "PGE" name is too generic and has a lot of name-sake cases around the world. The discussion has taken a long time until another poll was started where the "Moondust" name was chosen by community votes closer to the 2018'th year. However, the major rebranding process wasn't started until 2021 year. The final "**Moondust**" name was been used at minor places until the 2020'th year where it got started to be used wider (including the official Discord server name).
+
 
 ## History
 
@@ -109,7 +114,7 @@ The source code is published on the GitHub repository.
 
 Developing a game engine is a responsibility which requires dedication and hard
 work. Sufficient time and motivation is needed for this
-goal to be achieved. As of 2020, the development is still
+goal to be achieved. As of 2021, the development is still
 active, I have the goal to build the Engine, and I will go forward!
 
 ## Join us

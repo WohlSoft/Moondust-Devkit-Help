@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo
-        run: git clone -b master --depth=1 https://github.com/WohlSoft/PGE-Editor-Help.git .
+        run: git clone -b master --depth=1 https://github.com/WohlSoft/Moondust-Devkit-Help.git .
       - name: List all content of the repo
         run: ls -al
       - name: Deploy to server
@@ -21,4 +21,3 @@ jobs:
           ssh_options: '-q -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-dss'
           src: './*'
           dest: '${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.EDITOR_HELP_REMOTE }}'
-
