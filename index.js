@@ -428,6 +428,10 @@ new Docute({
                 {
                     title: 'Talkhaus',
                     link: 'http://talkhaus.raocow.com/'
+                },
+                {
+                    title: 'SMBX Equipo Estelar',
+                    link: 'https://www.smbxequipoestelar.com/'
                 }
             ]
         }
