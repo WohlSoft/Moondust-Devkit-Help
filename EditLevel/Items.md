@@ -477,6 +477,7 @@ there are leeks.
 * **Pipe directions** - This is a direction of the warp, which can be used for "pipe" warp type only.
 * **Warp type** - Definition of the warp type: Instant, Pipe, or Door.
 * **Pipe directions** - This is a direction of the warp, which can be used for "pipe" warp type only.
+* **Cannon shoot exit** - Allows the player to fly out of the other end of the pipe, simulating a cannon shot.
 * **Level file name** - This is a definition of the entrance into another level file to make a warp into them.
 * **Door #** - (In the SMBX this option was named as "Warp to"). If the value is 0 (Normal entrance) player will start the target level from his(her) default start point, else the player will enter into level by target warp point by ID.
 
@@ -617,6 +618,10 @@ Each warp has its entry. At first, you need to add a new warp entry into the lis
 
 ![002_addWarp](screenshots/LevelEditing/Warps/002_addWarp.png)
 
+Or you can make a duplicated copy of the current warp entry with all settings but entrance and exit points placements:
+
+![002_dupeWarp](screenshots/LevelEditing/Warps/002_dupeWarp.png)
+
 And now, you can place points (or you can define warp options before).
 
 To place an entrance or exit point, you should press the "Set Entrance" to place or jump to, if already placed, the entrance point
@@ -665,7 +670,7 @@ one of those flags: "Level Exit" or "Level entrance".
 
 ### Two-way warp
 
-To make two-way warps just use a "Two-side warp" check box, and the player will be able to enter this warp from both sides.
+This is a warp entry that allows player to go through it at both sides. To make two-way warps just use a "Two-side warp" check box, and the player will be able to enter this warp from both sides.
 
 <Note type="warning">
 Legacy SMBX Engine and 38A older than 1.4.3 doesn't support that. If you targeting your levels to the legacy engines, you should make a second warp entry with opposite point placements:
