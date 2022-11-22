@@ -451,16 +451,17 @@ width="200px"
 **Warps have next flags:**
 
 * **No Vehicles** - (In SMBX this option was named as "No Yoshi") When a playable character will enter into this warp, he/she will exit without a vehicle (Vehicle will be returned when a player will exit from this level).
-* **Allow items** - (In SMBX this option was named as "Allow NPC") With this flag playable character can get the carryed item through this warp. Without this flag, items will be leaven about the entrance of this warp.
+* **Allow items** - (In SMBX this option was named as "Allow NPC") With this flag playable character can get the carried item through this warp. Without this flag, items will be automatically dropped at the entrance of this warp.
 * **Locked** - This flag will close the door with a lock. To open this warp player should take a key. When the key was applied, the warp will be opened for entering.
 * **Need a bomb** - This flag will close the door with a lock. To open this warp need to explode lock with any explosive projectile, bomb, etc. When an explosion happens around, a warp will be opened for entering.
 * **Special state only** - This flag will disallow entering of players in any states except one special (which defined in the configuration)
 * **Two-way warp** - Allows players entering into this warp from both sides.
+* **Needs floor** - Player will be able to enter this warp when they are standing on a floor.
 
 **Special flags**
 
-* **Level entrance** - this option allows to use alone point. With this flag impossible to enter in this warp, this warp can be used just for entrance into this level, for example, from a world map or another level with the definition of target warp ID.
-* **Level exit** - this option allows to use alone point. When the playable character enters into this warp, level exiting will be caused.
+* **Level entrance** - this option allows to use a single point. With this flag impossible to enter into this warp, this warp can be used just for entrance into this level, for example, from a world map or another level with the definition of target warp ID.
+* **Level exit** - this option allows to use a single point. When the playable character enters into this warp, level exiting will be caused.
 
 **Values and options**
 
@@ -472,6 +473,7 @@ there are leeks.
 * **Don't show stars number** - if this warp follows to another level, several stars on the target level are will not be shown.
 * **X** and **Y** - This is an exit to the world map with target coordinates. If coordinates are defined, this warp will be an exit into the world map with teleporting to the target point by coordinates.
 * **Warp type** - Definition of the warp type: Instant, Pipe, Door, or Portal.
+* **Transition effect** - Definition of the transition effects: None, Scroll, Fade, Circle fade, Flip horizontal, and Flip vertical.
 * **Pipe directions** - This is a direction of the warp, which can be used for "pipe" warp type only.
 * **Warp type** - Definition of the warp type: Instant, Pipe, or Door.
 * **Pipe directions** - This is a direction of the warp, which can be used for "pipe" warp type only.
@@ -533,6 +535,81 @@ url="screenshots/LevelEditing/Warps/010_Pipes2.png"
 width="200px"
 :border="true"
 />
+
+
+### Transition effects
+<Note type="warning">
+This feature is available for <strong>SMBX-38A</strong> and <strong>TheXTech</strong> only
+</Note>
+
+This option allows to set one of different transition effects which will be performed when player enters a warp.
+
+<Note type="tip">
+If you click the combo-box by a Right Mouse Button (Left if you are lefty), you can open the context menu and choose the "Apply to all" action to quickly make all warps on the level to use the same transition effect as currently selected.
+</Note>
+
+**None** - The screen will be changed immediately without any transition effects (except for a very short fade happen between level sections).
+
+_None transition effect in action:_<br/>
+<ImageZoom
+alt="transit_01-none"
+url="screenshots/LevelEditing/Warps/transit_01-none.gif"
+width="200px"
+:border="true"
+/>
+
+**Scroll** - The screen will smoothly move between the entrance to exit points. Has no effect when going between different sections.
+
+_Scroll transition effect in action:_<br/>
+<ImageZoom
+alt="transit_02_scroll"
+url="screenshots/LevelEditing/Warps/transit_02_scroll.gif"
+width="200px"
+:border="true"
+/>
+
+**Fade** - The screen will smoothly go into darkness, and then go from it.
+
+_Fade transition effect in action:_<br/>
+<ImageZoom
+alt="transit_03_fade"
+url="screenshots/LevelEditing/Warps/transit_03_fade.gif"
+width="200px"
+:border="true"
+/>
+
+**Circle fade** - The screen will smoothly go into darkness through a black circular overlay, and then go from it.
+
+_Circle fade transition effect in action:_<br/>
+<ImageZoom
+alt="transit_04_circle"
+url="screenshots/LevelEditing/Warps/transit_04_circle.gif"
+width="200px"
+:border="true"
+/>
+
+**Flip horizontal** - The screen will smoothly go into darkness through two black rectangular overlays closing the screen at the top and bottom sides, and then go from it.
+
+_Flip hotizontal fade transition effect in action:_<br/>
+<ImageZoom
+alt="transit_05_fliph"
+url="screenshots/LevelEditing/Warps/transit_05_fliph.gif"
+width="200px"
+:border="true"
+/>
+
+**Flip vertical** - The screen will smoothly go into darkness through two black rectangular overlays closing the screen at the left and right sides, and then go from it.
+
+_Flip vertical fade transition effect in action:_<br/>
+<ImageZoom
+alt="transit_06_flipv"
+url="screenshots/LevelEditing/Warps/transit_06_flipv.gif"
+width="200px"
+:border="true"
+/>
+
+
+
 
 ### Create the warp entry
 
