@@ -1,6 +1,7 @@
 # What is NPC.txt?
 ## Overview
-NPC.txt is a custom configuration file which have name like npc-12.txt, npc-46.txt and contains the some parameters for custom NPC. The NPC.txt came from SMBX 1.3 and this is a part of SMBX64 standard.
+NPC.txt is a custom configuration file which have name like npc-12.txt, npc-46.txt and contains some parameters for custom NPC. The NPC.txt came from SMBX 1.3 and this is a part of SMBX64 standard.
+
 ## Parameters
 The NPC.txt have limited options for using, and Moondust can use more options than SMBX. Unknown options will be ignored by SMBX.
 
@@ -52,10 +53,8 @@ The NPC.txt have limited options for using, and Moondust can use more options th
 | image |Defines the sprite image file name in the editor. Allows to have a custom image file names |["string"] |
 | script |Custom NPC-AI Algorithm script in Moondust |["string"] |
 
-<Note type="warning">
-Original SMBX have a bug: do not use decimal values in NPC codes if you want use them with SMBX.
+!> **Important:** Original SMBX have a bug: do not use decimal values in NPC codes if you want use them with SMBX.
 It causes crashing of SMBX for some people. In the Moondust, TheXTech, SMBX2, and SMBX-38A this bug is absence,
-and you have a full freedom for use decimal values. But if you want use decimal values for vanilla SMBX,
+and you have full freedom for use decimal values. But if you want to use decimal values for vanilla SMBX,
 you must have in the "International standards" settings the dot "." character instead a comma "," character 
 as decimal separator.
-</Note>

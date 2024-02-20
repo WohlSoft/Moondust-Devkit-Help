@@ -6,11 +6,7 @@
 
 _Section switch panel. here you can quickly switch to another section_
 
-<ImageZoom
-alt="Section_Switch"
-url="screenshots/LevelEditing/Section_Switch.png"
-:border="true"
-/>
+![Section_Switch](../screenshots/LevelEditing/Section_Switch.png ':no-zoom')
 
 If you list in huge level space, you can immediately return to the left-bottom, left-top, right-top, or right-bottom corner of the current section. While switching between different sections, your last position will be kept. Оnce you switch the previous section back the last position will be restored at the same coordinates.
 
@@ -32,21 +28,13 @@ Here you can change all section settings and resize the section.
 
 _Section settings toolbox_
 
-<ImageZoom
-alt="0toolbox_section"
-url="screenshots/LevelEditing/Section/0toolbox_section.png"
-:border="true"
-/>
+![0toolbox_section](../screenshots/LevelEditing/Section/0toolbox_section.png)
 
 You can set background music from the list, or you can use your custom music files. You must place these files into the same folder with the level file of any sub-directory inside directory with your level file.
 
 _Music list window (Displaying all music files, even inside sub-directories)_
 
-<ImageZoom
-alt="0toolbox_section_musiclist"
-url="screenshots/LevelEditing/Section/0toolbox_section_musiclist.png"
-:border="true"
-/>
+![0toolbox_section_musiclist](../screenshots/LevelEditing/Section/0toolbox_section_musiclist.png)
 
 
 **Custom** checkbox will be automatically enabled when you select the "Custom" item at the music list. Then, when you enable the "custom" checkbox, the "Custom" entry at the music list will automatically appear.
@@ -55,7 +43,7 @@ url="screenshots/LevelEditing/Section/0toolbox_section_musiclist.png"
 
 _Custom music field_
 
-![0toolbox_section_musicPath](screenshots/LevelEditing/Section/0toolbox_section_musicPath.png)
+![0toolbox_section_musicPath](../screenshots/LevelEditing/Section/0toolbox_section_musicPath.png ':no-zoom')
 
 ## Resizing
 
@@ -63,9 +51,7 @@ Sections can have any size. You can resize the section from the section properti
 
 The <u>minimal default section size</u> is 800x600. This value may depend on the configuration package settings.
 
-<Note type="tip">
-Note: If you want to get more features from the resizer box (green net which defined the new size of the section), click it by the right mouse button.
-</Note>
+?> **Note:** If you want to get more features from the resizer box (green net which defined the new size of the section), click it by the right mouse button.
 
 The context menu has the next actions:
 * **Cut top here** - move the top boundary of the box to the current mouse position.
@@ -77,8 +63,4 @@ The context menu has the next actions:
 
 _Section resizing process_
 
-<ImageZoom
-alt="0toolbox_section_resize"
-url="screenshots/LevelEditing/Section/0toolbox_section_resize.png"
-:border="true"
-/>
+![0toolbox_section_resize](../screenshots/LevelEditing/Section/0toolbox_section_resize.png)

@@ -2,13 +2,11 @@
 ## Overview
 While you work on your levels, you would want to run your level file in action to verify the behavior.
 
-![testMenu](screenshots/menus/005_test.png)
+![testMenu](../screenshots/menus/005_test.png ':no-zoom')
 
 The editor has the support of level testing via different run-time engines. You may use any of the supported engines and optionally change their settings by a special sub-menu.
 
-<Note type="warning">
-Depending on the configure pack used, a different engine may use as the default run time. Also, it may prevent the choose any other runtime engine than the default for level testing.
-</Note>
+!> **Important:** Depending on the configure pack used, a different engine may use as the default run time. Also, it may prevent the choose any other runtime engine than the default for level testing.
 
 To start a level testing, open the **Test** menu, select the **Test level** menu item, or press the **F5** key on your keyboard. Alternatively, you can use a menu of each supported engine to run a level test on a different runtime engine instead of the default.
 
@@ -21,12 +19,7 @@ If needed, you can tune your **Testing options** to select playable characters, 
 For Windows-only engines, Editor has support for an IPC bridge that can work on Wine. When Editor works on a non-Windows operating system, you will find an extra menu item in the menus of LunaTester and SMBX-38A, which allows you to configure Wine usage and even choose a different Wine installation (see [Wine Settings](#wine-settings)).
 
 ## Test settings
-<ImageZoom
-  alt="eventsList"
-  url="screenshots/Testing/test_settings.png"
-  width="200px"
-  :border="true"
-/>
+![eventsList](../screenshots/Testing/test_settings.png ':size=200px')
 
 It's a dialog of generic settings that allows you to configure some features: choose 1 or 2 players game, select playable characters and their states, add vehicles/mounts, etc.
 
@@ -40,11 +33,9 @@ It's a dialog of generic settings that allows you to configure some features: ch
 - **Physics debug** - Enables drawing of hitboxes of all objects include invisible (Moondust Engine only).
 
 ## Moondust Engine
-<Note type="warning">
-Be careful: the Engine part is under construction. It has many features that are weren't implemented yet.
-</Note>
+!> **Be careful:** the Engine part is under construction. It has many features that are weren't implemented yet.
 
-![testMenu](screenshots/menus/005_test_pge_engine.png)
+![testMenu](../screenshots/menus/005_test_pge_engine.png ':no-zoom')
 
 It's an own run-time engine of the Moondust Project. This engine has full integration with Editor and supports all main features. You can run testing of new-made or unsaved files on the fly. While the test work, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly.
 
@@ -56,7 +47,7 @@ We recommend reading the manual written in the [Engine.Readme.txt](https://raw.g
 - **Start Game** - Start a game by using a currently loaded configuration package.
 
 ## TheXTech
-![testMenu](screenshots/menus/005_test_thextech.png)
+![testMenu](../screenshots/menus/005_test_thextech.png)
 
 It's the full C++ port of SMBX Engine 1.3, created from the source code published on February 2, 2020. It's the accurate replica of the vanilla SMBX engine with the full Editor integration support and some other Moondust standard extras. You can run testing of new-made or unsaved files on the fly. While the test is running, you can select any of the elements on the Editor's tile set box or item search browser and place them into the running game window directly. You can pick-up elements by mouse click on elements inside of the running game. Use a middle mouse button to turn on the eraser to remove elements around.
 
@@ -68,16 +59,16 @@ It's the full C++ port of SMBX Engine 1.3, created from the source code publishe
   - **Default** - Graphical sub-system will be automatically detected.
   - **Software rendering** - Use a software rendering without acceleration. Use this if hardware acceleration does not work, or it works incorrectly and glitchy. May work slow on some systems.
   - **Accelerated** - Use a hardware-accelerated rendering sub-system. Used by default.
-  - **Accelerated with V-Sync** - Use a hardware-accelerated rendering sub-system with using of 
-  vertical synchronization to make a smoother rendering. May slow-down the game process, suggested to switch the monitor refresh rate into 75 hz if possible.
+  - **Accelerated with V-Sync** - Use a hardware-accelerated rendering sub-system with using of
+    vertical synchronization to make a smoother rendering. May slow-down the game process, suggested to switch the monitor refresh rate into 75 hz if possible.
 - **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as placing new elements taken in tile sets and item browsers.
 - **Enabme max FPS** - disables limit on FPS count and turns on the free rendering. In some cases may look like Fast-Forwarding of a video cassette.
 - **Enable grab all** - Allows playable character to grab any NPC without exceptions.
-- **Change the path to TheXTech** - Allows you to select the executable path to make testing work. You may choice a different assembly of TheXTech to use for some moment.  
-- **Start Game** - Start a normal game with using of a currently loaded configuration package. 
+- **Change the path to TheXTech** - Allows you to select the executable path to make testing work. You may choice a different assembly of TheXTech to use for some moment.
+- **Start Game** - Start a normal game with using of a currently loaded configuration package.
 
 ## LunaTester
-![testMenu](screenshots/menus/005_test_luna.png)
+![testMenu](../screenshots/menus/005_test_luna.png)
 
 It's a bridge proxy which allows you to use LunaLua equipped vanilla SMBX to run level tests on it.
 
@@ -101,13 +92,13 @@ You can run testing of new-made or unsaved files on the fly.
 
 
 ## SMBX-38A
-![testMenu](screenshots/menus/005_test_38a.png)
+![testMenu](../screenshots/menus/005_test_38a.png)
 
 It's a bridge proxy which allows you to use SMBX-38A engine to run level tests on it.
 
 **Pre-requirements:**
 * Windows XP or higher, or Wine (3.0 and higher is recommended) with installed DirectX 9, quartz, dsound, and VB6RUN.
-* Video drivers installed in your system, otherwise, game will not work. 
+* Video drivers installed in your system, otherwise, game will not work.
 * SMBX-38A v1.4.3 and higher.
 
 
@@ -116,22 +107,17 @@ It's a bridge proxy which allows you to use SMBX-38A engine to run level tests o
 - **Test level in battle mode** - Start a level testing in battle mode.
 - **Test saved level/world** - Starts a testing of currently opened level or world map by opening it from a disk.
 - **Reset checkpoints** - Resets state of checkpoints left after the last test playing.
-- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as 
-placing new elements taken in tile sets and item browsers.
+- **Enable magic hand** - Allows to use a mouse to pick-up elements from a working game directly. As well as
+  placing new elements taken in tile sets and item browsers.
 - **Don't auto-suspend game** - Makes game never suspend when game window is unfocused.
-- **Change the path to SMBX-38A** - Allows you to select the path to SMBX-38A executable to make the testing work. 
-You may choice a different assembly of SMBx-38A to use for some moment.
-- **[Wine settings...](#Wine-settings)** - (non-Windows operating systems only) Allows you to configure settings of Wine or choose 
-a different Wine installation (for example, import from a PlayOnLinux / PlayOnMac toolchain).
+- **Change the path to SMBX-38A** - Allows you to select the path to SMBX-38A executable to make the testing work.
+  You may choice a different assembly of SMBx-38A to use for some moment.
+- **[Wine settings...](#Wine-settings)** - (non-Windows operating systems only) Allows you to configure settings of Wine or choose
+  a different Wine installation (for example, import from a PlayOnLinux / PlayOnMac toolchain).
 - **Start Game** - Start a normal game of SMBX-38A
 
 ## Wine settings
-<ImageZoom
-  alt="eventsList"
-  url="screenshots/Testing/wine_settings.png"
-  width="200px"
-  :border="true"
-/>
+![eventsList](../screenshots/Testing/wine_settings.png ':size=200px')
 
 This dialog allows you to configure a work of Wine on non-Windows operating system to make a proper work of LunaTester and SMBX-38A engines.
 
