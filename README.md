@@ -1,6 +1,6 @@
 # Welcome to Moondust Devkit!
 
-![Logo](images/logo.png)
+![Logo](images/logo.png ':no-zoom')
 
 This manual contains almost complete information about Editor component of the Moondust Devkit.
 
