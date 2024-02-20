@@ -1,6 +1,6 @@
 # Editor Overview
 
-![PgeEditor](Intro/QuickStart/WhatIsPGEEditor.png)
+![PgeEditor](WhatIsPGEEditor.png ':no-zoom')
 
 **Moondust Editor** - is a flexible and universal editor for levels,
 world maps, and NPC configurations. With them, you can build your levels,
@@ -27,44 +27,42 @@ The following options in the editor are among the most commonly used ones.
 You can learn about the functions of the buttons that are not listed by hovering over 
 them for a second.
 
-<Note type="tip">
-Icons look may depend on the current theme. All represented screenshots in this manual
+!> Icons look may depend on the current theme. All represented screenshots in this manual
 do use the internal icon theme of the Editor. You can change the theme via 
-<a href="#/Tools/ApplicationSettings#view">Application Settings</a>.
-</Note>
+[Application Settings](../../Tools/ApplicationSettings#view).
 
 
 -----
 
-![tilesetbox](images/icons/tileset_box.png)<br/>
+![tilesetbox](../../images/icons/tileset_box.png ':no-zoom')<br/>
 The button with this icon opens the **Tileset Itembox**,
 one of two main methods of adding objects to a level. Its functionality 
 is further explained in a later segment.
 
 -----
 
-![browserLevel](images/icons/item_browser_level.png) ![browserLevel](images/icons/item_browser_world.png)<br/>
+![browserLevel](../../images/icons/item_browser_level.png ':no-zoom') ![browserLevel](../../images/icons/item_browser_world.png ':no-zoom')<br/>
 The button with this icon opens the **Item Browser / Search Browser**,
 the main method of adding objects to a level. Its functionality is
 further explained in a later segment.
 
 -----
 
-![p1](images/icons/player1_start.png)![p2](images/icons/player2_start.png)<br />
+![p1](../../images/icons/player1_start.png ':no-zoom')![p2](../../images/icons/player2_start.png ':no-zoom')<br />
 Before you can test your level, you need to place a
 start point for the first player. Green Mario’s start point is
 optional.
 
 -----
 
-![water](images/icons/draw_water.png)![sand](images/icons/draw_sand.png)<br />
+![water](../../images/icons/draw_water.png ':no-zoom')![sand](../../images/icons/draw_sand.png ':no-zoom')<br />
 These buttons are used to draw zones of water and
 quicksand respectively. These zones can be moved and resized after
 placement, too.
 
 -----
 
-![warps](images/icons/doors.png)<br />
+![warps](../../images/icons/doors.png ':no-zoom')<br />
 Opens the “Warps and Doors” window, in which warps can
 be configured. There are various unsupported features in this window,
 all of which are further detailed in the “Unsupported Features” segment
@@ -72,14 +70,14 @@ below.
 
 -----
 
-![section](images/icons/section.png)<br />
+![section](../../images/icons/section.png ':no-zoom')<br />
 Opens the “Section Settings” window, in which various
 section-specific properties can be configured. Unsupported features of
 this window are listed in the “unsupported Features” segment.
 
 -----
 
-![layers](images/icons/layers.png)![events](images/icons/events.png)<br />
+![layers](../../images/icons/layers.png ':no-zoom')![events](../../images/icons/events.png ':no-zoom')<br />
 Open the “Layers” and “Events” windows respectively.
 Together, these can be used to create moving layers and toggle layer
 visibility. Events can further be used to play sound effects, lock
@@ -88,31 +86,29 @@ LunaLua’s onEvent event).
 
 -----
 
-![sectionBar](images/icons/sections_bar.png)<br />
+![sectionBar](../../images/icons/sections_bar.png ':no-zoom')<br />
 The section buttons transport you to the specified
 section instantly. 
 
-<Note type="warning">
-Although there is a button to the right for adding sections beyond Section 20, 
+> Note: Although there is a button to the right for adding sections beyond Section 20, 
 such extended sections are not currently supported by vanilla SMBX, by SMBX-38A, and by SMBX2.
-Adding sections beyond Section 20 is only supported by <strong>Moondust Engine</strong> and 
-by <strong>TheXTech</strong> engines.
-</Note>
+Adding sections beyond Section 20 is only supported by **Moondust Engine** and 
+by **TheXTech** engines.
 
 -----
 
-![lock](images/icons/item_lockers.png)<br />
+![lock](../../images/icons/item_lockers.png ':no-zoom')<br />
 Enabling a lock will prevent any of the tiles of that
 type to be interacted with. From left to right, the locks are: Blocks,
 Background Objects, NPCs, Warps, Liquids.
 
-![wld](images/icons/item_lockers_wld.png)<br />
+![wld](../../images/icons/item_lockers_wld.png ':no-zoom')<br />
 The same for world map editing. From left to right, the locks are: Terrain tiles,
 Scenery, Path cells, Level entrance points, Music change boxes.
 
 -----
 
-![snaptogrid](screenshots/focus/menu-snap-to-grid.png)<br />
+![snaptogrid](../../screenshots/focus/menu-snap-to-grid.png ':no-zoom')<br />
 “Snap to grid” and manipulation of grid size can be
 used for more granular placement of elements such as blocks and
 background objects. “Default by item” describes the default grid
@@ -120,14 +116,14 @@ alginment option.
 
 -----
 
-![animation](images/icons/animation.png)<br />
+![animation](../../images/icons/animation.png ':no-zoom')<br />
 If you are starting to notice that the editor is
 lagging, disabling the animation with a click of this button should
 help\!
 
 -----
 
-![lang](screenshots/focus/menu-language.png)<br />
+![lang](../../screenshots/focus/menu-language.png ':no-zoom')<br />
 Changes the editor’s language. Translations may not always be perfectly accurate, 
 but if English doesn’t do the job for you, hopefully you will be able to 
 find your way around more easily with a different language\!
@@ -137,36 +133,23 @@ find your way around more easily with a different language\!
 Item sets are the main method of adding objects to a level or world map. 
 The Editor has two different item sets that can be used for objects adding:
 
-* ![tilesetbox](images/icons/tileset_box.png) **[Tilesets item box](../../Tools/TilesetBox)** - The organized group of item sets that gives an 
+* ![tilesetbox](../../images/icons/tileset_box.png ':no-zoom') **[Tilesets item box](../../Tools/TilesetBox)** - The organized group of item sets that gives an 
 organized and sorted look at available elements. You also can make your tilesets of 
 the most often used items to organize your work. We suggest using this toolbox by 
 newbies who aren't familiar with the available items set. Also, this toolbox will
 be useful for users who want to keep their work organized.
 
-<ImageZoom
-    alt="TilesetBox"
-    url="screenshots/Tools/TilesetBox2.png"
-    width="200px"
-    :border="true"
-/><ImageZoom
-    alt="TilesetBox"
-    url="screenshots/Tools/TilesetBox.png"
-    width="200px"
-    :border="true"
-/>
+![TilesetBox](../../screenshots/Tools/TilesetBox2.png ':size=200px')
+![TilesetBox](../../screenshots/Tools/TilesetBox.png ':size=200px')
 
-* ![browserLevel](images/icons/item_browser_level.png)![browserLevel](images/icons/item_browser_world.png) 
+
+* ![browserLevel](../../images/icons/item_browser_level.png ':no-zoom')![browserLevel](../../images/icons/item_browser_world.png) 
 **[Search Browser / Items Browser](../../EditLevel/ItemBrowser)** - The complete database of available elements 
 for placement. It has the filtering by groups and a category, and the flexible 
 search of any specific item at the whole database. We suggest using this toolbox 
 by experienced users who want the full overlook of all available elements.
 
-<ImageZoom
-    alt="SearchBrowser"
-    url="screenshots/Tools/SearchBrowser.png"
-    width="50px"
-    :border="true"
-/>
+![SearchBrowser](../../screenshots/Tools/SearchBrowser.png)
 
 
 ## Compare to SMBX 1.3 Editor

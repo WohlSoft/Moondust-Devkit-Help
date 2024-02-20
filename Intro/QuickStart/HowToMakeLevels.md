@@ -1,6 +1,6 @@
 # How to make levels
 
-![HowToLevels](Intro/QuickStart/HowToMakeLevels.png)
+![HowToLevels](HowToMakeLevels.png ':no-zoom')
 
 **Levels** - are a total space available to the player(s) during the
 course of completing a discrete objective.
@@ -68,11 +68,7 @@ to quit the level. There are possible level exit types:
 
 _Level editing interface_
 
-<ImageZoom 
-  alt="EditorInterface"
-  url="screenshots/LevelEditing/005_levelEditingSpace.png" 
-  :border="true"
-/>
+![EditorInterface](../../screenshots/LevelEditing/005_levelEditingSpace.png)
 
 
 ## Level units and items

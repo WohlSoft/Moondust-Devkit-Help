@@ -16,7 +16,7 @@ Placing new elements on the level or world map can be done in multiple various w
 - **[Overwrite mode](#overwrite-mode)** - This feature gives an ability to replace items already placed on the map.
 
 
-![PI](screenshots/LevelEditing/Items/PlacingTools.png)
+![PI](../../screenshots/LevelEditing/Items/PlacingTools.png)
 
 
 ## Rectangle

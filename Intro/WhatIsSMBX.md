@@ -5,7 +5,7 @@
 In the year 2009, Andrew "Redigit" Spinks began work on the game: Super Mario Brothers X. 
 Gradually the game gathered a following among fans of the Mario game series.
 
-![SMBXTitleScreen](images/smbx_scr.png)
+![SMBXTitleScreen](../images/smbx_scr.png)
 
 In my opinion, it is perhaps one of the all-time best Mario fan games. It combined 
 gameplay elements from games such as Super Mario Bros, by Super Mario Bros. 2, SMB 3, 
@@ -27,7 +27,7 @@ There were several attempts to revive the project, but they all failed.
 
 The main mistake: **the game was published UNDER A COPYRIGHTED BRAND**.
 
-![brandTheft](images/brand_theft.png)
+![brandTheft](../images/brand_theft.png)
 
 Redigit was making money off SMBX with ads located in the SMBX installer,
 on his forums, and on his website. Redigit was making money with

@@ -1,6 +1,6 @@
 # How to make world maps
 
-![HowToWorlds](Intro/QuickStart/HowToMakeWorlds.png)
+![HowToWorlds](HowToMakeWorlds.png ':no-zoom')
 
 **World map** - is the interactive list of levels available for a player(s) to play.
 
@@ -53,11 +53,7 @@ lose level mission, etc), exit is failed and you should replay level)!
 
 _World map editor interface_
 
-<ImageZoom 
-  alt="WorldMapInterface"
-  url="screenshots/WorldEditing/WorldEdit_Workspace.png" 
-  :border="true"
-/>
+![WorldMapInterface](../../screenshots/WorldEditing/WorldEdit_Workspace.png)
 
 
 ## World map items

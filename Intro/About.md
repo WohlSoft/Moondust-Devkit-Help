@@ -119,6 +119,6 @@ active, I have the goal to build the Engine, and I will go forward!
 
 ## Join us
 Does this project sound interesting to you? You can show your
-support and [join us](http://wohlsoft.ru/forum/) at the Forum!
+support and [join us](http://wohlsoft.ru/forum/) at the Forum! :fox_face:
 
 We also at Discord: https://discord.gg/qPBsvMy
