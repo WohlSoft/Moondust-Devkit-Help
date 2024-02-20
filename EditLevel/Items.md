@@ -79,22 +79,12 @@ _Resizing of sizable blocks_
 
 _Placing of BGO_
 
-<ImageZoom
-alt="PlacingBGO"
-url="screenshots/LevelEditing/Items/PlacingBGO.png"
-width="200px"
-:border="true"
-/>
+![PlacingBGO](../screenshots/LevelEditing/Items/PlacingBGO.png ':size=200px')
 
 
 _BGO Context menu_
 
-<ImageZoom
-alt="BGO_Context"
-url="screenshots/LevelEditing/Items/BGO_Context.png"
-width="200px"
-:border="true"
-/>
+![BGO_Context](../screenshots/LevelEditing/Items/BGO_Context.png ':size=200px')
 
 ### BGO Properties
 
@@ -153,22 +143,12 @@ __(bush in the right drawn over playable characters)__
 
 _Placing of NPC's_
 
-<ImageZoom
-alt="PlacingNPC"
-url="screenshots/LevelEditing/Items/PlacingNPC.png"
-width="200px"
-:border="true"
-/>
+![PlacingNPC](../screenshots/LevelEditing/Items/PlacingNPC.png ':size=200px')
 
 
 _Context menu of NPC_
 
-<ImageZoom
-alt="NPC_Direction"
-url="screenshots/LevelEditing/Items/NPC_Direction.png"
-width="200px"
-:border="true"
-/>
+![NPC_Direction](../screenshots/LevelEditing/Items/NPC_Direction.png ':size=200px')
 
 ### NPC Properties
 
@@ -185,18 +165,11 @@ Each NPC has switches and flags:
 
 _Message box editing_
 
-<ImageZoom
-alt="MessageBox"
-url="screenshots/LevelEditing/MessageBox.png"
-width="200px"
-:border="true"
-/>
+![MessageBox](../screenshots/LevelEditing/MessageBox.png ':size=200px')
 
-<Note type="tip">
-Note: Don't forget: all new-line characters will not work correctly 
+?> **Note:** Don't forget: all new-line characters will not work correctly 
 with SMBX Engine (but will work in Moondust Engine natively).
 As a workaround for SMBX Engine, use the extra-spaces to cause a words wrap.
-</Note>
 
 
 Some NPCs can have a special value:
@@ -219,22 +192,7 @@ Each NPC has the event slots:
 
 _NPC Properties toolbox: Generator, NPC-Container, NPC-Container with spin box special value_
 
-<ImageZoom
-alt="Props_NPC_generator"
-url="screenshots/LevelEditing/Items/Props_NPC_generator.png"
-width="100px"
-:border="true"
-/><ImageZoom
-alt="Props_NPC_Container"
-url="screenshots/LevelEditing/Items/Props_NPC_Container.png"
-width="100px"
-:border="true"
-/><ImageZoom
-alt="Props_NPC_Container_Second"
-url="screenshots/LevelEditing/Items/Props_NPC_Container_Second.png"
-width="100px"
-:border="true"
-/>
+![Props_NPC_generator](../screenshots/LevelEditing/Items/Props_NPC_generator.png ':size=100px')![Props_NPC_Container](../screenshots/LevelEditing/Items/Props_NPC_Container.png ':size=100px')![Props_NPC_Container_Second](../screenshots/LevelEditing/Items/Props_NPC_Container_Second.png ':size=100px')
 
 
 
@@ -248,101 +206,52 @@ In Moondust Editor you can edit Containers. And therefore, for example, Herb wil
 
 If we will pick up any NPC from the "Containers" category and they will be placed on the map with empty contents:
 
-<ImageZoom
-alt="001_placed_containers"
-url="screenshots/LevelEditing/Items/NPC-Container/001_placed_containers.png"
-width="200px"
-:border="true"
-/>
+![001_placed_containers](../screenshots/LevelEditing/Items/NPC-Container/001_placed_containers.png ':size=200px')
 
 But how to place them with contents?
 
 For already placed containers we can select alone or a group of NPC-Containers
 and open the "Properties" item of the context menu:
 
-<ImageZoom
-alt="002_Open_props"
-url="screenshots/LevelEditing/Items/NPC-Container/002_Open_props.png"
-width="200px"
-:border="true"
-/>
+![002_Open_props](../screenshots/LevelEditing/Items/NPC-Container/002_Open_props.png ':size=200px')
 
 Now we should click to the **\[empty\]** button to select target NPC as "content"
 of this container(s):
 
-<ImageZoom
-alt="003_choice_included"
-url="screenshots/LevelEditing/Items/NPC-Container/003_choice_included.png"
-width="200px"
-:border="true"
-/>
+![003_choice_included](../screenshots/LevelEditing/Items/NPC-Container/003_choice_included.png ':size=200px')
 
 Here you can select the necessary NPC which will be included in our container(s):
 
-<ImageZoom
-alt="004_select_contain"
-url="screenshots/LevelEditing/Items/NPC-Container/004_select_contain.png"
-width="200px"
-:border="true"
-/>
+![004_select_contain](../screenshots/LevelEditing/Items/NPC-Container/004_select_contain.png ':size=200px')
 
 Done, now the Bubble has the gold key as content:
 
-<ImageZoom
-alt="005_NPC_included"
-url="screenshots/LevelEditing/Items/NPC-Container/005_NPC_included.png"
-width="200px"
-:border="true"
-/>
+![005_NPC_included](../screenshots/LevelEditing/Items/NPC-Container/005_NPC_included.png ':size=200px')
 
 Same operations to set Butterfly's bullets:
 
-<ImageZoom
-alt="008_lakitu_with_contains"
-url="screenshots/LevelEditing/Items/NPC-Container/008_lakitu_with_contains.png"
-width="200px"
-:border="true"
-/>
+![008_lakitu_with_contains](../screenshots/LevelEditing/Items/NPC-Container/008_lakitu_with_contains.png ':size=200px')
 
 And same to set the content of egg:
 
-<ImageZoom
-alt="009_egg"
-url="screenshots/LevelEditing/Items/NPC-Container/009_egg.png"
-width="200px"
-:border="true"
-/>
+![009_egg](../screenshots/LevelEditing/Items/NPC-Container/009_egg.png ':size=200px')
 
 But how to place the container with already included content?
 
 **1)** Take necessary NPC from the item toolbox:<br/>
-<ImageZoom
-alt="006_placing_container"
-url="screenshots/LevelEditing/Items/NPC-Container/006_placing_container.png"
-width="200px"
-:border="true"
-/>
+![006_placing_container](../screenshots/LevelEditing/Items/NPC-Container/006_placing_container.png ':size=200px')
 
 **2)** Set in the opened Properties window contents of NPC and after place them
-to the map:
-<ImageZoom
-alt="007_herb_with_contains"
-url="screenshots/LevelEditing/Items/NPC-Container/007_herb_with_contains.png"
-width="200px"
-:border="true"
-/>
+to the map:<br/>
+![007_herb_with_contains](../screenshots/LevelEditing/Items/NPC-Container/007_herb_with_contains.png ':size=200px')
+
 
 ### Generators
 
 Generator flag in the Properties dialog will make generator (or re-spawning
 point) of selected NPC
 
-<ImageZoom
-alt="Props_NPC_generator"
-url="screenshots/LevelEditing/Items/Props_NPC_generator.png"
-width="200px"
-:border="true"
-/>
+![Props_NPC_generator](../screenshots/LevelEditing/Items/Props_NPC_generator.png ':size=200px')
 
 * **NPC** will be appeared every time delay by two methods: warp and projectile.
 * **Warp** - NPC will appear smoothy and will start its regular movement on appearance.
@@ -355,21 +264,11 @@ their own marker as generator direction arrow:
 
 _Generator types_
 
-<ImageZoom
-alt="Generator_types"
-url="screenshots/LevelEditing/Items/NPC-Generator/Generator_types.png"
-width="200px"
-:border="true"
-/>
+![Generator_types](../screenshots/LevelEditing/Items/NPC-Generator/Generator_types.png ':size=200px')
 
 _Generators in action_
 
-<ImageZoom
-alt="Generators_in_action"
-url="screenshots/LevelEditing/Items/NPC-Generator/Generators_in_action.png"
-width="200px"
-:border="true"
-/>
+![Generators_in_action](../screenshots/LevelEditing/Items/NPC-Generator/Generators_in_action.png ':size=200px')
 
 
 ## Warps
@@ -379,33 +278,18 @@ from the first warp point (Entrance) to the second (Exit). The player can telepo
 
 _Warps and Doors toolbox_
 
-<ImageZoom
-alt="001_warpList"
-url="screenshots/LevelEditing/Warps/001_warpList.png"
-width="200px"
-:border="true"
-/>
+![001_warpList](../screenshots/LevelEditing/Warps/001_warpList.png ':size=200px')
 
 All warp entries are shown in the special list:
 
-In the SMBX all warps entries are hidden, and you can't see them. 
+In the SMBX all warps entries are hidden, and you can't see them.
 In the Moondust Editor is possible to get a full list of warps:
 
-<ImageZoom
-alt="LevelGlobalWarpList"
-url="screenshots/LevelEditing/Warps/LevelGlobalWarpList.png"
-width="200px"
-:border="true"
-/>
+![LevelGlobalWarpList](../screenshots/LevelEditing/Warps/LevelGlobalWarpList.png ':size=200px')
 
 _Context menu of warp point_
 
-<ImageZoom
-alt="WarpContextMenu"
-url="screenshots/LevelEditing/Warps/WarpContextMenu.png"
-width="200px"
-:border="true"
-/>
+![WarpContextMenu](../screenshots/LevelEditing/Warps/WarpContextMenu.png ':size=200px')
 
 ### Properties
 
@@ -442,133 +326,67 @@ there are leeks.
 * **Level file name** - This is a definition of the entrance into another level file to make a warp into them.
 * **Door #** - (In the SMBX this option was named as "Warp to"). If the value is 0 (Normal entrance) player will start the target level from his(her) default start point, else the player will enter into level by target warp point by ID.
 
-<Note type="tip">
-Note: If you were removed some warp entry (entries), to re-count warp IDs you should reload level (press F8 key)!
-</Note> 
+?> **Note:** If you were removed some warp entry (entries), to re-count warp IDs you should reload level (press F8 key)!
 
 
 ### Warp types
 
 The warps have three types: Instant, Pipe, Door, and Portal **(which is not available in SMBX 1.3)**.
 
-<ImageZoom
-alt="006_WarpTypes"
-url="screenshots/LevelEditing/Warps/006_WarpTypes.png"
-width="200px"
-:border="true"
-/>
+![006_WarpTypes](../screenshots/LevelEditing/Warps/006_WarpTypes.png ':size=200px')
 
 **Instant or Portal** - Player will immediately teleport once they touch the warp entrance point. The difference between "Instant" and "Portal" types:
 * The "Instant" warp resets the X speed after teleport.
 * The "Portal" warp keeps the same motion/flying speed after teleport.
 
-<ImageZoom
-alt="008_Instants"
-url="screenshots/LevelEditing/Warps/008_Instants.png"
-width="200px"
-:border="true"
-/>
+![008_Instants](../screenshots/LevelEditing/Warps/008_Instants.png ':size=200px')
 
 **Door** - The player can enter into this warp only when it is contacted with the entrance point and when a player will press the UP key.
 
-<ImageZoom
-alt="007_Doors"
-url="screenshots/LevelEditing/Warps/007_Doors.png"
-width="200px"
-:border="true"
-/>
+![007_Doors](../screenshots/LevelEditing/Warps/007_Doors.png ':size=200px')
 
 
 **Pipe** - this is a directional warp. To enter into this warp player need to contact the entrance warp point and press the key equal to the defined direction. The player will be exited from the exit point with a defined exit direction.
 
-<ImageZoom
-alt="009_Pipes1"
-url="screenshots/LevelEditing/Warps/009_Pipes1.png"
-width="200px"
-:border="true"
-/><ImageZoom
-alt="011_Pipes3"
-url="screenshots/LevelEditing/Warps/011_Pipes3.png"
-width="200px"
-:border="true"
-/><ImageZoom
-alt="010_Pipes2"
-url="screenshots/LevelEditing/Warps/010_Pipes2.png"
-width="200px"
-:border="true"
-/>
+![009_Pipes1](../screenshots/LevelEditing/Warps/009_Pipes1.png ':size=200px')![011_Pipes3](../screenshots/LevelEditing/Warps/011_Pipes3.png ':size=200px')![010_Pipes2](../screenshots/LevelEditing/Warps/010_Pipes2.png ':size=200px')
 
 
 ### Transition effects
-<Note type="warning">
-This feature is available for <strong>SMBX-38A</strong> and <strong>TheXTech</strong> only
-</Note>
+!> This feature is available for <strong>SMBX-38A</strong> and <strong>TheXTech</strong> only
 
 This option allows to set one of different transition effects which will be performed when player enters a warp.
 
-<Note type="tip">
-If you click the combo-box by a Right Mouse Button (Left if you are lefty), you can open the context menu and choose the "Apply to all" action to quickly make all warps on the level to use the same transition effect as currently selected.
-</Note>
+?> **Tip** If you click the combo-box by a Right Mouse Button (Left if you are lefty), you can open the context menu and choose the "Apply to all" action to quickly make all warps on the level to use the same transition effect as currently selected.
 
 **None** - The screen will be changed immediately without any transition effects (except for a very short fade happen between level sections).
 
-_None transition effect in action:_<br/>
-<ImageZoom
-alt="transit_01-none"
-url="screenshots/LevelEditing/Warps/transit_01-none.gif"
-width="200px"
-:border="true"
-/>
+_None transition effect in action:<br/>
+![transit_01-none](../screenshots/LevelEditing/Warps/transit_01-none.gif ':size=200px')
 
 **Scroll** - The screen will smoothly move between the entrance to exit points. Has no effect when going between different sections.
 
-_Scroll transition effect in action:_<br/>
-<ImageZoom
-alt="transit_02_scroll"
-url="screenshots/LevelEditing/Warps/transit_02_scroll.gif"
-width="200px"
-:border="true"
-/>
+_Scroll transition effect in action:<br/>
+![transit_02_scroll](../screenshots/LevelEditing/Warps/transit_02_scroll.gif ':size=200px')
 
 **Fade** - The screen will smoothly go into darkness, and then go from it.
 
-_Fade transition effect in action:_<br/>
-<ImageZoom
-alt="transit_03_fade"
-url="screenshots/LevelEditing/Warps/transit_03_fade.gif"
-width="200px"
-:border="true"
-/>
+_Fade transition effect in action:<br/>
+![transit_03_fade](../screenshots/LevelEditing/Warps/transit_03_fade.gif ':size=200px')
 
 **Circle fade** - The screen will smoothly go into darkness through a black circular overlay, and then go from it.
 
-_Circle fade transition effect in action:_<br/>
-<ImageZoom
-alt="transit_04_circle"
-url="screenshots/LevelEditing/Warps/transit_04_circle.gif"
-width="200px"
-:border="true"
-/>
+_Circle fade transition effect in action:<br/>
+![transit_04_circle](../screenshots/LevelEditing/Warps/transit_04_circle.gif ':size=200px')
 
 **Flip horizontal** - The screen will smoothly go into darkness through two black rectangular overlays closing the screen at the top and bottom sides, and then go from it.
 
-_Flip hotizontal fade transition effect in action:_<br/>
-<ImageZoom
-alt="transit_05_fliph"
-url="screenshots/LevelEditing/Warps/transit_05_fliph.gif"
-width="200px"
-:border="true"
-/>
+_Flip hotizontal fade transition effect in action:<br/>
+![transit_05_fliph](../screenshots/LevelEditing/Warps/transit_05_fliph.gif ':size=200px')
 
 **Flip vertical** - The screen will smoothly go into darkness through two black rectangular overlays closing the screen at the left and right sides, and then go from it.
 
-_Flip vertical fade transition effect in action:_<br/>
-<ImageZoom
-alt="transit_06_flipv"
-url="screenshots/LevelEditing/Warps/transit_06_flipv.gif"
-width="200px"
-:border="true"
-/>
+_Flip vertical fade transition effect in action:<br/>
+![transit_06_flipv](../screenshots/LevelEditing/Warps/transit_06_flipv.gif ':size=200px')
 
 
 
@@ -587,32 +405,17 @@ And now, you can place points (or you can define warp options before).
 
 To place an entrance or exit point, you should press the "Set Entrance" to place or jump to, if already placed, the entrance point
 
-<ImageZoom
-alt="003_setEntrance"
-url="screenshots/LevelEditing/Warps/003_setEntrance.png"
-width="200px"
-:border="true"
-/>
+![003_setEntrance](../screenshots/LevelEditing/Warps/003_setEntrance.png ':size=200px')
 
 and "Set Exit" to place or jump to, if already placed, exit point.
 
-<ImageZoom
-alt="004_setExit"
-url="screenshots/LevelEditing/Warps/004_setExit.png"
-width="200px"
-:border="true"
-/>
+![004_setExit](../screenshots/LevelEditing/Warps/004_setExit.png ':size=200px')
 
 ?> **Tip:** If the grayed checkbox at the left side of the button is set, that means the entrance/exit point has already been placed. The press on the button will result in the camera jump to the location of the placed point.
 
 _Placing of the Exit warp point to the map_
 
-<ImageZoom
-alt="005_setExit"
-url="screenshots/LevelEditing/Warps/005_setExit.png"
-width="200px"
-:border="true"
-/>
+![005_setExit](../screenshots/LevelEditing/Warps/005_setExit.png ':size=200px')
 
 
 !> Don't forget to set up warp settings!
@@ -639,12 +442,7 @@ Locked warp - is a warp with a closed entrance which possible to open with a key
 
 To make a locked door, you need to set the "Locked" flag into the 'checked' state:
 
-<ImageZoom
-alt="019_Locked_door"
-url="screenshots/LevelEditing/Warps/019_Locked_door.png"
-width="200px"
-:border="true"
-/>
+![019_Locked_door](../screenshots/LevelEditing/Warps/019_Locked_door.png ':size=200px')
 
 ### Star limited warp
 
@@ -652,22 +450,12 @@ To enter into this warp you must have a specified number of stars!
 
 _Locked door_
 
-<ImageZoom
-alt="020_Stared_door"
-url="screenshots/LevelEditing/Warps/020_Stared_door.png"
-width="200px"
-:border="true"
-/>
+![020_Stared_door](../screenshots/LevelEditing/Warps/020_Stared_door.png ':size=200px')
 
 
 To lock warp entrance with stars, you must set the count of stars value, needed for the ability to enter into this warp:
 
-<ImageZoom
-alt="021_Stared_door"
-url="screenshots/LevelEditing/Warps/021_Stared_door.png"
-width="200px"
-:border="true"
-/>
+![021_Stared_door](../screenshots/LevelEditing/Warps/021_Stared_door.png ':size=200px')
 
 
 ### Level entrance and exit
@@ -676,22 +464,12 @@ There are special flags that allowing to place alone warp point.
 
 **Level entrance** - allows placing alone exit point. Set this flag if you wish to use this warp as an entrance into this level. With this flag, the warp will have no entrance point.
 
-<ImageZoom
-alt="014_entrance_to_level"
-url="screenshots/LevelEditing/Warps/014_entrance_to_level.png"
-width="200px"
-:border="true"
-/>
+![014_entrance_to_level](../screenshots/LevelEditing/Warps/014_entrance_to_level.png ':size=200px')
 
 **Level Exit** - allows placing alone entrance point. The level will be exited
 when a player will enter into this warp.
 
-<ImageZoom
-alt="013_Exit_from_level"
-url="screenshots/LevelEditing/Warps/013_Exit_from_level.png"
-width="200px"
-:border="true"
-/>
+![013_Exit_from_level](../screenshots/LevelEditing/Warps/013_Exit_from_level.png ':size=200px')
 
 
 ### Warp to another level
@@ -707,12 +485,7 @@ The number of the door will show: where the player must be entered. If the value
 
 _Level file list of the same folder which contains editing level file_
 
-<ImageZoom
-alt="015_warp_to_another_level"
-url="screenshots/LevelEditing/Warps/015_warp_to_another_level.png"
-width="200px"
-:border="true"
-/>
+![015_warp_to_another_level](../screenshots/LevelEditing/Warps/015_warp_to_another_level.png ':size=200px')
 
 
 ### Warp to the world map
@@ -725,12 +498,7 @@ You also can press the "Set" button and select a target point on the world map i
 
 _World map point selection dialog_
 
-<ImageZoom
-alt="GotoWorldMap"
-url="screenshots/WorldEditing/GotoWorldMap.png"
-width="200px"
-:border="true"
-/>
+![GotoWorldMap](../screenshots/WorldEditing/GotoWorldMap.png ':size=200px')
 
 
 ## Physical environments
@@ -762,21 +530,11 @@ Because the Physical environment zone is a sizable element, the placing process 
 
 Placed physical environment rectangles: Green - water, Yellow - quicksand
 
-<ImageZoom
-alt="05_paced_areas"
-url="screenshots/LevelEditing/Physics/05_paced_areas.png"
-width="200px"
-:border="true"
-/>
+![05_paced_areas](../screenshots/LevelEditing/Physics/05_paced_areas.png ':size=200px')
 
 You can change the environment type of the placed rectangle by a context menu:
 
-<ImageZoom
-alt="06_change_type"
-url="screenshots/LevelEditing/Physics/06_change_type.png"
-width="200px"
-:border="true"
-/>
+![06_change_type](../screenshots/LevelEditing/Physics/06_change_type.png ':size=200px')
 
 
 Also, you can easily resize an environment rectangle:
@@ -794,12 +552,7 @@ new size of the section), click inside of them by right mouse button.
 * **Don't snap to grid** - disables grid snapping on moving of box boundaries
 * **Disable minimal size limit** - gives the ability to set size less than minimally available size
 
-<ImageZoom
-alt="PhysEnvResizing"
-url="screenshots/LevelEditing/Physics/PhysEnvResizing.png"
-width="200px"
-:border="true"
-/>
+![PhysEnvResizing](../screenshots/LevelEditing/Physics/PhysEnvResizing.png ':size=200px')
 
 ## Player points
 
