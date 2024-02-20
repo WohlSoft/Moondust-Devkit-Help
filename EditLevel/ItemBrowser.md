@@ -1,6 +1,6 @@
-# Search browser
+# Items browser
 
-**Search browser** - The toolbox contains a list of available items to add to the current level section or the world map.
+**Items browser** - The toolbox contains a list of available items to add to the current level section or the world map.
 
 Click a necessary object in the list to pick it up for adding to the level or world map.
 
@@ -14,29 +14,21 @@ For convenience, the toolbox contains a list of groups used for the large packs 
 
 _Search Browser_
 
-![0toolbox_items](screenshots/LevelEditing/Items/0toolbox_items.png)
+![0toolbox_items](../screenshots/LevelEditing/Items/0toolbox_items.png ':no-zoom')
 
 Also, you can find any necessary item in the list by its name or by ID. Use the wrench icon menu to open the filtering and sorting settings.
 
 
 _Item search: by name and by ID_
 
-![0toolbox_items_filter1](screenshots/LevelEditing/Items/0toolbox_items_filter1.png) ![0toolbox_items_filter2](screenshots/LevelEditing/Items/0toolbox_items_filter2.png)
+![0toolbox_items_filter1](../screenshots/LevelEditing/Items/0toolbox_items_filter1.png ':no-zoom') ![0toolbox_items_filter2](../screenshots/LevelEditing/Items/0toolbox_items_filter2.png ':no-zoom')
 
 You can drag and move any toolboxes and resize them as you want.
 
 _Vertical view of the Search Browser_
 
-<ImageZoom
-alt="0toolbox_items_pos1"
-url="screenshots/LevelEditing/Items/0toolbox_items_pos1.png"
-:border="true"
-/>
+![0toolbox_items_pos](../screenshots/LevelEditing/Items/0toolbox_items_pos1.png)
 
 _Horisontal view of item toolbox_
 
-<ImageZoom
-alt="0toolbox_items_pos2"
-url="screenshots/LevelEditing/Items/0toolbox_items_pos2.png"
-:border="true"
-/>
+![toolbox_items_pos2](../screenshots/LevelEditing/Items/0toolbox_items_pos2.png)

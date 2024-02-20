@@ -1,6 +1,6 @@
 # Transparency bit masks
 When targeting graphics for the vanilla SMBX engine, you should use the special pair of graphics that contains the front
-and mask pictures ready for usage with the Bit Blit algorithm. The [PNG2GIFs](/Tools/Console/PNG2GIFs) utility can be used to simplify the
+and mask pictures ready for usage with the Bit Blit algorithm. The [PNG2GIFs](../Tools/Console/PNG2GIFs) utility can be used to simplify the
 conversion of images.
 
 
@@ -24,7 +24,7 @@ Then, the program renders the image pixel's bits by combining them with the back
 bitwise OR operation. This way, the image pixels are appropriately placed while keeping the background surrounding
 pixels preserved. The result is a perfect compound of the image over the background. 
 
-![src](screenshots/Tools/console/GIFs2PNG/example_src1.gif) ![srcm](screenshots/Tools/console/GIFs2PNG/example_src1m.gif)
+![src](../screenshots/Tools/console/GIFs2PNG/example_src1.gif ':no-zoom') ![srcm](../screenshots/Tools/console/GIFs2PNG/example_src1m.gif ':no-zoom')
 
 This technique is used for painting pointing device cursors, in typical 2-D videogames for characters, bullets and
 so on (the sprites), for GUI icons, and for video titling and other image mixing applications.
@@ -37,11 +37,11 @@ which do not involve the image pixel mixage by binary masking.
 Lazily-made / Noob-made / noob drawing / result of lazy effort - These are pairs of an image and mask, created
 via simple copies of the original image, with a white color.
 
-![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_src1m.gif)
+![lazyFront](../screenshots/Tools/console/LazyFix/example_src1.gif ':no-zoom') ![lazyBack](../screenshots/Tools/console/LazyFix/example_src1m.gif ':no-zoom')
 
-This is a bad method that it's not recommended for sprite making. Instead, use the [PNG2GIFs](/Tools/Console/PNG2GIFs) 
+This is a bad method that it's not recommended for sprite making. Instead, use the [PNG2GIFs](../Tools/Console/PNG2GIFs) 
 utility to convert PNG image into the valid bit-mask ready front and mask pair. If you have a dozen of lazily-made
-graphics, you can fix the by using the special [LazyFix Tool](/Tools/Console/LazyFixTool) utility.
+graphics, you can fix the by using the special [LazyFix Tool](../Tools/Console/LazyFixTool) utility.
 
 
 ## Links 

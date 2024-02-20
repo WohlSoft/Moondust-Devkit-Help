@@ -4,19 +4,9 @@ Using this toolbox, you can find on the level map the necessary item by known pr
 
 _Blocks search_
 
-<ImageZoom
-  alt="SearchBlock"
-  url="screenshots/LevelEditing/Search/SearchBlock.png"
-  width="200px"
-  :border="true"
-/>
+![SearchBlock](../screenshots/LevelEditing/Search/SearchBlock.png ':size=200px')
 
 
 _NPC search_
 
-<ImageZoom
-  alt="SearchNPC"
-  url="screenshots/LevelEditing/Search/SearchNPC.png"
-  width="200px"
-  :border="true"
-/>
+![SearchNPC](../screenshots/LevelEditing/Search/SearchNPC.png ':size=200px')

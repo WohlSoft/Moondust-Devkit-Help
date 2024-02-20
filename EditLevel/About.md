@@ -23,17 +23,13 @@ The main level unis is a **section**. Section - is a separated sub-area of a lev
 
 _Level editing interface_
 
-<ImageZoom
-alt="005_levelEditingSpace"
-url="screenshots/LevelEditing/005_levelEditingSpace.png"
-:border="true"
-/>
+![005_levelEditingSpace](../screenshots/LevelEditing/005_levelEditingSpace.png)
 
 <u>**Each level should have**</u>:
 
 * **Title of level** - The name of the level which showing on the world map or in the battle mode. You will be asked for it when you will try to save the level. Or you can edit them in the `Level -> Properties` menu.
-* **Player's start/spawn point** where the player can start its walk. Also, you can put instead of them any warps, but you will able to start this level
-  when you have entered them with the definition of entrance warp ID! If you will put no start points, you will haven't able to start level!
+* **Player's start/spawn point** where the player can start its walk. Also, you can put instead of them any warps, but you will be able to start this level
+  when you have entered them with the definition of entrance warp ID! If you put no start points, you will haven't able to start level!
 * **Exit from level**: this is a special NPC that triggers the exit and ends the level with a successful result. Without exits, the player will not be able to exit from your level.
   * **Standard exits**: ends level when one of them was taken by the player. In the SMBX64 configurations are  NPC-11(Card roulette), NPC-16 (Dungeon ball), NPC-41 (Crystal sphere), NPC-197 (Goal tape), NPC-97 (Star).
   * **Secret exit**: in the SMBX64 configurations is a combination of NPC-31 (key) and BGO-35 (asshole). To activate this exit player should contact by carried a key with a keyhole.

@@ -16,22 +16,12 @@
 
 _Placing of blocks_
 
-<ImageZoom
-alt="place_blocks"
-url="screenshots/LevelEditing/Items/place_blocks.png"
-width="200px"
-:border="true"
-/>
+![place_blocks](../screenshots/LevelEditing/Items/place_blocks.png ':size=200px')
 
 
 _Block context menu_
 
-<ImageZoom
-alt="BlockContext"
-url="screenshots/LevelEditing/Items/BlockContext.png"
-width="200px"
-:border="true"
-/>
+![BlockContext](../screenshots/LevelEditing/Items/BlockContext.png ':size=200px')
 
 
 ### Block Properties
@@ -53,12 +43,7 @@ width="200px"
 
 _Block Properties toolbox_
 
-<ImageZoom
-alt="Props_Block"
-url="screenshots/LevelEditing/Items/Props_Block.png"
-width="200px"
-:border="true"
-/>
+![Props_Block](../screenshots/LevelEditing/Items/Props_Block.png ':size=200px')
 
 ### Sizable blocks
 
@@ -66,21 +51,14 @@ It's a special type of block that can have any size. Unlike standard locks, this
 
 _Drawing of sizable blocks_
 
-<ImageZoom
-alt="DrawSizableBlock"
-url="screenshots/LevelEditing/Items/DrawSizableBlock.png"
-width="200px"
-:border="true"
-/>
+![DrawSizableBlock](../screenshots/LevelEditing/Items/DrawSizableBlock.png ':size=200px')
 
 
 These blocks can be resized. Unlike standard blocks, these blocks displaying in the low background layer and displaying always under BGO (but some BGO in the exception can be shown under sizable blocks).
 
-To start resizing, you should open the "Resize" context menu item and you will see a blue rectangle which a "sizer". Move corner dots or sides to define the new size of the block. When you are done resizing press the ENTER key to accept the new size, and then the block will have a new size. If you will press the ESC key you will cancel resizing and the block will keep it's current it's size.
+To start resizing, you should open the "Resize" context menu item, and you will see a blue rectangle which a "sizer". Move corner dots or sides to define the new size of the block. When you are done resizing press the ENTER key to accept the new size, and then the block will have a new size. If you press the ESC key you will cancel resizing and the block will keep it's current it's size.
 
-<Note type="tip">
-Note: If you wish to get more features of the resize box (green net which defined the new size of the section), click inside of them by the right mouse button.
-</Note>
+?> **Note:** If you wish to get more features of the resize box (green net which defined the new size of the section), click inside of them by the right mouse button.
 
 The context menu has actions:
 
@@ -93,12 +71,7 @@ The context menu has actions:
 
 _Resizing of sizable blocks_
 
-<ImageZoom
-alt="ResizeBlock2"
-url="screenshots/LevelEditing/Items/ResizeBlock2.png"
-width="200px"
-:border="true"
-/>
+![ResizeBlock2](../screenshots/LevelEditing/Items/ResizeBlock2.png ':size=200px')
 
 ## BGO
 
@@ -146,46 +119,34 @@ url="screenshots/LevelEditing/Items/Props_BGO.png"
 
 ### Hack: Z-Order in SMBX
 
-Legacy SMBX Engine doesn't support customization of Z-order natively. However, it's possible with a workaround. This working ONLY if you saving into SMBX file format. And will not saving in them. After reopening the same file you need to define this value again.
+Legacy SMBX Engine doesn't support customization of Z-order natively. However, it's possible with a workaround. This working ONLY if you're saving into SMBX file format. And will not save in them. After reopening the same file you need to define this value again.
 
 
 **1)** All data, include BGOs, in files written in defined sequence:
 
-![Pseudo-foregroundBGO-1](screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-1.png)
+![Pseudo-foregroundBGO-1](../screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-1.png)
 
-**2)** When we using the sort priority value, we will tell to BGO's place, at the beginning, middle, or at the end of the array:
+**2)** When we use the sort priority value, we will tell to BGO's place, at the beginning, middle, or at the end of the array:
 
-![Pseudo-foregroundBGO-2](screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-2.png)
+![Pseudo-foregroundBGO-2](../screenshots/LevelEditing/Items/bgo_hack/Pseudo-foregroundBGO-2.png)
 
-SMBX render algorithm displaying BGOs by special groups - layers, and BGO order is very important for this case. So, if we are will do a change of the order, we are will let a first BGO, which marked as "Foreground", to make all next BGOs be foreground too, even if there is hasn't a "foreground" flag. Knowing this thing is possible to force display any background BGOs as foreground.
+SMBX render algorithm displaying BGOs by special groups - layers, and BGO order is very important for this case. So, if we will do a change of the order, we will let a first BGO, which marked as "Foreground", to make all next BGOs be foregrounded too, even if there is hasn't a "foreground" flag. Knowing this thing is possible to force display any background BGOs as foreground.
 
 **3)** To allow this feature work, you must place to the map any of true "Foreground" BGO in any position (if your level has no those BGO's, place one of them out of the section to get it on the level space). This trick requires one of foreground BGO under our BGO's which we are want to make foreground too.
 
-<ImageZoom
-alt="001_bgo_hack"
-url="screenshots/LevelEditing/Items/bgo_hack/_001_bgo_hack.png"
-width="200px"
-:border="true"
-/>
+![001_bgo_hack](../screenshots/LevelEditing/Items/bgo_hack/_001_bgo_hack.png ':size=200px')
 
 
-<Note type="warning">
-Don't forget, that if you saving the file into SMBX1...64 LVL format, on
-next, open this file you must to redefine the sorting priority value
+!> **Important:** Don't forget, that if you're saving the file into SMBX1...64 LVL format, on
+next, open this file you should redefine the sorting priority value
 again, because it doesn't save into SMBX level file. Backup saved into
 LVLX file format is suggested.
-</Note>
 
 
 **Result of BGO hack in action**
 __(bush in the right drawn over playable characters)__
 
-<ImageZoom
-alt="Foreground_BGO"
-url="screenshots/LevelEditing/Items/bgo_hack/Pseudo-Foreground_BGO.png"
-width="200px"
-:border="true"
-/>
+![Foreground_BGO](../screenshots/LevelEditing/Items/bgo_hack/Pseudo-Foreground_BGO.png ':size=200px')
 
 ## NPC
 **Non-playable characters** - is the main game unit that building the game process: there are enemies, friends, items, power-ups, sceneries, etc. Each NPC has it's an algorithm and can be programmed.
@@ -616,11 +577,11 @@ width="200px"
 
 Each warp has its entry. At first, you need to add a new warp entry into the list:
 
-![002_addWarp](screenshots/LevelEditing/Warps/002_addWarp.png)
+![002_addWarp](../screenshots/LevelEditing/Warps/002_addWarp.png ':no-zoom')
 
 Or you can make a duplicated copy of the current warp entry with all settings but entrance and exit points placements:
 
-![002_dupeWarp](screenshots/LevelEditing/Warps/002_dupeWarp.png)
+![002_dupeWarp](../screenshots/LevelEditing/Warps/002_dupeWarp.png ':no-zoom')
 
 And now, you can place points (or you can define warp options before).
 
@@ -642,9 +603,7 @@ width="200px"
 :border="true"
 />
 
-<Note type="tip">
-If the grayed checkbox at the left side of the button is set, that means the entrance/exit point has already been placed. The press on the button will result in the camera jump to the location of the placed point.
-</Note>
+?> **Tip:** If the grayed checkbox at the left side of the button is set, that means the entrance/exit point has already been placed. The press on the button will result in the camera jump to the location of the placed point.
 
 _Placing of the Exit warp point to the map_
 
@@ -656,39 +615,27 @@ width="200px"
 />
 
 
-<Note type="warning">
-Don't forget to set up warp settings!
-</Note>
+!> Don't forget to set up warp settings!
 
-<Note type="tip">
-Note: the warp entry must have both placed points or warp entry will
+?> **Note:** the warp entry must have both placed points or warp entry will
 be marked as broken and will not be saved into the file.
-Exclusion: You can have single-point warp entries when they are have
-one of those flags: "Level Exit" or "Level entrance".
-</Note>
+**Exclusion:** You can have single-point warp entries when they have one of those flags: "Level Exit" or "Level entrance".
 
 
 ### Two-way warp
 
 This is a warp entry that allows player to go through it at both sides. To make two-way warps just use a "Two-side warp" check box, and the player will be able to enter this warp from both sides.
 
-<Note type="warning">
-Legacy SMBX Engine and 38A older than 1.4.3 doesn't support that. If you targeting your levels to the legacy engines, you should make a second warp entry with opposite point placements:
-</Note>
+!> **Important:** Legacy SMBX Engine and 38A older than 1.4.3 doesn't support that. If you're targeting your levels to the legacy engines, you should make a second warp entry with opposite point placements:
 
-<ImageZoom
-alt="012_two-way_doors"
-url="screenshots/LevelEditing/Warps/012_two-way_doors.png"
-width="200px"
-:border="true"
-/>
+![012_two-way_doors](../screenshots/LevelEditing/Warps/012_two-way_doors.png ':size=200px')
 
 
 ### Locked warp
 
 Locked warp - is a warp with a closed entrance which possible to open with a key:
 
-![018_locked_door](screenshots/LevelEditing/Warps/018_locked_door.png)
+![018_locked_door](../screenshots/LevelEditing/Warps/018_locked_door.png ':no-zoom')
 
 To make a locked door, you need to set the "Locked" flag into the 'checked' state:
 
@@ -754,7 +701,7 @@ The player will be entered into another level if he(she) enter into this warp.
 
 You should simply define the level filename in the Level file field. You also can browse the level file and select the necessary file from the list
 
-![016_target_warp_ID](screenshots/LevelEditing/Warps/016_target_warp_ID.png)
+![016_target_warp_ID](../screenshots/LevelEditing/Warps/016_target_warp_ID.png)
 
 The number of the door will show: where the player must be entered. If the value is a zero - the player will start the level from his(her) default start point.
 
@@ -774,7 +721,7 @@ You also can create the exit to specified coordinates of the world map. You need
 
 You also can press the "Set" button and select a target point on the world map in interactive mode!
 
-![017_World_map_coordinates](screenshots/LevelEditing/Warps/017_World_map_coordinates.png)
+![017_World_map_coordinates](../screenshots/LevelEditing/Warps/017_World_map_coordinates.png)
 
 _World map point selection dialog_
 
@@ -788,7 +735,7 @@ width="200px"
 
 ## Physical environments
 **Physical environments** (Water, Quicksand, etc.) - there are a special
-units that defining the physical environment inside of their rectangular area.
+units that defining the physical environment inside their rectangular area.
 
 **Available environment types:**
 * **Water** - a swimmable liquid environment.
@@ -804,13 +751,11 @@ units that defining the physical environment inside of their rectangular area.
 * **Collision event** - **\[WIP\]**
 * **Air chamber** - Air environment which overrides other physical environments with air environment.
 
-<Note type="warning">
-Important: Legacy SMBX Engine, TheXTech, and SMBX2 has the support for only two types of physical environments: Water and Quicksand. SMBX 1.3 and SMBX2 doesn't support other physical environment types. Only Moondust Engine and SMBX-38A.
-</Note>
+!> **Important:** Legacy SMBX Engine, TheXTech, and SMBX2 has the support for only two types of physical environments: Water and Quicksand. SMBX 1.3 and SMBX2 doesn't support other physical environment types. Only Moondust Engine and SMBX-38A.
 
 Because the Physical environment zone is a sizable element, the placing process is going by rectangle drawing. To place them, you need to select on toolbar one of two icons:
 
-![DW](screenshots/LevelEditing/Physics/draw_water.png) ![DQ](screenshots/LevelEditing/Physics/draw_sand.png)
+![DW](../screenshots/LevelEditing/Physics/draw_water.png ':no-zoom') ![DQ](../screenshots/LevelEditing/Physics/draw_sand.png ':no-zoom')
 
 <span style="color: blue;">Blue</span> - draw water zone,
 <span style="color: #fde910;">Yellow</span> - draw quicksand zone.
@@ -836,12 +781,10 @@ width="200px"
 
 Also, you can easily resize an environment rectangle:
 
-To start resizing, you should open the "Resize" context menu item and you will see a yellow rectangle which a "sizer". Move corner dots or sides to define the new size of the block. When you are done resizing press the ENTER key to accept the new size, and then the block will have a new size. If you will press the ESC key you will cancel resizing and the block will keep it's current it's size.
+To start resizing, you should open the "Resize" context menu item, and you will see a yellow rectangle which a "sizer". Move corner dots or sides to define the new size of the block. When you are done resizing press the ENTER key to accept the new size, and then the block will have a new size. If you press the ESC key you will cancel resizing and the block will keep it's current it's size.
 
-<Note type="tip">
-Note: If you wish to get more features of resizer box (green net which defined
+?> **Note:** If you wish to get more features of resizer box (green net which defined
 new size of the section), click inside of them by right mouse button.
-</Note> 
 
 **The context menu has actions**
 * **Cut top here** - moves the top boundary of the box to the current mouse position
@@ -862,10 +805,10 @@ width="200px"
 
 This is a point that defines an initial position of a playable character on the level. Every time you starting a level, the playable character will appear at this point.
 
-To place a player point, you need to click one of the toolbar buttons (![P1](screenshots/LevelEditing/players/player1_start.png) or ![P2](screenshots/LevelEditing/players/player2_start.png)): where is red - it's for a 1'st player and the green for 2'nd.
+To place a player point, you need to click one of the toolbar buttons (![P1](../screenshots/LevelEditing/players/player1_start.png ':no-zoom') or ![P2](../screenshots/LevelEditing/players/player2_start.png ':no-zoom')): where is red - it's for a 1'st player and the green for 2'nd.
 
 In the editor start points will be shown as flags (They are may look different with a dependence on a currently used UI theme):
 
-![PlayerPoints](screenshots/LevelEditing/Items/Player_startPoints_2.png)
+![PlayerPoints](../screenshots/LevelEditing/Items/Player_startPoints_2.png ':no-zoom')
 
 If points will not be defined, the level will automatically end, because it hasn't available playable characters on the level. Also, you can use doors as the player's start points, but you need to define the array index of this door in the world map or on another level.

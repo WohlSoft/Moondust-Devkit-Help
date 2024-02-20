@@ -11,22 +11,13 @@ There are some built-in events that you can't remove:
 - "**P Switch - Start**" - starts if you will activate the special item called "P-Switch". You can make, for example, a showing of layers with a surprise for your playable character.
 - "**P Switch - stop**" - This event starts if the P-Switch timer was the end. This event can be used, for example, to hide the same layer with a surprise.
 
-<Note type="tip">
-You can drag event items in a list to change their order
-</Note>
+> **Tip:** You can drag event items in a list to change their order
 
-<Note type="tip">
-You can rename an event by double click on the layer name. The new name of the event will be applied to all items which using them without loss of connections.
-</Note>
+> **Tip:** You can rename an event by double-click on the layer name. The new name of the event will be applied to all items which using them without loss of connections.
 
 _Events toolbox_
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/001Events_list.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/001Events_list.png ':size=200px')
 
 * [Layer visibility](#layer-visibility)
 * [Layer motion](#layer-motion)
@@ -43,18 +34,12 @@ To add a layer to the list, please, select them in the list, and press "+" to ad
 
 To remove a layer from the list, select layer in one of three lists and press "-".
 
-<Note type="warning">
-Note: If you have an SMBX64 LVL file format, you will get a limit of layers for every list in 20 entries. Layers outed from 20 items per list will not be saved in SMBX format. By SMBX 1.3 Editor it's possible to add 21 layers into each list, however, here is a bug, that makes no way to remove layers from a list. Instead, it copies the last layer entry instead of the removed layer.
-</Note>
+!> **Note:** If you have an SMBX64 LVL file format, you will get a limit of layers for every list in 20 entries. Layers outed from 20 items per list will not be saved in SMBX format. By SMBX 1.3 Editor it's possible to add 21 layers into each list, however, here is a bug, that makes no way to remove layers from a list. Instead, it copies the last layer entry instead of the removed layer.
 
 _Layer visibly tab_
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/002_layer_visibly.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/002_layer_visibly.png ':size=200px')
+
 
 ## Layer motion
 Here you can configure the movement for solid and statical items that are members of a target layer.
@@ -84,21 +69,10 @@ width="200px"
 ## Auto-scroll sections
 Here you can define auto-scrolling of the target section.
 
-<Note type="warning">
-<strong>Notes!</strong><br/>
-<ul>
-    <li>Don't forget to define target section size in the section properties
-    of same event. If you wasn't redefine of section. 
-    Auto-scroll will not be working.</li>
-    <li><span style="color: #af0000;">If you want to use auto-scrolling in the SMBX, 
-    <span style="color: red;">be careful</span>, 
-    because SMBX engine has a bug: 
-    Auto-scroll will work only for one section and only if this section contains a 
-    start point of playable character and when event contains auto-scrolling definition
-    will be triggered via special "Level - Start" event. If you will try auto-scroll
-    another section, it will not work!</span></li>
-</ul>
-</Note>
+!> **Notes!** Please read them carefully
+* Don't forget to define target section size in the section properties of same event. If you wasn't redefine of section. Auto-scroll will not be working.
+* <span style="color: #af0000;">If you want to use auto-scrolling in the SMBX, <span style="color: red;">be careful</span>, because SMBX engine has a bug: Auto-scroll will work only for one section and only if this section contains a start point of playable character and when event contains auto-scrolling definition will be triggered via special "Level - Start" event. If you try auto-scroll another section, it will not work!</span>
+
 
 **Horizontal speed**:
 - If <0 - move to left.
@@ -112,36 +86,20 @@ Here you can define auto-scrolling of the target section.
 
 _Layer move list_
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/004_autoscroll.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/004_autoscroll.png ':size=200px')
+
 
 ### How to make the auto-scroll of the section
 1) In the first step, you should define the default section size which will be auto-scrolled.
 
-2) Open in the same event the "section settings" tab and then mark "define new" and set a size of auto-scrollable part of screen. You can click "Capture" button to define size of the scrollable part of the section in the interactive mode:
-   <br/><ImageZoom
-   alt="eventsList"
-   url="screenshots/LevelEditing/Events/006_capture_size.png"
-   width="200px"
-   :border="true"
-   />
+2) Open in the same event the "section settings" tab and then mark "define new" and set a size of auto-scrollable part of screen. You can click "Capture" button to define size of the scrollable part of the section in the interactive mode:<br/>
+   ![eventsList](../screenshots/LevelEditing/Events/006_capture_size.png ':size=200px')
    <br/>There are examples of auto-scrolling areas:
-   <br/><ImageZoom
-   alt="eventsList"
-   url="screenshots/LevelEditing/Events/Autoscroll_examples.png"
-   width="200px"
-   :border="true"
-   />
+   <br/>![eventsList](../screenshots/LevelEditing/Events/Autoscroll_examples.png ':size=200px')
 
 3) Set the number of a section that will be auto-scrolled and the speed X and speed Y values.
 
-<Note type="warning">
-Don't forget to mark this event to auto start! (requires by SMBX, if you will play the same level in the Moondust Engine, auto-scroll can be toggled via side event triggers (blocks or NPC's))
-</Note>
+!> **Important:** Don't forget to mark this event to auto start! (requires by SMBX, if you will play the same level in the Moondust Engine, auto-scroll can be toggled via side event triggers (blocks or NPC's))
 
 If you made everything correctly, the screen will start scrolling when this level will be started, when you will enter into a section with defined auto-scrolling, and when you will toggle auto-scroll via side event triggers.
 
@@ -158,21 +116,11 @@ Inside one event, you can define options for slightly sections one event. Also, 
 
 **Change background** - This option can change the background of the selected section.
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/005_section_settings.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/005_section_settings.png ':size=200px')
 
 _Capturing of new size what will be defined by event_
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/006_capture_size.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/006_capture_size.png ':size=200px')
 
 ## Common actions
 Here you can:
@@ -180,43 +128,21 @@ Here you can:
 - Play sound from the list
 - Start the end of a game algorithm: Play end of game fanfares -> show credits screen -> save game, return to the main menu
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/007_common.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/007_common.png ':size=200px')
 
 _Message box editing_
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/MessageBox.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/MessageBox.png ':size=200px')
 
-<Note type="warning">
-Keep a note that all new-line characters will be removed if you save them into SMBX64 LVL format. Use extra-spaces as a workaround.
-</Note>
+!> **Important:** Keep a note that all new-line characters will be removed if you save them into SMBX64 LVL format. Use extra-spaces as a workaround.
 
 
 ## Force player controls
 Here you can control a playable character to automate its actions.
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/008_player_control.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/008_player_control.png ':size=200px')
 
 ## Trigger another event
 This feature allows the execution of another event after running this. You also can specify a delay before executing the target event.
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/009_trigger.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/009_trigger.png ':size=200px')

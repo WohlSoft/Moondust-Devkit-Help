@@ -16,7 +16,7 @@ Placing new elements on the level or world map can be done in multiple various w
 - **[Overwrite mode](#overwrite-mode)** - This feature gives an ability to replace items already placed on the map.
 
 
-![PI](../../screenshots/LevelEditing/Items/PlacingTools.png)
+![PI](../../screenshots/LevelEditing/Items/PlacingTools.png ':no-zoom')
 
 
 ## Rectangle
@@ -29,11 +29,7 @@ To use this feature, you need to press on the "Rectangle" icon, and to place ite
 
 _Placing items by rectangle tool_
 
-<ImageZoom
-  alt="demo-place-rect"
-  url="demos/demo-place-rect.gif"
-  :border="true"
-/>
+![demo-place-rect](../demos/demo-place-rect.gif)
 
 
 ## Circle
@@ -46,11 +42,7 @@ To use this feature, you need to press on the "Circle" icon, and to place item g
 
 _Placing blocks with circle tool_
 
-<ImageZoom
-  alt="demo-place-circle"
-  url="demos/demo-place-circle.gif"
-  :border="true"
-/>
+![demo-place-circle](../demos/demo-place-circle.gif)
 
 
 ## Line
@@ -63,17 +55,14 @@ To use this feature, you need to press on the "Line" icon, and to place item gro
 
 _Placing items with line tool_
 
-<ImageZoom
-  alt="demo-place-line"
-  url="demos/demo-place-line.gif"
-  :border="true"
-/>
+![demo-place-line](../demos/demo-place-line.gif)
+
 
 ## Flood fill
 
 It's a tool that allows the filling of closed areas built by items.
 
-This feature available for BGO and Blocks. And in the world map editor available for any items.
+This feature is available for BGO and Blocks. And in the world map editor available for any items.
 
 To use this feature, you need to press on the "Fill" icon, and to place item groups, you need to click on the empty area you want to fill.
 
@@ -83,11 +72,7 @@ To use this feature, you need to press on the "Fill" icon, and to place item gro
 
 _Filling with blocks_
 
-<ImageZoom
-  alt="demo-place-flood"
-  url="demos/demo-place-flood.gif"
-  :border="true"
-/>
+![demo-place-flood](../demos/demo-place-flood.gif)
 
 
 ## Overwrite mode
@@ -96,8 +81,4 @@ This feature allows you to replace items placed on the map. To use them, switch 
 
 _Draw with overwrite mode_
 
-<ImageZoom
-  alt="demo-override-mode"
-  url="demos/demo-override-mode.gif"
-  :border="true"
-/>
+![demo-override-mode](../demos/demo-override-mode.gif)
