@@ -6,4 +6,4 @@ This editor records all actions in a history manager. You can undo and redo the 
 
 _History manager in action_
 
-![HistoryInAct](demos/demo-history.gif)
+![HistoryInAct](../demos/demo-history.gif ':no-zoom')

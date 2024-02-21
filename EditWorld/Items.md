@@ -4,41 +4,27 @@ Main content and part of any world maps. There are construction materials, scene
 ## Terrain tiles
 The main design units are used for the creation of the terrain design of the world map. Terrain tiles are not communicating with other elements, there are always static. (except water terrain tiles)
 
-<ImageZoom
-alt="wld_tiles"
-url="screenshots/WorldEditing/Items/wld_tiles.png"
-:border="true"
-/>
+![wld_tiles](../screenshots/WorldEditing/Items/wld_tiles.png ":no-zoom")
+
 ## Sceneries
 The second design unit. Sceneries are can be hidden when the player had to open the path that goes through them.
 
-<ImageZoom
-alt="wld_sceneries"
-url="screenshots/WorldEditing/Items/wld_sceneries.png"
-:border="true"
-/>
+![wld_sceneries](../screenshots/WorldEditing/Items/wld_sceneries.png ":no-zoom")
+
 ## Paths
 Allow a player to move between level points and map locations. Usually, paths are hidden and appearing when players pass the level which is placed nearly to them.
 
-<ImageZoom
-alt="wld_paths"
-url="screenshots/WorldEditing/Items/wld_paths.png"
-:border="true"
-/>
+![wld_paths](../screenshots/WorldEditing/Items/wld_paths.png ":no-zoom")
+
+
 ## Level entrances
 There are special units, which are allowing you to enter into a defined level or teleport player to other map coordinates. Levels can have multiple entrances but can have different warp points inside a level. Also, level point using as the game start point. If the point is not defined, the player will start from 0x0 coordinates.
 
-<ImageZoom
-alt="wld_levels"
-url="screenshots/WorldEditing/Items/wld_levels.png"
-:border="true"
-/>
+![wld_levels](../screenshots/WorldEditing/Items/wld_levels.png ":no-zoom")
+
 ### Level Entrance Properties
-<ImageZoom
-alt="wld_levels"
-url="screenshots/WorldEditing/LevelItemProps.png"
-:border="false"
-/>
+![wld_levels](../screenshots/WorldEditing/LevelItemProps.png)
+
 
 **Position** - Displaying currently coordinated with the selected item.
 
@@ -52,7 +38,7 @@ url="screenshots/WorldEditing/LevelItemProps.png"
 
 **Always visible** - with this option the level point will be displayed always. If this flag is disabled, the level point will be shown only when the player opens a path to them.
 
-**Game start point** - the important option needed for the definition of the player's initial position on the game begins. This point must exist on the world map if you creating the world map based episode (if you creating a hub-based episode, this point is not needed).
+**Game start point** - the important option needed for the definition of the player's initial position on the game begins. This point must exist on the world map if you're creating the world map based episode (if you're creating a hub-based episode, this point is not needed).
 
 **Level file** - defining the target level file.
 
@@ -67,8 +53,4 @@ url="screenshots/WorldEditing/LevelItemProps.png"
 ## Music Boxes
 There are special units that are switching playing music when the player character stands on them.
 
-<ImageZoom
-alt="wld_musicboxes"
-url="screenshots/WorldEditing/Items/wld_musicboxes.png"
-:border="true"
-/>
+![wld_musicboxes](../screenshots/WorldEditing/Items/wld_musicboxes.png ":no-zoom")

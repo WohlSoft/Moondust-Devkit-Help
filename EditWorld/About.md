@@ -13,14 +13,11 @@ World map also can be a hub-styled, I.e. world map will not be used. Instead of 
 
 _World map editor interface_
 
-<ImageZoom
-alt="WorldEdit_Workspace"
-url="screenshots/WorldEditing/WorldEdit_Workspace.png"
-:border="true"
-/>
+![WorldEdit_Workspace](../screenshots/WorldEditing/WorldEdit_Workspace.png)
+
 
 **Each world map should have:**
 
-* **Title of episode** - this is the name of the world map which showing in the main menu. If you will not define it and when you will try to play it in the SMBX, you will see the blank title of the episode!
-* **Game start point** - Any level item with a "Game start" flag. If you will not place it, the player will start the game from the 0x0 coordinates of the world map. If you will put multiple levels with the "Game start" flag, you will start the game from the oldest of them.
+* **Title of episode** - this is the name of the world map which showing in the main menu. If you don't define it and when you will try to play it in the SMBX, you will see the blank title of the episode!
+* **Game start point** - Any level item with a "Game start" flag. If you don't place it, the player will start the game from the 0x0 coordinates of the world map. If you put multiple levels with the "Game start" flag, you will start the game from the oldest of them.
 * **All levels should be connected with paths** - if you will don't connect levels with paths you will not be able to walk over the world map. Path items - only one type of item that giving an ability to walk over the world map. Even if you will build a chain of levels which placed together, the next level will be opened only if you will complete it (level is successful only if player end them by getting the exit item. If a player got lose the level (killed by enemy/boss, fell into a pit, lose a level mission, etc), the exit will give the failure result, and you should replay level)!

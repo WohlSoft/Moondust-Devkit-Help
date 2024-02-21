@@ -1,8 +1,8 @@
 # Document view
 
-The Editor can specify the preferred document view mode: Tabs or Sub-Windows. The tabs mode is the default. Content of opened files gets maximized inside the main window and the list of opened files shown at the top row as tabs. The sub-windows mode represents opened files as windows inside of the main window. A sub-windows view is an option for users who prefer the classic look of Editor more closed to SMBX Editor.
+The Editor can specify the preferred document view mode: Tabs or Sub-Windows. The tabs mode is the default. Content of opened files gets maximized inside the main window and the list of opened files shown at the top row as tabs. The sub-windows mode represents opened files as windows inside the main window. A sub-windows view is an option for users who prefer the classic look of Editor more closed to SMBX Editor.
 
-![Tabs](screenshots/Interface/TabView.png)
+![Tabs](../screenshots/Interface/TabView.png ":no-zoom")
 
 You have three ways to switch between sub-windows and tabs view mode:
 * In the "Window" menu, you can select the item "Sub Windows" or

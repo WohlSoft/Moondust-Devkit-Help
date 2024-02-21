@@ -8,11 +8,7 @@ Also in the debugger you will see counters of placed items on the level or on th
 
 To show the debugger box, open the `View -> Debugger` menuitem.
 
-<ImageZoom
-  alt="DebugBox"
-  url="screenshots/Tools/DebuggerBox.png"
-  :border="true"
-/>
+![DebugBox](../screenshots/Tools/DebuggerBox.png)
 
 
 ## Custom counters
@@ -21,16 +17,9 @@ This is a special feature which allow count all items of target bunch of ID's.
 
 You can add and remove any counters in this list by your wish. **To edit or remove counter use the context menu**.
 
-<Note type="tip">
-Note: Due to performance reasons custom counters don't updating automatically. You should refresh custom counters 
-manually by a "refresh" button!
-</Note>
+> **Tip:** Note: Due to performance reasons custom counters don't updating automatically. You should refresh custom counters manually by a "refresh" button!
 
 
-_Custom counter editor dialog_
+_Custom counter editor dialogue_
 
-<ImageZoom
-  alt="DebugCCEdit"
-  url="screenshots/Tools/DebuggerBoxCustomCounterEditor.png"
-  :border="true"
-/>
+![DebugCCEdit](../screenshots/Tools/DebuggerBoxCustomCounterEditor.png ":no-zoom")

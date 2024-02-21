@@ -3,7 +3,7 @@
 Editor's menu bar provides full access to almost all supported features of Editor. This article contains an explanation for the most useful menu items and something also.
 
 ## File
-![fileMenu](screenshots/menus/001_file.png)
+![fileMenu](../screenshots/menus/001_file.png ":no-zoom")
 
 * **New** - Create a new file.
 
@@ -22,7 +22,7 @@ Editor's menu bar provides full access to almost all supported features of Edito
 
 ## Edit
 
-![editMenu](screenshots/menus/002_edit.png)
+![editMenu](../screenshots/menus/002_edit.png ":no-zoom")
 
 * **History**
   * **Undo** - Cancel recent action.
@@ -44,7 +44,7 @@ Editor's menu bar provides full access to almost all supported features of Edito
 
 ## Level
 
-![levelMenu](screenshots/menus/003_level.png)
+![levelMenu](../screenshots/menus/003_level.png ":no-zoom")
 
 * **Change current section** - In this menu, you can switch the current section to another.
 
@@ -65,7 +65,7 @@ Editor's menu bar provides full access to almost all supported features of Edito
 
 ## Test
 
-![testMenu1](screenshots/menus/005_test.png)
+![testMenu1](../screenshots/menus/005_test.png ":no-zoom")
 
 * **Run testing** - will run testing of current level with the default Engine of current config pack. Inter-processing integration will work. It allows you to perform a hot-placing of items into the running level directly if the engine supports the integration.
 
@@ -85,24 +85,22 @@ Editor's menu bar provides full access to almost all supported features of Edito
 
 ## View
 
-![viewMenu](screenshots/menus/006_view.png)
+![viewMenu](../screenshots/menus/006_view.png ":no-zoom")
 
 * **Show/Hide toolboxes** - You can show or hide exists toolboxes.
 * **Fullscreen** - Enabling displaying of the main window in fullscreen mode. This feature is useful for tablets.
 * **Snap to grid** - Enable or disable the aligning of items by the grid.
 * **Animation on/off** - Enable or disable item animations. This option will not be work if on the level map placed too many items.
 
-<Note type="tip">
-You can disable the animation option if you feel that Editor works laggy.
-</Note>
+> **Tip:** You can disable the animation option if you feel that Editor works laggy.
 
 
 
 ## Configuration
 
-![configMenu](screenshots/menus/Configuration.png)
+![configMenu](../screenshots/menus/Configuration.png ":no-zoom")
 
-* **Current configuration status** - Open the dialog that displays the global configuration status window. You will see a list of all loaded items, and you can see all errors that occurred during the loading process.
+* **Current configuration status** - Open the dialogue that displays the global configuration status window. You will see a list of all loaded items, and you can see all errors that occurred during the loading process.
 * **Reload configuration pack** - This option starts the complete reload of all global configuration data without restart of the editor.
 * **Run configure tool...** - Some configuration packs have their own configure tool that can change extra properties of config pack (for example, integration config packs are using it to set up the LunaLua-SMBX directory).
 * **Change configuration pack** - This option giving able to switch into another config pack.
@@ -111,7 +109,7 @@ You can disable the animation option if you feel that Editor works laggy.
 
 ## Tools
 
-![toolsMenu](screenshots/menus/010_tools_configs.png)
+![toolsMenu](../screenshots/menus/010_tools_configs.png ":no-zoom")
 
 * **Refresh menus** - This option will reset menubar options.
 
@@ -144,7 +142,7 @@ Here are displaying all opened documents. You can:
 
 ## Help
 
-![helpMenu](screenshots/menus/011_help.png)
+![helpMenu](../screenshots/menus/011_help.png ":no-zoom")
 
 This menu contains links to helpful information and links to special tools.
 

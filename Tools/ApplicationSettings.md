@@ -13,11 +13,7 @@ like in the browser.
 * **Associate file extensions** - Register supported file types and assign them with the Editor: you can open those
 files in the Editor directly from a file manager.
 
-<ImageZoom
-  alt="AppSettingsMain"
-  url="screenshots/AppSettings/AppSettings_main.png"
-  :border="true"
-/>
+![AppSettingsMain](../screenshots/AppSettings/AppSettings_main.png)
 
 ## Editor
 Here you can enable or disable editing process features.
@@ -37,11 +33,8 @@ for the placing. Then, if you want to open the properties toolbox, use the "Prop
 * **Screen capture default size** - Defines the initial size for the yellow box for the scene area capturing to export 
 it to the image file.
 
-<ImageZoom
-  alt="AppSettingsEditor"
-  url="screenshots/AppSettings/AppSettings_editor.png"
-  :border="true"
-/>
+![AppSettingsEditor](../screenshots/AppSettings/AppSettings_editor.png)
+
 
 ## Defaults
 Here you can redefine initial state of properties boxes when you place new elements, creating events or configuring warps.
@@ -51,11 +44,8 @@ Here you can redefine initial state of properties boxes when you place new eleme
 * **Classic Events tabs to auto-expand** - Choose which event actions blocks need to keep always expanded with
 no matter are they match their default states or not.
 
-<ImageZoom
-  alt="AppSettingsDefaults"
-  url="screenshots/AppSettings/AppSettings_defaults.png"
-  :border="true"
-/>
+![AppSettingsDefaults](../screenshots/AppSettings/AppSettings_defaults.png)
+
 
 ## View
 Here you can set up some view settings. For example, tab direction of the toolboxes.
@@ -69,17 +59,11 @@ Also, here you can change the font size and interface theme from the `themes/` d
   * **Font size** - Change the UI font size.
 * **Theme** - Change the Editor UI look.
   * **Theme** - Select the icons and cursors theme from the list.
-  * **Palette** - Select the UI color palette.
+  * **Palette** - Select the UI colour palette.
   
-<Note type="warning">
-Palette change will be properly applied after the Editor application restart.
-</Note>
+!> **Important:** Palette change will be properly applied after the Editor application restart.
 
-<ImageZoom
-  alt="AppSettingsView"
-  url="screenshots/AppSettings/AppSettings_view.png"
-  :border="true"
-/>
+![AppSettingsView](../screenshots/AppSettings/AppSettings_view.png)
 
 
 ## Logging 
@@ -93,23 +77,14 @@ Here you can set log file, where editor will write its work process logs.
 * **System messages** - Some system messages will be written.
 * **Disable logging** - Don't write any messages into log files.
 
-<ImageZoom
-  alt="AppSettingsView"
-  url="screenshots/AppSettings/AppSettings_logging.png"
-  :border="true"
-/>
+![AppSettingsView](../screenshots/AppSettings/AppSettings_logging.png)
+
 
 ## Extra
 Here you can find some special and unusual settings.
 
-* **Enable auto-scaling on high-DPI monitors** - Enables UI scaling together with the system wide monitor scale factor.
+* **Enable auto-scaling on high-DPI monitors** - Enables UI scaling together with the system-wide monitor scale factor.
 
-<Note type="warning">
-To apply the change for this option you need to restart the Editor application.
-</Note>
+!> **Important note:** To apply the change for this option you will need to restart the Editor application.
 
-<ImageZoom
-  alt="AppSettingsView"
-  url="screenshots/AppSettings/AppSettings_extra.png"
-  :border="true"
-/>
+![AppSettingsView](../screenshots/AppSettings/AppSettings_extra.png)

@@ -5,7 +5,7 @@
 In the year 2009, Andrew "Redigit" Spinks began work on the game: Super Mario Brothers X. 
 Gradually the game gathered a following among fans of the Mario game series.
 
-![SMBXTitleScreen](../images/smbx_scr.png)
+![SMBXTitleScreen](../images/smbx_scr.png ":no-zoom")
 
 In my opinion, it is perhaps one of the all-time best Mario fan games. It combined 
 gameplay elements from games such as Super Mario Bros, by Super Mario Bros. 2, SMB 3, 
@@ -15,7 +15,7 @@ but also allows the player to create full-fledged episodes with a plot!
 
 Unfortunately in 2011, Redigit received a call from the lawyers of Nintendo, 
 who threatened him and demanded he remove SMBX and stop any further development. 
-After some time, the supermariobrothers.org domain was also taken over by Nintendo. 
+After some time, the _supermariobrothers.org_ domain was also taken over by Nintendo. 
 So such a remarkable project was killed.
 
 But even so, it continued to played. A lot of "episodes" have been made for SMBX, 
@@ -27,7 +27,7 @@ There were several attempts to revive the project, but they all failed.
 
 The main mistake: **the game was published UNDER A COPYRIGHTED BRAND**.
 
-![brandTheft](../images/brand_theft.png)
+![brandTheft](../images/brand_theft.png ":no-zoom")
 
 Redigit was making money off SMBX with ads located in the SMBX installer,
 on his forums, and on his website. Redigit was making money with
@@ -45,15 +45,15 @@ union of various development tools, extensions, and lua scripts.
 
 ## Source code
 For a long time, the source code was never published. However, since 10 years after 
-last release, In February 2, 2020, the original source code of SMBX 1.3 has been 
-finally released and published on GitHub with a MIT license. In March 2020, the TheXTech
+last release, In the 2'nd of February 2020, the original source code of SMBX 1.3 has been 
+finally released and published on GitHub with a MIT licence. In March 2020, the TheXTech
 project has been released by Wohlstand as a modern and cross-platform port of SMBX Engine.
 
 
 ## Links
 * [Read more about SMBX](https://wohlsoft.ru/pgewiki/Super_Mario_Bros._X)
-* [Another article about SMBX](http://gaming.wikia.com/wiki/Super_Mario_Bros._X)
-* [Official SMBX Forums](https://www.supermariobrosx.org/forums/) 
-* [Source code opening announcement](https://www.supermariobrosx.org/forums/viewtopic.php?f=69&t=25160)
+* [Another article about SMBX](https://gamicus.fandom.com/wiki/Super_Mario_Bros._X)
+* [Official SMBX Forums](https://www.smbxgame.com/forums/) 
+* [Source code opening announcement](https://www.smbxgame.com/forums/viewtopic.php?f=69&t=25160)
 * [TheXTech - the modern port of SMBX game](https://wohlsoft.ru/forum/viewtopic.php?f=5&t=3677)
-* [The Official site for SMBX2 Project](http://codehaus.wohlsoft.ru/)
+* [The Official site for SMBX2 Project](https://codehaus.moe/)

@@ -5,11 +5,8 @@ for cheats into the engine part while the level is testing.
 
 To open a console, open the `Help -> Show Development Console` menu item.
 
-<ImageZoom
-  alt="AppSettingsView"
-  url="screenshots/Tools/devconsole.png"
-  :border="true"
-/>
+![AppSettingsView](../screenshots/Tools/devconsole.png)
+
 
 ### Available console commands:
 Here is a list of available commands you can use for various tests and works.

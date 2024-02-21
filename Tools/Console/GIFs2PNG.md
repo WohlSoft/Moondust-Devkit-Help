@@ -1,19 +1,19 @@
 # GIFs2PNG
 
-![CatGIFs2PNG](screenshots/Tools/console/cat_gif2png_128.png)
+![CatGIFs2PNG](../../screenshots/Tools/console/cat_gif2png_128.png ":no-zoom")
 
 **Masked GIFs to PNG Converter** (Known as GIFs2PNG) is a graphical conversion tool that converts SMBX64 GIF images 
-(source image with transparency mask) to PNG images with support to alpha-channel and true color palette. 
+(source image with transparency mask) to PNG images with support to alpha-channel and true colour palette. 
 
 ## How it works
 This is the bit-mask ready pair: the front picture with a black background, and the bit mask that defines the 
 transparency level:
 
-![src](screenshots/Tools/console/GIFs2PNG/example_src1.gif) ![srcm](screenshots/Tools/console/GIFs2PNG/example_src1m.gif)
+![src](../../screenshots/Tools/console/GIFs2PNG/example_src1.gif ":no-zoom") ![srcm](../../screenshots/Tools/console/GIFs2PNG/example_src1m.gif ":no-zoom")
 
 After running the tool, the front and mask will be merged into united PNG image that has own transparency: 
 
-![dst](screenshots/Tools/console/GIFs2PNG/example_dst1.png)
+![dst](../../screenshots/Tools/console/GIFs2PNG/example_dst1.png ":no-zoom")
 
 ## Usage
 

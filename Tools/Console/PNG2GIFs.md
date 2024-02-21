@@ -1,6 +1,6 @@
 # PNG2GIFs
 
-![CatPGE2GIFs](screenshots/Tools/console/cat_png2gif_128.png)
+![CatPGE2GIFs](../../screenshots/Tools/console/cat_png2gif_128.png ":no-zoom")
 
 **PNG to masked GIFs converter** (Known as PNG2GIFs) is a graphical conversion tool that converts a transparent 
 PNG image into a SMBX64 compatible GIF with the transparency mask format. This tool allows you to save a lot of time
@@ -10,12 +10,12 @@ when creating a transparency masks for use in the SMBX game engine.
 
 This is a common PNG image with own transparency: 
 
-![src](screenshots/Tools/console/GIFs2PNG/example_dst1.png)
+![src](../../screenshots/Tools/console/GIFs2PNG/example_dst1.png ":no-zoom")
 
 
 After running the tool, the front and it's mask will be generated:
 
-![dst](screenshots/Tools/console/GIFs2PNG/example_src1.gif) ![dstm](screenshots/Tools/console/GIFs2PNG/example_src1m.gif)
+![dst](../../screenshots/Tools/console/GIFs2PNG/example_src1.gif ":no-zoom") ![dstm](../../screenshots/Tools/console/GIFs2PNG/example_src1m.gif ":no-zoom")
 
 Result can be freely used with the vanilla SMBX game and will work properly.
 

@@ -1,24 +1,24 @@
 # Palette Filter
-![PalleteFilter](screenshots/Tools/console/pallete_filter_128.png)
+![PalleteFilter](../../screenshots/Tools/console/pallete_filter_128.png ":no-zoom")
 
-**Palette filter** - a tool for color adjuction of images into the pallete of a reference picture.
+**Palette filter** - A tool to adjust colours of images into the palette of a reference picture.
 
 ## How it works
 
 This utility can be used to adjust the palette of any images you have into the given reference picture that
-contains the set of colors of your palette.
+contains the set of colours of your palette.
 
 This is an example of the reference image that defines the target palette:
 
-![Ref](screenshots/Tools/console/PalleteFilter/reference_example.png)
+![Ref](../../screenshots/Tools/console/PalleteFilter/reference_example.png ":no-zoom")
 
 This is the source image before the filtering:
 
-![Ref](screenshots/Tools/console/PalleteFilter/example_src.png)
+![Ref](../../screenshots/Tools/console/PalleteFilter/example_src.png ":no-zoom")
 
 After you run the utility, you will get the next result:
 
-![Ref](screenshots/Tools/console/PalleteFilter/example_dst.png)
+![Ref](../../screenshots/Tools/console/PalleteFilter/example_dst.png ":no-zoom")
 
 
 ## Usage
@@ -62,4 +62,3 @@ Where:
    <Input file path(s)>  (accepted multiple times)
      (required)  Input PNG file(s) (GIFs are not supported by this tool)
 ```
-

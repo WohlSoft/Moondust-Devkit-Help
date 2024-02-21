@@ -1,7 +1,7 @@
 # How to use custom graphics
 There usually comes a time when you find the need to replace the default images with your own custom graphics. This 
 is possible without overwriting any of the default images. Custom graphics are a great way to make your game episode
-unique and colorful.
+unique and colourful.
 
 The process is quite simple, but for those of you who don't know how, here is an in depth look at using custom 
 graphics with the editor.

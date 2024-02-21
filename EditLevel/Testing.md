@@ -21,7 +21,7 @@ For Windows-only engines, Editor has support for an IPC bridge that can work on 
 ## Test settings
 ![eventsList](../screenshots/Testing/test_settings.png ':size=200px')
 
-It's a dialog of generic settings that allows you to configure some features: choose 1 or 2 players game, select playable characters and their states, add vehicles/mounts, etc.
+It's a dialogue of generic settings that allows you to configure some features: choose 1 or 2 players game, select playable characters and their states, add vehicles/mounts, etc.
 
 **There are some extra settings:**
 - **God Mode** - Makes your playable character being invincible to dangerous NPCs and surfaces.
@@ -119,7 +119,7 @@ It's a bridge proxy which allows you to use SMBX-38A engine to run level tests o
 ## Wine settings
 ![eventsList](../screenshots/Testing/wine_settings.png ':size=200px')
 
-This dialog allows you to configure a work of Wine on non-Windows operating system to make a proper work of LunaTester and SMBX-38A engines.
+This dialogue allows you to configure a work of Wine on non-Windows operating system to make a proper work of LunaTester and SMBX-38A engines.
 
 **Location of Wine**
 

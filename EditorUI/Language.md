@@ -20,4 +20,4 @@ To switch a language go to the `Help -> Language -> [the language]` menu.
 
 _Languages list_
 
-![LangsList](screenshots/Interface/003_langChange.png)
+![LangsList](../screenshots/Interface/003_langChange.png ':no-zoom')

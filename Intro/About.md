@@ -26,7 +26,7 @@ The Project initially had the "PlatGenWohl" codename ("**P**latform **G**ame **e
 ## History
 
 ### Beginning
-In December 2013 I had the desire to create a [SMBX](WhatIsSMBX.md)-compatible
+In December 2013 I had the desire to create a [SMBX](/Intro/WhatIsSMBX.md)-compatible
 game engine, and in doing so, give it a new life. The inspiration for this was [Hedgewars](http://hedgewars.org/), a clone of the game
 "Worms" by the company Team17. I decided to create a new game engine,
 with the source-code being open under the GPLv3 License.

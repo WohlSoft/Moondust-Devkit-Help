@@ -58,12 +58,7 @@ Layer that is selected in a list will be moved with a specified speed in the nex
 
 _Layer move list_
 
-<ImageZoom
-alt="eventsList"
-url="screenshots/LevelEditing/Events/003_moveLayer.png"
-width="200px"
-:border="true"
-/>
+![eventsList](../screenshots/LevelEditing/Events/003_moveLayer.png ":size=200px")
 
 
 ## Auto-scroll sections

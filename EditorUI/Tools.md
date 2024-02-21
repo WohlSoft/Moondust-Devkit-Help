@@ -4,17 +4,8 @@ Editor's interface has draggable and sizable toolboxes and toolbars. You can dra
 
 *Toolbars*
 
-<ImageZoom 
-  alt="toolbars"
-  url="screenshots/Interface/006_toolbar.png" 
-  :border="true" 
-/>
+![toolbars](../screenshots/Interface/006_toolbar.png)
 
 *Toolbox and Toolbar placement zones*
 
-<ImageZoom 
-  alt="toolbars"
-  url="screenshots/Interface/002_toolboxes.png" 
-  :border="true"
-/>
-
+![toolbars](../screenshots/Interface/002_toolboxes.png)

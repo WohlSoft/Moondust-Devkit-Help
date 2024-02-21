@@ -29,13 +29,13 @@ pixels preserved. The result is a perfect compound of the image over the backgro
 This technique is used for painting pointing device cursors, in typical 2-D videogames for characters, bullets and
 so on (the sprites), for GUI icons, and for video titling and other image mixing applications.
 
-Although related (due to being used for the same purposes), transparent colors and alpha channels are techniques
-which do not involve the image pixel mixage by binary masking. 
+Although related (due to being used for the same purposes), transparent colours and alpha channels are techniques
+which do not involve the image pixel mixing by binary masking. 
 
 ## Lazily-made masks
 
 Lazily-made / Noob-made / noob drawing / result of lazy effort - These are pairs of an image and mask, created
-via simple copies of the original image, with a white color.
+via simple copies of the original image, with a white colour.
 
 ![lazyFront](../screenshots/Tools/console/LazyFix/example_src1.gif ':no-zoom') ![lazyBack](../screenshots/Tools/console/LazyFix/example_src1m.gif ':no-zoom')
 

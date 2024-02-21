@@ -2,11 +2,7 @@
 ## Overview
 This is the universal and customizable item set, the main container for almost all elements.
 
-<ImageZoom
-  alt="TilesetBox"
-  url="screenshots/Tools/TilesetBox.png"
-  :border="true"
-/>
+![TilesetBox](../screenshots/Tools/TilesetBox.png)
 
 By switching between the different tabs, you are able to navigate to the items you want to place in your level.
 
@@ -16,13 +12,10 @@ Tabs at the top row are **categories**, and the tabs at the second row are <u>ti
 Even though quick access to all features is nice, there is still a lot of clicking involved in 
 order to get to the items you want to access. This is where the “**Custom**” tab is helpful.
 
-<ImageZoom
-  alt="CustomTilesetBox"
-  url="screenshots/Tools/TilesetBox_custom.png"
-  :border="true"
-/>
+![CustomTilesetBox](../screenshots/Tools/TilesetBox_custom.png)
 
-![newTileset](screenshots/Tools/TilesetBox_customNew.png)<br />
+
+![newTileset](../screenshots/Tools/TilesetBox_customNew.png ":no-zoom")<br/>
 With a press of this button, you will be brought into a Tileset Editor, 
 in which you can create your own tilesets of any kind.
 
@@ -32,26 +25,11 @@ custom assets, or sprites without. After giving the tileset a name and hitting "
 it will be saved into the level folder, and the tileset will automatically be 
 displayed as part of the "**Custom**" tab in the Tileset Itembox.
 
-<ImageZoom
-  alt="CustomTilesetEditor"
-  url="screenshots/Tools/TileSet_EditorCustom.png"
-  width=200px
-  :border="true"
-/><ImageZoom
-  alt="GlobalTilesetEditor"
-  url="screenshots/Tools/TileSet_Editor.png"
-  width=200px
-  :border="true"
-/>
+![CustomTilesetEditor](../screenshots/Tools/TileSet_EditorCustom.png ":size=200px")
+![GlobalTilesetEditor](../screenshots/Tools/TileSet_Editor.png ":size=200px")
 
 
-<Note type="warning">
-Note for SMBX2 users: Certain features have been specifically removed from the 
-Tileset Itembox for this build. This is because these NPCs, Blocks, BGOs, etc. are 
-unfinished and likely to behave unexpectedly, or cause crashes or errors. If an NPC you 
-are looking for is not in the Tileset Itembox, please avoid using it in your levels, as
-it is very likely to behave differently in future releases.
-</Note>
+!> **Important note:** Note for SMBX2 users: Certain features have been specifically removed from the Tileset Itembox for this build. This is because these NPCs, Blocks, BGOs, etc. are unfinished and likely to behave unexpectedly, or cause crashes or errors. If an NPC you are looking for is not in the Tileset Itembox, please avoid using it in your levels, as it is very likely to behave differently in future releases.
 
 
 More about Tileset Editor features:
@@ -77,13 +55,7 @@ the `Tools -> Tilesets and pallets` menu.
 ## Global groups
 Also, you can create the groups of tilesets which will always be displayed in the tileset box.
 
-<Note type="tip">
-Note: If you want to create a category, do save the tileset group with a new category name, 
+> **Note:** If you want to create a category, do save the tileset group with a new category name, 
 typed manually: it will appear automatically.
-</Note>
 
-<ImageZoom
-  alt="GlobalTilesetGroupEditor"
-  url="screenshots/Tools/TileSet_Group_Editor.png"
-  :border="true"
-/>
+![GlobalTilesetGroupEditor](../screenshots/Tools/TileSet_Group_Editor.png)

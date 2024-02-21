@@ -1,5 +1,5 @@
 # LazyFix tool
-![CatGlasses](screenshots/Tools/console/cat_glasses_128.png)
+![CatGlasses](../../screenshots/Tools/console/cat_glasses_128.png ":no-zoom")
 
 The **LazyFix Tool** is a tool that fixes masks considered invalid or improper (such as when the mask is the 
 same as the front image). 
@@ -7,11 +7,11 @@ same as the front image).
 ## How it works
 This is an example of invalid mask (which was made with a lazy effort by a simple copying of the picture):
 
-![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_src1m.gif)
+![lazyFront](../../screenshots/Tools/console/LazyFix/example_src1.gif ":no-zoom") ![lazyBack](../../screenshots/Tools/console/LazyFix/example_src1m.gif ":no-zoom")
 
 After processing, you will get the next result:
 
-![lazyFront](screenshots/Tools/console/LazyFix/example_src1.gif) ![lazyBack](screenshots/Tools/console/LazyFix/example_dst1m.gif)
+![lazyFront](../../screenshots/Tools/console/LazyFix/example_src1.gif ":no-zoom") ![lazyBack](../../screenshots/Tools/console/LazyFix/example_dst1m.gif ":no-zoom")
 
 For the proper bit-mask based sprite, the mask defines the pixel transparency level, and it should never contain the
 copy of original sprite.

@@ -2,15 +2,11 @@
 Configuration Manager allows you to control and select the global game configurations.
 
 ## Configuration status
-This dialog allows you to check states of current game configuration and find errors if they exist.
+This dialogue allows you to check states of current game configuration and find errors if they exist.
 
 ![007_configStatus](../screenshots/Tools/007_configStatus.png ':no-zoom')
 
-<ImageZoom
-  alt="008_ConfigStatusBox"
-  url="screenshots/Tools/008_ConfigStatusBox.png" 
-  :border="true"
-/>
+![008_ConfigStatusBox](../screenshots/Tools/008_ConfigStatusBox.png)
 
 ## Reload global configuration
 This feature allows reloading global configuration settings without restarting of application. 

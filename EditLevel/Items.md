@@ -30,7 +30,7 @@ _Block context menu_
 
 * **Invisible** - Make the block invisible. It will appear once it will get a hit from the bottom side. This flag useful for a place on the map secret bonuses or build barriers for a move up.
 * **Slippery** - The block's top surface will be slippery.
-* **Change contained NPC** - Open NPC selection dialog for change block content.
+* **Change contained NPC** - Open NPC selection dialogue for change block content.
 
 * **Layer** - here was defined the layer which is the owner of this block.
   All items at first are members of the "Default" layer.
@@ -101,11 +101,7 @@ This option can be used only as a hack of SMBX to force display background BGO a
 
 _BGO Properties toolbox_
 
-<ImageZoom
-alt="BGO_Context"
-url="screenshots/LevelEditing/Items/Props_BGO.png"
-:border="true"
-/>
+![BGO_Context](../screenshots/LevelEditing/Items/Props_BGO.png)
 
 ### Hack: Z-Order in SMBX
 
@@ -154,14 +150,14 @@ _Context menu of NPC_
 
 Each NPC has switches and flags:
 
-* Default direction - NPC will start its movement in a defined direction. The direction option can have other names and values, for example, the name "Activation state" and values "On"/"Off", etc. Dependent on the algorithm and global settings.
-* Friendly - NPC won't communicate with playable characters and with other NPC's. Friendly NPC's can't be killed, can't hurt player, can't be taken or grabbed. Playable characters and other NPC's can't stay on top of the friendly NPCs.
-* Not movable - NPC will be idle irrespective of its algorithm.
-* Set as boss - (inside of SMBX this option calling as "Legacy Boss") This is a special flag that automatically enables special events for some bosses which supports them. For example: if NPC has the activated "Boss" flag, will be changed background music to the boss's theme and when the boss will be defeat, will be spawned a special bonus item or the game will be completed.
-* Talk message - The message which will be displayed when a player will try to talk with this NPC. After displaying this message will be activated event slot.
-* Generator - Making NPC generator. From the one point will be spawned new NPC's every each defined time delay.
-  * Generator type - Warp - NPC will be smoothly warped. Projectile - NPC will be appeared by sharply shoot.
-  * Generator direction - defining the direction of the spawn of NPC
+* **Default direction** - NPC will start its movement in a defined direction. The direction option can have other names and values, for example, the name "Activation state" and values "On"/"Off", etc. Dependent on the algorithm and global settings.
+* **Friendly** - NPC won't communicate with playable characters and with other NPC's. Friendly NPC's can't be killed, can't hurt player, can't be taken or grabbed. Playable characters and other NPC's can't stay on top of the friendly NPCs.
+* **Not movable** - NPC will be idle irrespective of its algorithm.
+* **Set as boss** - (inside SMBX this option calling as "Legacy Boss" referring enabling of behaviour from previous SMBX versions) This is a special flag that defines the special behaviour for some bosses which supports them. For example: if NPC has the activated "Boss" flag, the background music will be changed to the boss's theme and when the boss will be defeat, a special bonus item will be spawned or the game will be set as completed.
+* **Talk message** - The message which will be displayed when a player will try to talk with this NPC. After displaying this message will be activated event slot.
+* **Generator** - Making NPC generator. From the one point will be spawned new NPC's every each defined time delay.
+  * **Generator type** - Warp - NPC will be smoothly warped. Projectile - NPC will be appeared by sharply shoot.
+  * **Generator direction** - defining the direction of the spawn of NPC
 
 _Message box editing_
 
@@ -248,7 +244,7 @@ to the map:<br/>
 
 ### Generators
 
-Generator flag in the Properties dialog will make generator (or re-spawning
+Generator flag in the Properties dialogue will make generator (or re-spawning
 point) of selected NPC
 
 ![Props_NPC_generator](../screenshots/LevelEditing/Items/Props_NPC_generator.png ':size=200px')
@@ -496,7 +492,7 @@ You also can press the "Set" button and select a target point on the world map i
 
 ![017_World_map_coordinates](../screenshots/LevelEditing/Warps/017_World_map_coordinates.png)
 
-_World map point selection dialog_
+_World map point selection dialogue_
 
 ![GotoWorldMap](../screenshots/WorldEditing/GotoWorldMap.png ':size=200px')
 
