@@ -1,10 +1,13 @@
 name: Auto-Upload
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   upload:
-    name: Upload docute-based help to server
+    name: Upload Docsify-based help to server
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo
