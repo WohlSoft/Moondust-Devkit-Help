@@ -2,7 +2,16 @@ window.$docsify =
 {
     loadSidebar: true,
     loadNavbar: true,
-    subMaxLevel: 2
+    subMaxLevel: 2,
+    name: 'Moondust Editor'
+    /*,
+    plugins: [
+        EditOnGithubPlugin.create(
+            "https://github.com/WohlSoft/Moondust-Devkit-Help/blob/master",
+            "https://github.com/WohlSoft/Moondust-Devkit-Help/edit/master",
+            "Edit this page on GitHub"
+        )
+    ]*/
 };
 
 /*

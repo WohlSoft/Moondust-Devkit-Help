@@ -31,7 +31,7 @@ img.emoji {
   vertical-align: middle;
 }
 span.emoji {
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   font-size: 1.2em;
   vertical-align: middle;
 }
@@ -156,14 +156,14 @@ li input[type='checkbox'] {
   transition: color 0.3s;
 }
 .app-nav a:hover {
-  color: #ea6f5a;
-  color: var(--theme-color, #ea6f5a);
+  color: #009688;
+  color: var(--theme-color, #009688);
 }
 .app-nav a.active {
-  border-bottom: 2px solid #ea6f5a;
-  border-bottom: 2px solid var(--theme-color, #ea6f5a);
-  color: #ea6f5a;
-  color: var(--theme-color, #ea6f5a);
+  border-bottom: 2px solid #009688;
+  border-bottom: 2px solid var(--theme-color, #009688);
+  color: #009688;
+  color: var(--theme-color, #009688);
 }
 .app-nav li {
   display: inline-block;
@@ -331,8 +331,8 @@ main.hidden {
   opacity: 0.4;
 }
 .sidebar-toggle span {
-  background-color: #ea6f5a;
-  background-color: var(--theme-color, #ea6f5a);
+  background-color: #009688;
+  background-color: var(--theme-color, #009688);
   display: block;
   margin-bottom: 4px;
   width: 16px;
@@ -637,11 +637,11 @@ section.cover blockquote > p > a:hover {
   color: var(--theme-color, #ea6f5a);
 }
 body {
-  background-color: #3f3f3f;
+  background-color: #2f3136;
 }
 /* sidebar */
 .sidebar {
-  background-color: #3f3f3f;
+  background-color: #282727;
   color: #c8c8c8;
 }
 .sidebar li {
@@ -662,8 +662,8 @@ body {
   padding: 0;
 }
 .sidebar ul li.active > a {
-  color: #ea6f5a;
-  color: var(--theme-color, #ea6f5a);
+  color: #009688;
+  color: var(--theme-color, #009688);
   font-weight: 600;
 }
 /* markdown content found on pages */
@@ -672,12 +672,12 @@ body {
 .markdown-section h3,
 .markdown-section h4,
 .markdown-section strong {
-  color: #657b83;
+  color: #d9d9d9;
   font-weight: 600;
 }
 .markdown-section a {
-  color: #ea6f5a;
-  color: var(--theme-color, #ea6f5a);
+  color: #009688;
+  color: var(--theme-color, #009688);
   font-weight: 600;
 }
 .markdown-section h1 {
@@ -719,8 +719,8 @@ body {
   padding-left: 1.5rem;
 }
 .markdown-section blockquote {
-  border-left: 4px solid #ea6f5a;
-  border-left: 4px solid var(--theme-color, #ea6f5a);
+  border-left: 4px solid #55e191;
+  border-left: 4px solid var(--theme-color, #55e191);
   color: #858585;
   margin: 2em 0;
   padding-left: 20px;
@@ -733,7 +733,7 @@ body {
   margin: 1em 0;
 }
 .markdown-section em {
-  color: #7f8c8d;
+  color: #aab8b9;
 }
 .markdown-section code {
   background-color: #282828;
@@ -882,7 +882,7 @@ pre::after {
 }
 .markdown-section p.tip {
   background-color: #282828;
-  color: #657b83;
+  color: #cad4dc;
 }
 input[type='search'] {
   background: #4f4f4f;

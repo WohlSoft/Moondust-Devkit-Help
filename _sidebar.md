@@ -1,5 +1,3 @@
-# Moondust Editor
-
 * Main
   * [Intro](/)
 
