@@ -28,13 +28,15 @@ _Events toolbox_
 * [Trigger another event](#trigger-another-event)
 
 ## Layer visibility
-This options list allows for changing the visibility of layers. I.e. visibly of all items which are members of the target layer.
+There are lists of layers are used to perform specific action at the title of the list.
+I.e. change the visibility of all member items of layers added into the list. 
 
-To add a layer to the list, please, select them in the list, and press "+" to add this layer to its list.
+To add a layer into the list, please, select it in the general list shown at the top of
+the tab, and press "+" button at the desired list to add.
 
-To remove a layer from the list, select layer in one of three lists and press "-".
+To remove a layer from the list, select the layer in the list from which you want to remove it, and then, press the "-" button.
 
-!> **Note:** If you have an SMBX64 LVL file format, you will get a limit of layers for every list in 20 entries. Layers outed from 20 items per list will not be saved in SMBX format. By SMBX 1.3 Editor it's possible to add 21 layers into each list, however, here is a bug, that makes no way to remove layers from a list. Instead, it copies the last layer entry instead of the removed layer.
+!> **Note:** Levels saved in the SMBX64 LVL format has a limitation of 20 items per every list. If you add more and save your level as SMBX64 LVL format, all items out of 20 limit will be removed. Level files of PGE-X (LVLX) and SMBX-38A formats don't have this limit. 
 
 _Layer visibly tab_
 
@@ -64,9 +66,9 @@ _Layer move list_
 ## Auto-scroll sections
 Here you can define auto-scrolling of the target section.
 
-!> **Notes!** Please read them carefully
-* Don't forget to define target section size in the section properties of same event. If you wasn't redefine of section. Auto-scroll will not be working.
-* <span style="color: #af0000;">If you want to use auto-scrolling in the SMBX, <span style="color: red;">be careful</span>, because SMBX engine has a bug: Auto-scroll will work only for one section and only if this section contains a start point of playable character and when event contains auto-scrolling definition will be triggered via special "Level - Start" event. If you try auto-scroll another section, it will not work!</span>
+!> **Notes!** Please read them carefully, they are very important!
+* Don't forget to specify the target section size in the section properties of the same event. If you didn't specify the section, Auto-scroll will not work.
+* <span style="color: #af0000;">If you want to use auto-scrolling in the legacy SMBX engine, <span style="color: red;">be extremely careful</span>, the logic in the legacy engine is buggy and requires extremely: you can only make an auto-scrolling section that matches by the index of the event itself in the list. I.e. If you use the "Level - Start" event to trigger the auto-scrolling, you can only use the Section 0 (1 in the original SMBX Editor) to run the auto-scrolling. Or, you can use the section 3 (4 in the original) if you make a custom event that appears in the list next after "P-Switch - End".</span>
 
 
 **Horizontal speed**:
@@ -79,24 +81,48 @@ Here you can define auto-scrolling of the target section.
 - If >0 - move to down
 - If =0 - stop
 
-_Layer move list_
+_Autoscroll speed setup: legacy and modern_
 
-![eventsList](../screenshots/LevelEditing/Events/004_autoscroll.png ':size=200px')
+![eventsList](../screenshots/LevelEditing/Events/004_autoscroll.png ':size=200px')  ![eventsList](../screenshots/LevelEditing/Events/004_autoscroll_modern.png ':size=200px')
 
 
-### How to make the auto-scroll of the section
-1) In the first step, you should define the default section size which will be auto-scrolled.
+### How to make the auto-scroll of the section (Modern Method)
+This method is works in **TheXTech**, **SMBX-38A**, and is supposed to work in the **Moondust Engine** once this behaviour will be fixed.
+Unlike legacy method, you can control the auto-scrolling dynamically, trigger it at any time, start, stop, change speed/direction, etc.
+And also, you can have the auto-scrolling enabled in multiple different sections!
 
-2) Open in the same event the "section settings" tab and then mark "define new" and set a size of auto-scrollable part of screen. You can click "Capture" button to define size of the scrollable part of the section in the interactive mode:<br/>
+1) As the first step, you should specify the initial section size which will be used as an auto-scrolled frame.
+
+2) At the same event entry, open the "Section settings" tab and then select them "define new" and set a size of the auto-scrollable part of screen. You can click the "Capture" button to select the size of the scrollable area of the section in the interactive mode:<br/>
+   ![eventsList](../screenshots/LevelEditing/Events/006_capture_size_modern.png ':size=200px')
+   <br/>There are examples of auto-scrolling areas:
+   <br/>![eventsList](../screenshots/LevelEditing/Events/Autoscroll_examples.png ':size=200px')
+3) Find below the "Change the autoscroll speed" setting, enable it, and assign the speed X and speed Y values.
+4) Make this event auto-start or assign a trigger to block or to an NPC to trigger the autoscroll.
+
+> **Tip:** You may want to have the "change section size" event being separate from the auto-scroll toggling and so, you can control the auto-scroll speed just dynamically without bothering the section's size. You can have a chain of events that assign the speed and direction of the auto-scroll, so you can have the auto-scroll that changes its route dynamically.
+
+> **Note:** The only "Simple" method is implemented right now, the "Advanced" is not yet done. It's planned that you can make build the auto-scrolling path from vertexes and curves using this way.
+
+If you did everything correctly, the screen will start its scrolling when you launch the test of this level, or when you cause an even trigger to start the auto-scrolling at the desired section.
+
+### How to make the auto-scroll of the section (Legacy Method)
+This method is used to configure the auto-scrolling that will work in the **original legacy SMBX engine**. To use this method, you are required to use the "Autoscroll Section (Legacy)" tab.
+
+1) As the first step, you should specify the initial section size which will be used as an auto-scrolled frame.
+
+2) At the same event entry, open the "Section settings" tab and then select them "define new" and set a size of the auto-scrollable part of screen. You can click the "Capture" button to select the size of the scrollable area of the section in the interactive mode:<br/>
    ![eventsList](../screenshots/LevelEditing/Events/006_capture_size.png ':size=200px')
    <br/>There are examples of auto-scrolling areas:
    <br/>![eventsList](../screenshots/LevelEditing/Events/Autoscroll_examples.png ':size=200px')
 
-3) Set the number of a section that will be auto-scrolled and the speed X and speed Y values.
+3) Set the number of a section that will be auto-scrolled and the speed X and speed Y values. In the legacy SMBX engine and at the TheXTech using legacy method, the section number should match the index of the event itself (a 0-based order in the list of events).
 
-!> **Important:** Don't forget to mark this event to auto start! (requires by SMBX, if you will play the same level in the Moondust Engine, auto-scroll can be toggled via side event triggers (blocks or NPC's))
+!> **Important:** Don't forget to mark this event as "auto start"!
 
-If you made everything correctly, the screen will start scrolling when this level will be started, when you will enter into a section with defined auto-scrolling, and when you will toggle auto-scroll via side event triggers.
+If you did everything correctly, the screen will start its scrolling when you launch the test of this level.
+
+
 
 ## Change section settings
 Here you can set options for each section of this level. You can define: music, background, and size/position of the selected section.
@@ -110,6 +136,8 @@ Inside one event, you can define options for slightly sections one event. Also, 
 **Change music** - This option can change the music of the selected section, or switch to section default.
 
 **Change background** - This option can change the background of the selected section.
+
+**Change the autoscroll speed** - This option allows to specify the speed and direction of the camera autoscroll on this section using modern method. See the manual above on how to build auto-scrolled sections. 
 
 ![eventsList](../screenshots/LevelEditing/Events/005_section_settings.png ':size=200px')
 
@@ -128,8 +156,6 @@ Here you can:
 _Message box editing_
 
 ![eventsList](../screenshots/LevelEditing/MessageBox.png ':size=200px')
-
-!> **Important:** Keep a note that all new-line characters will be removed if you save them into SMBX64 LVL format. Use extra-spaces as a workaround.
 
 
 ## Force player controls
