@@ -147,7 +147,7 @@ _Capturing of new size what will be defined by event_
 
 ## Common actions
 Here you can:
-- Display message box
+- Display a message box
 - Play sound from the list
 - Start the end of a game algorithm: Play end of game fanfares -> show credits screen -> save game, return to the main menu
 
