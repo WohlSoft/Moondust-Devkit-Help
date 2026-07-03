@@ -26,10 +26,22 @@ The Project initially had the "PlatGenWohl" codename ("**P**latform **G**ame **e
 ## History
 
 ### Beginning
-In December 2013 I had the desire to create a [SMBX](/Intro/WhatIsSMBX.md)-compatible
-game engine, and in doing so, give it a new life. The inspiration for this was [Hedgewars](http://hedgewars.org/), a clone of the game
-"Worms" by the company Team17. I decided to create a new game engine,
-with the source-code being open under the GPLv3 Licence.
+All was started from the Summer of the year 2013 when I first time learned 
+that the fan-game "[Super Mario Bros. X](/Intro/WhatIsSMBX.md)" exists.
+First I tried to play a demo of the "Sarasaland Adventure 2" made 
+by Mike Slayton known as Otabo. And later I started to experiment with 
+the Editor to make some kind of levels to just prove how the engine works.
+During these experiments I learned about large amount of bugs that started 
+to be pretty annoying! But once I learned the project is abandoned by
+its author two years ago, and that he removed it from the original place
+after sue threats came from American Nintendo's representatives.
+Later, in December 2013, I got the desire to create a [SMBX](/Intro/WhatIsSMBX.md)-compatible
+game engine, and in doing so, give it a new life. The inspiration for
+this was a [Hedgewars](http://hedgewars.org/) game founded by my compatriot
+from another city, a clone of the game "Worms" by the company Team17.
+I decided to create a new game engine, with the source-code being open
+under the GPLv3 Licence, to not be like original proprietary one and ensure
+project will continue its life even without me.
 
 One of the most important parts of this project in my opinion is the
 NAME. Because of the NAME he gave SMBX, Redigit was confronted with legal
@@ -46,14 +58,15 @@ live if it is free, libre, open-source.
 
 ### The Birth of the Editor
 My introduction wasn't met well by the SMBX community, as they first thought I 
-was another scammer advertising a fake SMBX 1.4. After completing
-the initial research, I started the actual development of the Editor
-on March 24th, 2014. The Editor project began as a part of my 
+was another scammer advertising a fake SMBX 1.4 or a similar "project".
+After completing the initial research, I started the actual development 
+of the Editor on 24th of March 2014. The Editor project began as a part of my 
 SMBX Research Works that started some months before. 
-On April 28th, 2014, Kevsoft joined the Moondust Project (named as "PGE Project" at that time), and shortly afterward, Editor version 0.0.7-Alpha was released. The first
+On 28th April 2014, Kevsoft joined the Moondust Project (named as
+"PGE Project" at that time), and shortly afterward, Editor version 0.0.7-Alpha was released. The first
 fully-featured version with the ability to read/write files, a history
 manager, and full support of NPC rendering was 0.0.8-Alpha, which
-was released on July 13th, 2014. On October 20th of 2014, after
+was released on 13th July 2014. On October 20th of 2014, after
 a long time of development, the first stable and fully-featured
 build of the editor was released with the ability to read/write
 level-, world- and interactive NPC editor files etc. This version
@@ -62,7 +75,8 @@ content packages without needing to overwrite existing content files.
 
 ### Founding the Engine
 In October 2014, I started the first sketch for the Engine. It was a simple SDL2 
-application with the use of Box2D physics and OpenGL rendering. After some time, I made it able to play levels with simple graphics. The playable
+application with the use of Box2D physics and OpenGL rendering. After some time, 
+I made it able to play levels with simple graphics. The playable
 character was just a blue rectangle. Gradually, I implemented the support
 for the rest of the graphics, sound, world maps, menus, screens, etc.
 I made it so playable characters would be rendered correctly. Bye-bye, blue rectangle!
@@ -87,10 +101,10 @@ PGE Engine (later renamed into Moondust Engine), and instead, they were focused 
 In 2016, I have described the nature of SMBX2 as the "Biggest
 workaround in the Universe". Horikawa Otane agreed with me. She supported
 my development of the Engine. However, a while later, the SMBX2 team
-majorly changed when Horikawa Otane left the project because of personal reasons. After 2016, I started to procrastinate
-and switch to other projects. My biggest mistake was to care a lot
-about the SMBX2 development. At the end of 2019,
-I finally decided to reduce my attention to SMBX2 and focus on
+majorly changed when Horikawa Otane left the project because of personal reasons.
+After 2016, I started to procrastinate and switch to other projects.
+My biggest mistake was to care a lot about the SMBX2 development. 
+At the end of 2019, I finally decided to reduce my attention to SMBX2 and focus on
 my own development process.
 
 ### SMBX source code was published, founding TheXTech
