@@ -120,7 +120,7 @@ configured standard.
 
 | Name        |       Type       | Description                                                                                        | Default |   Supported engines    |
 |-------------|:----------------:|----------------------------------------------------------------------------------------------------|:-------:|:----------------------:|
-| name        |       ing        | Defines the NPC's name which will be used in the editor                                            | ""[^1]  | Moondust Editor/Engine |
+| name        |      string      | Defines the NPC's name which will be used in the editor                                            | ""[^1]  | Moondust Editor/Engine |
 | grid        | unsigned integer | Re-defines alignment grid size for this NPC in the editor                                          |   32    | Moondust Editor/Engine |
 | gridoffsetx |  signed integer  | Defines horisontal offset at aligned by grid coordinate value in the editor                        |    0    | Moondust Editor/Engine |
 | gridoffsety |  signed integer  | Defines vertical offset at aligned by grid coordinate value in the editor                          |    0    | Moondust Editor/Engine |
