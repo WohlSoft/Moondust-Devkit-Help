@@ -68,15 +68,14 @@ framestyle=1
 | **jumphurt**         | boolean (0 false, 1 true) | If 1, the player gets hit from landing on the enemy.                         |  0[^1]  |      **All**      |
 | **nohurt**           | boolean (0 false, 1 true) | If 1, the NPC doesn't hurt you.                                              |  0[^1]  |      **All**      |
 | spinjumpsafe         | boolean (0 false, 1 true) | If 1, it's safe to jump on NPC with a spin.                                  |    0    |       SMBX2       |
-| **grabside**         | boolean (0 false, 1 true) | Gives the player the ability to grab NPCs from the side                      |  0[^1]  |      **All**      |
-| **grabtop**          | boolean (0 false, 1 true) | Gives Mario the ability to grab NPC's like shy guys                          |  0[^1]  |      **All**      |
-| **grabtop**          | boolean (0 false, 1 true) | Gives Mario the ability to grab NPC's like shy guys                          |  0[^1]  |      **All**      |
+| **grabside**         | boolean (0 false, 1 true) | If 1, Player gets an ability to grab an NPC from the side                    |  0[^1]  |      **All**      |
+| **grabtop**          | boolean (0 false, 1 true) | If 1, Player gets an ability to grab an NPC while standing on in             |  0[^1]  |      **All**      |
 | harmlessgrab         | boolean (0 false, 1 true) | If 1, the NPC is unable to hit other NPCs while held.                        |    0    |       SMBX2       |
 | harmlessthrown       | boolean (0 false, 1 true) | If 1, the NPC is unable to hit other NPCs while thrown.                      |    0    |       SMBX2       |
 | ignorethrownnpcs     | boolean (0 false, 1 true) | If 1, the NPC is unaffected by thrown NPCs.                                  |    0    |       SMBX2       |
 | **noyoshi**          | boolean (0 false, 1 true) | If 1 you can't eat the NPC                                                   |  0[^1]  |      **All**      |
-| **nofireball**       | boolean (0 false, 1 true) | If 1, the NPC can't be killed by fireballs                                   |  0[^1]  |      **All**      |
-| **noiceball**        | boolean (0 false, 1 true) | If 1, enemy can't freeze when an ice ball touches it                         |  0[^1]  |      **All**      |
+| **nofireball**       | boolean (0 false, 1 true) | If 1, the NPC can't be burned by fireballs                                   |  0[^1]  |      **All**      |
+| **noiceball**        | boolean (0 false, 1 true) | If 1, the NPC can't be frozen by touching ice balls                          |  0[^1]  |      **All**      |
 | nohammer             | boolean (0 false, 1 true) | If 1, an NPC will be resistant to hammers                                    |    0    |  Moondust Engine  |
 | noshell              | boolean (0 false, 1 true) | If 1, an NPC will be resistant to running shells                             |    0    |  Moondust Engine  |
 | nogliding            | boolean (0 false, 1 true) | If 1, the NPC ignores gliding blocks.                                        |    0    |       SMBX2       |
